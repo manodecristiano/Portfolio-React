@@ -1,10 +1,11 @@
-
-import './App.css';
-import { MisRutas } from './router/MisRutas';
+import "./App.css";
+import { MisRutas } from "./router/MisRutas";
 function App() {
   return (
     <>
-      <MisRutas/>
+      <div className="layout">
+        <MisRutas />
+      </div>
     </>
   );
 }
