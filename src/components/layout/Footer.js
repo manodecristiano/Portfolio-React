@@ -1,8 +1,15 @@
 import React from 'react'
 
 export const Footer = () => {
-  return (
+  
+   
+      return (
+        <div>
+          <div className="py-2 text-center footer-style">Made with ❤️ by Cristian Carreño ©️&nbsp; {new Date().getFullYear()}</div>
+        </div>
+      );
+    };
     
-    <footer>Cristian Portfolio &copy; React Portfolio-2025</footer>
-  )
-}
+    export default Footer;
+  
+
