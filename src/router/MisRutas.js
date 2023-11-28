@@ -4,7 +4,7 @@ import { Contacto } from "../components/Contacto";
 import { Inicio } from "../components/Inicio";
 import { Trabajos } from "../components/Trabajos";
 import { Footer } from "../components/layout/Footer";
-import { ParallaxImagen } from "../components/ParallaxImagen";
+import { Parallax} from "../components/Parallax";
 import { HeaderNav } from "../components/layout/HeaderNav";
 
 export const MisRutas = () => {
@@ -12,7 +12,7 @@ export const MisRutas = () => {
     <BrowserRouter>
       {/*Header y Navegacion*/}
       <HeaderNav></HeaderNav>
-      <ParallaxImagen></ParallaxImagen>
+    
       {/*Contenido Central*/}
       <Routes>
         <Route path="/" element={<Inicio />} />
