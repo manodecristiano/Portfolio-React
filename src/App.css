@@ -6,3 +6,17 @@ body { font-family: 'Kumbh Sans', system-ui, -apple-system, BlinkMacSystemFont,
 	-moz-osx-font-smoothing: grayscale;
 	}
 	code { font-family: source-code-pro,Menlo, Monaco, Consolas, 'Courier New', monospace}
+
+
+	.general{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	
+	}
+	.content{
+		display: flex;
+		align-items: stretch;
+		flex-wrap: wrap;
+		width: 100%;
+		}

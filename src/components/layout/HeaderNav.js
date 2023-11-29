@@ -4,11 +4,8 @@ import { NavLink } from "react-router-dom";
 
 export const HeaderNav = () => {
   return (
-    
-   
-     
     <div className="sidebar">
-      
+      <div className="fixedcontainer">
     <div className="logo">
         <span>C</span>
         <h3> ristian arreño</h3>
@@ -26,6 +23,7 @@ export const HeaderNav = () => {
           </li>
         </ul>
       </nav>
+    </div>
     </div>
   
   );

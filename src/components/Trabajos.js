@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import "./css/Trabajos.css";
+
 
 export const Trabajos = () => {
   return (
-    <div>Trabajos</div>
+    <div id='trabajo'>Trabajos</div>
   )
 }
