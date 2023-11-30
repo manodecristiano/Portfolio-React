@@ -6,9 +6,9 @@
   }
   
   .image-container {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
+    opacity: 1;
+    transform: translateY(10px);
+    transition: opacity 4s, transform 4s;
   }
   
   .image-container.visible {

@@ -15,8 +15,9 @@ export const MisRutas = () => {
       {/*Header y Navegacion*/}
       <div className='general'> 
       <HeaderNav></HeaderNav>
-      <div className='content'> 
       <ModuleParallax></ModuleParallax>
+      <div className='content'> 
+     
      <Galeria></Galeria>
    
       {/*Contenido Central*/}
