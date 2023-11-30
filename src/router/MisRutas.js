@@ -7,6 +7,7 @@ import { Trabajos } from "../components/Trabajos";
 import { Footer } from "../components/layout/Footer";
 import { ModuleParallax } from "../components/layout/Parallax";
 import { HeaderNav } from "../components/layout/HeaderNav";
+import{Galeria} from "../components/Galeria";
 
 export const MisRutas = () => {
   return (
@@ -16,7 +17,7 @@ export const MisRutas = () => {
       <HeaderNav></HeaderNav>
       <div className='content'> 
       <ModuleParallax></ModuleParallax>
-     
+     <Galeria></Galeria>
    
       {/*Contenido Central*/}
       <Routes>
