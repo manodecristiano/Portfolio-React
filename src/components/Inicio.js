@@ -4,16 +4,18 @@ import "./css/Inicio.css";
 export const Inicio = () => {
   return (
     <>
-    <h2 class="titulo">Bienvenido a mi web profesional</h2>
-    <div className="contenedor-flex">
-    
+      <h2 className="titulo">Bienvenido a mi web profesional</h2>
+      <div className="contenedor-flex">
         {/* Subcontenedor 1: Texto y Foto */}
         <div className="subcontenedor">
-          <h2>Subcontenedor con Texto y Foto</h2>
+          
           <p>
-              Leftmost column is placed for logo and main menu. After that is an
-              image column. Right side column is a 100% full-width content.
-            </p>
+            Licenciado en Desarrollo App Multiplataforma e Ilustración Diseño.
+            
+            Buen comunicador y creador de buen ambiente laboral. Con afán de
+            saber cada día más. Una persona extrovertida y divertida.
+            Auto-exigente y responsable.
+          </p>
           <img
             src="ruta-de-tu-imagen.jpg" // Agrega la ruta de tu imagen
             alt="Descripción de la imagen"
@@ -24,13 +26,11 @@ export const Inicio = () => {
         <div className="subcontenedor">
           <h2>Subcontenedor con Solo Texto</h2>
           <p>
-              Leftmost column is placed for logo and main menu. After that is an
-              image column. Right side column is a 100% full-width content.
-            </p>
+          Combino creatividad y originalidad con el desarrollo.
+          Valoro muy positivamente el trabajo  Full remote. Aunque también me gusta el formato híbrido.
+          </p>
         </div>
       </div>
-
-      </>
-   
+    </>
   );
 };

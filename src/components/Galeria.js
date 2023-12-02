@@ -43,7 +43,7 @@ export const Galeria = () => {
       : images.filter((img) => img.category === categoryImages.category);
 
   return (
-    <div>
+    <div id='trabajos'>
       <button
         onClick={() => handleStatesButtonClick("all")}
         disabled={buttonStates.all}

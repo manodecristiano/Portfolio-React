@@ -3,7 +3,7 @@ import React from 'react'
 export const Servicios = () => {
   return (
     <>
-    <h2 class="titulo">Servicios</h2>
+    <h2 className="titulo">Servicios</h2>
     <div className="contenedor-flex">
     
         {/* Subcontenedor 1: Texto y Foto */}

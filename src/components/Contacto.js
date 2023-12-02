@@ -10,7 +10,7 @@ export const  Contacto = () => {
   };
 
   return (
-    <div className="contacto-container">
+    <div id='contacto'className="contacto-container">
       {/* Formulario de Correo Electrónico */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="email">Tu Correo Electrónico:</label>
