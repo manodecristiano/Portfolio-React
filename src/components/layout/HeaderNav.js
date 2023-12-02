@@ -13,13 +13,18 @@ export const HeaderNav = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/inicio" className={({isActive})=> isActive? 'active2' : ''}> Inicio </NavLink>
+            <NavLink to="/inicio" className={({isActive})=> isActive? 'active2' : ''}> Home </NavLink>
           </li>
-          <li>
-            <NavLink to="/contacto" className={({isActive})=> isActive? 'active2' : ''}> Contacto </NavLink>
-          </li>
+          
           <li>
             <NavLink to="/trabajos" className={({isActive})=> isActive? 'active2' : ''}> Trabajos </NavLink>
+          </li>
+          <li>
+            <NavLink to="/servicios" className={({isActive})=> isActive? 'active3' : ''}> Servicios </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/contacto" className={({isActive})=> isActive? 'active4' : ''}> Contacto </NavLink>
           </li>
         </ul>
       </nav>

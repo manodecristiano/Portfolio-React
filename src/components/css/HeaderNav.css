@@ -22,7 +22,7 @@
 }
 
 .sidebar {
-  background-color: rgba(0, 255, 221, 0.238);
+ 
   overflow-y: scroll;
   width: 200px;
   top: 0;
@@ -31,7 +31,7 @@
   height:110vh;
   padding-left: 40px;
   padding-top: 40px;
-  width: 20%;
+  width: 30%;
 }
 .fixedcontainer {
   position: fixed;

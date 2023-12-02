@@ -15,7 +15,7 @@ body { font-family: 'Kumbh Sans', system-ui, -apple-system, BlinkMacSystemFont,
 	
 	}
 	.content{
-		display: flex;
+		/*display: flex;*/
 		align-items: stretch;
 		flex-wrap: wrap;
 		width: 100%;

@@ -1,5 +1,17 @@
-#inicio{
-    background-color: blue;
-    width: 70%;
-    height: 20%;
-}
+/* Estilos del contenedor flex */
+.contenedor-flex {
+    display: flex;
+    justify-content: space-around; /* Puedes ajustar esto según tus necesidades */
+    align-items: center; 
+    background-color: red;/* Puedes ajustar esto según tus necesidades */
+  }
+  
+  /* Estilos de los subcontenedores */
+  .subcontenedor {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  

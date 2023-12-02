@@ -1,10 +1,9 @@
-import React from "react";
-import "./css/Inicio.css";
+import React from 'react'
 
-export const Inicio = () => {
+export const Servicios = () => {
   return (
     <>
-    <h2 class="titulo">Bienvenido a mi web profesional</h2>
+    <h2 class="titulo">Servicios</h2>
     <div className="contenedor-flex">
     
         {/* Subcontenedor 1: Texto y Foto */}
@@ -32,5 +31,5 @@ export const Inicio = () => {
 
       </>
    
-  );
-};
+  )
+}
