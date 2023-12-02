@@ -1,20 +1,44 @@
 
 
+@keyframes salidaEntradaImagenes {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0) scale(1);
+    transform: translateZ(0) rotateY(0) scale(1);
+    opacity: 1;
+  }
+  45% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg) scale(1);
+    transform: translateZ(-160px) rotateY(87deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg) scale(0);
+    transform: translateZ(-160px) rotateY(87deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0) scale(1);
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.imagenAnimation {
+  animation: salidaEntradaImagenes 1s ease-in-out 0s;
+}
+
+
+
+
   .filtered {
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 1.5s ease, transform 0.5s ease;
   }
-  
-  .image-container {
-    opacity: 1;
-    transform: translateY(10px);
-    transition: opacity 4s, transform 4s;
+  .image-container{
+    overflow: hidden;
   }
-  
-  .image-container.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+ 
+ 
 
   /* Estilos base para los botones */
 button {
@@ -45,3 +69,5 @@ button:disabled {
   color: #7f8c8d;
   opacity: 0.5; /* Ajusta este valor según tus preferencias */
 }
+
+

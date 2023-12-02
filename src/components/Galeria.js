@@ -13,9 +13,9 @@ export const Galeria = () => {
     { id: 4, category: "frontend", src: imagen4 },
   ];
 
-  const [visibleState, setvisibleState] = useState({
+  const [categoryImages, setCategoryImages] = useState({
     category: "all",
-    isVisible: false,
+    
   });
 
   const [buttonStates, setButtonStates] = useState({
@@ -31,17 +31,16 @@ export const Galeria = () => {
       frontend: false,
       [Category]: true,
     });
-    setvisibleState({
-      ...visibleState,
-      isVisible: !visibleState.isVisible,
-      category: Category || visibleState.category,
+    setCategoryImages({
+      ...categoryImages,
+      category: Category || categoryImages.category,
     });
   };
 
   const filteredImages =
-    visibleState.category === "all"
+  categoryImages.category === "all"
       ? images
-      : images.filter((img) => img.category === visibleState.category);
+      : images.filter((img) => img.category === categoryImages.category);
 
   return (
     <div>
@@ -65,10 +64,10 @@ export const Galeria = () => {
       </button>
 
       <div
-        className={`image-container ${visibleState.isVisible ? "visible" : ""}`}
+        className={`image-container`}
       >
         {filteredImages.map((image) => (
-          <img key={image.id} src={image.src} alt={`Imagen ${image.id}`} />
+          <img className='imagenAnimation'key={image.id} src={image.src} alt={`Imagen ${image.id}`} />
         ))}
       </div>
     </div>
