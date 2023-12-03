@@ -1,17 +1,28 @@
-/* Estilos del contenedor flex */
+
+
+
+
+#titulo{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+
+  
+}
+
+
 .contenedor-flex {
     display: flex;
-    justify-content: space-around; /* Puedes ajustar esto según tus necesidades */
+    justify-content: space-around; 
     align-items: center; 
-    background-color: red;/* Puedes ajustar esto según tus necesidades */
+   
   }
   
-  /* Estilos de los subcontenedores */
   .subcontenedor {
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
   }
   
-  /* Estilos adicionales según sea necesario */
+
   

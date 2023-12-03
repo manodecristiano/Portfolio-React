@@ -1,10 +1,10 @@
 import React from "react";
 import "./css/Inicio.css";
-
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"></link>
 export const Inicio = () => {
   return (
     <>
-      <h2 className="titulo">Bienvenido a mi web profesional</h2>
+      <h2 id="titulo">Bienvenido a mi web profesional</h2>
       <div className="contenedor-flex">
         {/* Subcontenedor 1: Texto y Foto */}
         <div className="subcontenedor">
