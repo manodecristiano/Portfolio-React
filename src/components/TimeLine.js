@@ -7,7 +7,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-
+import "./css/TimeLine.css";
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: '6px 16px',
   },
-  secondaryTail: {
+  primaryTail: {
     backgroundColor: theme.palette.secondary.main,
   },
 }));
@@ -25,85 +25,112 @@ export default function CustomizedTimeline() {
   const classes = useStyles();
 
   return (
-    <Timeline align="alternate">
+    <Timeline align='left'>
+
+
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
+          <Typography className='empresa' variant="body2">
             Delivery Media
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot>
-          <TimelineDot />
+          <TimelineDot color="primary">
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" >
-            Líder Innovación Tecnológica
+            <Typography className='cargo'  >
+            Líder Innovación Tecnológica en
             Programatica digital
             </Typography>
-            <Typography>
-              Google TagManager
-              Google Adsense
-              GoogleWorks
+            <Typography className='funciones'>
+              Google TagManager /
+              Google Adsense /
+              Google WorkSpace /
+               Wordpress
             </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
+
       <TimelineItem>
         <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            10:00 am
+          <Typography className='empresa' variant="body2">
+             Grand Voyage
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary">
-          <TimelineDot />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Code
+            <Typography className='cargo'  >
+            Maquetador web
             </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
+            <Typography className='funciones'>
+              Javascript /
+              HTML / CSS /
+              Bootstrap              
+            </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography className='empresa' variant="body2">
+            Free Lance
+          </Typography>
+        </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-          <TimelineDot />
+          <TimelineDot color="primary">
           </TimelineDot>
-          <TimelineConnector className={classes.secondaryTail} />
+          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Sleep
+            <Typography className='cargo'  >
+            Desarrollador de app y UX/UI
             </Typography>
-            <Typography>Because you need rest</Typography>
+            <Typography className='funciones'>
+             Figma /
+             AdobeXD /
+             Flutter
+            </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography className='empresa' variant="body2">
+            INDRA
+          </Typography>
+        </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="secondary">
-          <TimelineDot />
+          <TimelineDot color="primary">
           </TimelineDot>
+          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Repeat
+            <Typography className='cargo'  >
+            Desarrollador Backend
             </Typography>
-            <Typography>Because this is the life you love!</Typography>
+            <Typography className='funciones'>
+              Cliente la CAIXA /
+              Java /
+              PL1
+            </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
     </Timeline>
   );
 }

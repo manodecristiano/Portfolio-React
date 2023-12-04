@@ -35,12 +35,13 @@ export const Inicio = () => {
         </div>
      
       </div>
-      <div className="contenedor-flex">
-       
+        
     <img
             src="ruta-de-tu-imagen.jpg" // Agrega la ruta de tu imagen
             alt="Descripción de la imagen"
           />
+      <div className="contenedor-flex">
+     
 <TimeLine></TimeLine>
 </div>
     </>

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+.empresa{
+    font-family: 'Abel', sans-serif;
+    font-weight: 300;
+}
+.cargo{
+    font-size: 15px;
+    font-weight: bold!important;
+}
+.funciones{
+    font-size: 12px!important;
+    text-transform: none;
+}

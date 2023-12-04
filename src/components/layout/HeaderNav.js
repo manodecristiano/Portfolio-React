@@ -6,8 +6,9 @@ export const HeaderNav = () => {
   const location = useLocation();
   return (
     <div className="sidebar">
-      <h2 className="cuerda">|</h2>
+      
       <div className="fixedcontainer">
+      <h2 className="cuerda">|</h2>
         <div className="logo">
           <span>C</span>
           <h3>ristian arreño</h3>
