@@ -35,7 +35,7 @@ export default function CustomizedTimeline() {
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="primary">
+          <TimelineDot style={{ backgroundColor: 'rgb(8, 93, 121)' }}>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -63,7 +63,7 @@ export default function CustomizedTimeline() {
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="primary">
+          <TimelineDot style={{ backgroundColor: 'rgb(8, 93, 121)' }}>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -88,7 +88,7 @@ export default function CustomizedTimeline() {
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="primary">
+          <TimelineDot style={{ backgroundColor: 'rgb(8, 93, 121)' }}>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -113,7 +113,7 @@ export default function CustomizedTimeline() {
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color="primary">
+          <TimelineDot style={{ backgroundColor: 'rgb(8, 93, 121)' }}>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>

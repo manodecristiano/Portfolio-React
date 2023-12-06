@@ -10,30 +10,35 @@ import imagenPortada from "./assets/Cristian.jpeg";
 export const Inicio = () => {
   return (
     <>
-      <h2 id="titulo">Bienvenido a mi web profesional</h2>
+      <h1 id="titulo">Bienvenido! Soy Cristian</h1>
+      <div className="linea-separadora"></div>
       <div className="contenedor-flex">
         {/* Subcontenedor 1: Texto y Foto */}
-        <div className="subcontenedor">
+        <div className="subcontenedor1">
           <p>
-            Hola que tal? Te cuento un poco sobre mi: <br/>
-           Soy Cristian un  <strong>Licenciado 
-            en Desarrollo de Aplicaciones Multiplataforma e Ilustración de
-            Diseño.</strong>  <br/>Destacado comunicador y generador de un entorno laboral
-            positivo. Apasionado por el aprendizaje continuo, me caracterizo por
-            mi exigencia conmigo mismo, extroversión y sentido del humor.
-            Autodidacta, y comprometido con la responsabilidad en cada tarea.
+           Soy Desarrollador <strong>Web</strong> y Aplicaciones multiplataforma con amplios conocimientos
+            en <strong>diseño </strong>  
+           e ilustración.<br/>
+            Desarrollo simple, intuitivo y responsive.
+           
           </p>
         </div>
         <img id='imagenPortada' src={imagenPortada} alt='foto profesioanl Cristian' />
       </div>
  <div className="contenedor-flex"></div>
         {/* Subcontenedor 2: Solo Texto */}
-        <div className="subcontenedor">
+        <div className="subcontenedor2">
           <p>
             Combino creatividad y originalidad con el desarrollo. Valoro muy
             positivamente el trabajo Full remote. También me gusta el formato
             híbrido.
           </p>
+          <p>
+          Destacado comunicador y generador de un entorno laboral
+            positivo. Apasionado por el aprendizaje continuo, me caracterizo por
+            mi exigencia conmigo mismo, extroversión y sentido del humor.
+            Autodidacta, y comprometido con la responsabilidad en cada tarea.
+            </p>
         </div>
       
 

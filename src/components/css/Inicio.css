@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 #imagenPortada{
+  padding: 40px;
   height: 292px;
   width: 400px;
 }
@@ -9,11 +10,16 @@
   display: flex;
   justify-content: space-around; 
   align-items: center; 
-  font-family: 'Abel', sans-serif;
-  font-size: xx-large;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+
   
 }
 
+.linea-separadora {
+  border-top: 4px solid rgb(8, 93, 121); 
+  margin: 10px 50px; 
+}
 
 .contenedor-flex {
     display: flex;
@@ -22,10 +28,19 @@
    
   }
   
-  .subcontenedor {
- 
-    padding: 10px;
-    border: 1px solid #ccc;
+  .subcontenedor1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+   
+    text-align: center;
+  }
+  .subcontenedor2{
+    background-color:  rgb(8, 93, 121);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 20px;
     text-align: center;
   }
   
