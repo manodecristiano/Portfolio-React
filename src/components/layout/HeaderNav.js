@@ -1,9 +1,37 @@
-import React from "react";
+
 import "../css/HeaderNav.css";
 import { NavLink, useLocation } from "react-router-dom";
+import React, { useRef, useEffect, useState } from "react";
 
 export const HeaderNav = () => {
   const location = useLocation();
+  const inicioRef = useRef(null);
+  const [isBotonActivo, setBotonActivo] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Verifica si la posición de la ventana está cerca de la sección de "inicio"
+      if (
+        inicioRef.current &&
+        window.scrollY >= inicioRef.current.offsetTop &&
+        window.scrollY < inicioRef.current.offsetTop + inicioRef.current.clientHeight
+      ) {
+        setBotonActivo(true);
+      } else {
+        setBotonActivo(false);
+      }
+    };
+
+    // Agrega un event listener para manejar el scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="sidebar">
       
@@ -16,12 +44,19 @@ export const HeaderNav = () => {
         <nav>
           <ul>
             <li>
-              <NavLink
+            <NavLink
                 to="#inicio"
-                className={location.hash === "#inicio" ? "active2" : ""}
+                  className={isBotonActivo ? "active2" : ""}
+                onClick={() => {
+                  // Desplázate a la sección de "inicio" al hacer clic en el botón
+                  if (inicioRef.current) {
+                    window.scrollTo({
+                      top: inicioRef.current.offsetTop,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
               >
-                {" "}
-                Sobre mi{" "}
               </NavLink>
             </li>
             <li>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import "./css/Inicio.css";
 import TimeLine from "./TimeLine";
 import imagenPortada from "./assets/Cristian.jpeg";
@@ -7,9 +7,12 @@ import imagenPortada from "./assets/Cristian.jpeg";
   href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
   rel="stylesheet"
 ></link>;
+
 export const Inicio = () => {
+  const inicioRef = useRef(null);
   return (
     <>
+      <div ref={inicioRef} id="inicio" className="seccionInicio"></div>
       <h1 id="titulo">Bienvenido! Soy Cristian</h1>
       <div className="linea-separadora"></div>
       <div className="contenedor-flex">
