@@ -46,26 +46,15 @@ export const HeaderNav = () => {
             <li>
             <NavLink
                 to="#inicio"
-                  className={isBotonActivo ? "active2" : ""}
-                onClick={() => {
-                  // Desplázate a la sección de "inicio" al hacer clic en el botón
-                  if (inicioRef.current) {
-                    window.scrollTo({
-                      top: inicioRef.current.offsetTop,
-                      behavior: "smooth",
-                    });
-                  }
-                }}
-              >
+                className={location.hash === "#inicio" ? "active2" : ""}
+              >Inicio
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="#trabajos"
                 className={location.hash === "#trabajos" ? "active2" : ""}
-              >
-                {" "}
-                Trabajos{" "}
+              >Trabajos
               </NavLink>
             </li>
             <li>

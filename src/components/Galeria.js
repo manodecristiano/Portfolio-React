@@ -73,3 +73,4 @@ export const Galeria = () => {
     </div>
   );
 };
+export default Galeria;

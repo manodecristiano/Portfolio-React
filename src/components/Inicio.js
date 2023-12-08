@@ -52,3 +52,4 @@ export const Inicio = () => {
     </>
   );
 };
+export default Inicio;
