@@ -3,10 +3,6 @@ import "./css/Inicio.css";
 import TimeLine from "./TimeLine";
 import imagenPortada from "./assets/Cristian.jpeg";
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-  rel="stylesheet"
-></link>;
 
 export const Inicio = () => {
   const inicioRef = useRef(null);

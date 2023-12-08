@@ -10,23 +10,30 @@ import { Galeria } from "../components/Galeria";
 import { Servicios } from "../components/Servicios";
 
 export const MisRutas = () => {
+
+ 
   return (
     <BrowserRouter>
       {/*Header y Navegacion*/}
       <div className="general">
+
         <HeaderNav></HeaderNav>
         <ModuleParallax></ModuleParallax>
         
         <div className="content">
-          {/*Contenido Central*/}
-          <Inicio></Inicio>
-          <Galeria></Galeria>
-          <Servicios></Servicios>
-          <Contacto></Contacto>
-          {/*Footer*/}
 
+          {/*Contenido Central*/}
+          <div id="inicio"> <Inicio></Inicio></div>
+         
+          <div id="trabajos"> <Galeria></Galeria></div>
+          <div id="servicios"> <Servicios></Servicios></div>
+          <div id="contacto"> <Contacto></Contacto></div>
+         
+
+          {/*Footer*/}
           <Footer></Footer>
         </div>
+
       </div>
     </BrowserRouter>
   );

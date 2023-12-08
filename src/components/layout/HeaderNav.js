@@ -1,42 +1,47 @@
-
 import "../css/HeaderNav.css";
-import { NavLink, useLocation } from "react-router-dom";
-import React, { useRef, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import React, { useRef, useEffect } from "react";
 
 export const HeaderNav = () => {
   const location = useLocation();
-  const inicioRef = useRef(null);
-  const [isBotonActivo, setBotonActivo] = useState(false);
 
+  const elmntInicio = useRef(null);
+  const elmntContacto = useRef(null);
+  const elmntTrabajos = useRef(null);
+  const elmntServicios = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Verifica si la posición de la ventana está cerca de la sección de "inicio"
-      if (
-        inicioRef.current &&
-        window.scrollY >= inicioRef.current.offsetTop &&
-        window.scrollY < inicioRef.current.offsetTop + inicioRef.current.clientHeight
-      ) {
-        setBotonActivo(true);
-      } else {
-        setBotonActivo(false);
-      }
-    };
+    // Actualizar las referencias cuando el componente se monta o cambia de ubicación
+    elmntInicio.current = document.getElementById("inicio");
+    elmntContacto.current = document.getElementById("contacto");
+    elmntTrabajos.current = document.getElementById("trabajos");
+    elmntServicios.current = document.getElementById("servicios");
+  }, [location]);
 
-    // Agrega un event listener para manejar el scroll
-    window.addEventListener("scroll", handleScroll);
-
-    // Limpia el event listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const scrollToInicio = () => {
+    if (elmntInicio.current) {
+      elmntInicio.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+  const scrollToTrabajos = () => {
+    if (elmntTrabajos.current) {
+      elmntTrabajos.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };const scrollToServicios = () => {
+    if (elmntServicios.current) {
+      elmntServicios.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+  const scrollToContacto = () => {
+    if (elmntContacto.current) {
+      elmntContacto.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <div className="sidebar">
-      
       <div className="fixedcontainer">
-      <h2 className="cuerda">|</h2>
+        <h2 className="cuerda">|</h2>
         <div className="logo">
           <span>C</span>
           <h3>ristian arreño</h3>
@@ -44,34 +49,24 @@ export const HeaderNav = () => {
         <nav>
           <ul>
             <li>
-            <NavLink
-                to="#inicio"
-                className={location.hash === "#inicio" ? "active2" : ""}
-              >Inicio
-              </NavLink>
+              <Link to="#inicio" className={location.hash === "#inicio" ? "active2" : ""} onClick={scrollToInicio}>
+                Inicio
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="#trabajos"
-                className={location.hash === "#trabajos" ? "active2" : ""}
-              >Trabajos
-              </NavLink>
+              <Link to="#trabajos" className={location.hash === "#trabajos" ? "active2" : ""}onClick={scrollToTrabajos}>
+                Trabajos
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="#servicios"
-                className={location.hash === "#servicios" ? "active2" : ""}
-                >Servicios
-              </NavLink>
+              <Link to="#servicios" className={location.hash === "#servicios" ? "active2" : ""}onClick={scrollToServicios}>
+                Servicios
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="#contacto"
-                className={location.hash === "#contacto" ? "active2" : ""}
-              >
-                {" "}
-                Contacto{" "}
-              </NavLink>
+              <Link to="#contacto" className={location.hash === "#contacto" ? "active2" : ""} onClick={scrollToContacto}>
+                Contacto
+              </Link>
             </li>
           </ul>
         </nav>

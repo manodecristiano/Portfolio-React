@@ -84,7 +84,7 @@ export default function CustomizedTimeline() {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography className='empresa' variant="body2">
-            Free Lance
+            FreeLance
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
