@@ -15,7 +15,7 @@ export const Inicio = () => {
         {/* Subcontenedor 1: Texto y Foto */}
         <div className="subcontenedor1">
           <p>
-           Soy Desarrollador <strong>Web</strong> y Aplicaciones multiplataforma con amplios conocimientos
+           Soy Desarrollador <strong>Web</strong> y Aplicaciones multiplataforma <br/>con amplios conocimientos
             en <strong>diseño </strong>  
            e ilustración.<br/>
             Desarrollo simple, intuitivo y responsive.

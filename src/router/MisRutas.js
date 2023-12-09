@@ -23,10 +23,14 @@ export const MisRutas = () => {
         <div className="content">
 
           {/*Contenido Central*/}
-          <div id="inicio"> <Inicio></Inicio></div>
-         
-          <div id="trabajos"> <Galeria></Galeria></div>
+          <section id="inicio"><Inicio></Inicio></section>
+          
+          <section className="galeria"><Galeria></Galeria></section>
+
+           <section id="servicios">
           <div id="servicios"> <Servicios></Servicios></div>
+          </section>
+
           <div id="contacto"> <Contacto></Contacto></div>
          
 

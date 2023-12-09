@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Parallax.css";
 import { Parallax } from "react-parallax";
+import image0 from "../assets/foto000.png";
 import image1 from "../assets/fotoCristian01.png";
 import image2 from "../assets/fotoCristian00.jpg";
 import image3 from "../assets/fotoCristian03.jpeg";
@@ -19,11 +20,18 @@ transform: "traslate (-50%, -50%)",
 export function ModuleParallax() {
 return (
 <div className="parallax">
-<Parallax bgImage={image1} strength={200}>
-<div style={{ height: "100vh" }}>
-
+  
+<Parallax bgImage={image0} strength={200}>
+<div style={{ height: "89vh" }}>
 </div>
 </Parallax>
+
+<Parallax bgImage={image1} strength={200}>
+<div style={{ height: "100vh" }}>
+</div>
+</Parallax>
+
+
 <Parallax bgImage={image2} strength={200}>
 <div style={{ height: "80vh" }}>
 <div style={insideStyles}> CV</div>

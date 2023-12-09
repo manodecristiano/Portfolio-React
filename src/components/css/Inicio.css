@@ -2,8 +2,8 @@
 
 #imagenPortada{
   padding: 40px;
-  height: 292px;
-  width: 400px;
+  height: 300px;
+  width: 370px;
 }
 
 #titulo{
@@ -12,13 +12,11 @@
   align-items: center; 
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
-
-  
 }
 
 .linea-separadora {
   border-top: 4px solid rgb(8, 93, 121); 
-  margin: 10px 50px; 
+  margin: 0px 0px 0px 121px!important; 
 }
 
 .contenedor-flex {
@@ -30,13 +28,16 @@
   
   .subcontenedor1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     padding: 20px;
-   
     text-align: center;
   }
+  .subcontenedor1 p{
+    padding: 20px;
+    margin-left: 40px;
+  }
   .subcontenedor2{
-    background-color:  rgb(8, 93, 121);
+    background-color:  rgb(4, 85, 109);
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
