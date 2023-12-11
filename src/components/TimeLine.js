@@ -34,98 +34,96 @@ export const TimeLine = () => {
     icon={<Icono1></Icono1>}
   >
     <h3 className="vertical-timeline-element-title"> Líder Innovación Tecnológica en Programatica digital.</h3>
-    <h4 className="vertical-timeline-element-subtitle">Madrid</h4>
+    <h4 className="vertical-timeline-element-subtitle">DeliveryMedia-Madrid</h4>
     <p>
+    SEO/
     Google TagManager /
     Google Adsense /
     Google WorkSpace /
-    Wordpress
+    Wordpress / 
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(8, 93, 121)', color: 'black' }}
+    contentStyle={{ background: 'rgb(8, 93, 121)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(8, 93, 121)' }}
-    date="2010 - 2011"
+    date="Junio/2022 - Noviembre/2023" 
     iconStyle={{ background: '#fff', color: '#fff' }}
     icon={<Icono2></Icono2>}
   >
-    <h3 className="vertical-timeline-element-title">Art Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    <h3 className="vertical-timeline-element-title">Maquetador Web</h3>
+    <h4 className="vertical-timeline-element-subtitle">GrandVoyage-Barcelona</h4>
     <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+      Desarrollo integro, Experiencia de usuario, 
+      Javascript /
+      HTML /
+      CSS /
+      Bootstrap /
+      Control de versiones git
     </p>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+     className="vertical-timeline-element--work"
+     contentStyle={{ background: 'rgb(8, 93, 121)', color: '#fff' }}
+     contentArrowStyle={{ borderRight: '7px solid  rgb(8, 93, 121)' }}
+     date="Junio/2022 - Noviembre/2023" 
+     iconStyle={{ background: '#fff', color: '#fff' }}
+     icon={<Icono2></Icono2>}
+   >
+     <h3 className="vertical-timeline-element-title">Desarrollador Mobile</h3>
+     <h4 className="vertical-timeline-element-subtitle">Freelance-Barcelona</h4>
+     <p>
+       Dirección creativa, Desarrollo integro, Experiencia de usuario,
+        Figma /
+        AdobeXD /
+        Flutter
+     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    conStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={image3}
+    contentStyle={{ background: 'rgb(8, 93, 121)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(8, 93, 121)' }}
+    date="Junio/2022 - Noviembre/2023" 
+    iconStyle={{ background: '#fff', color: '#fff' }}
+    icon={<Icono2></Icono2>}
   >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+    <h3 className="vertical-timeline-element-title">Desarrollador Backend</h3>
+    <h4 className="vertical-timeline-element-subtitle">Indra-Barcelona</h4>
     <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2006 - 2008"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    conStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={image4}
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      User Experience, Visual Design
+      Manejo de BBDD, control de versiones,  Desarrollo 
+       Java /
+       PL1
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="April 2013"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    conStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={image1}
+    contentStyle={{ background: 'rgba(8, 93, 121, 0.271)', color: 'black' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(8, 93, 121)' }}
+    date="Junio/2022 - Noviembre/2023" 
+    iconStyle={{ background: '#fff', color: '#fff' }}
+    icon={<Icono2></Icono2>}
   >
-    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+    <h3 className="vertical-timeline-element-title">Grado Superior Desarrollo de Aplicaciones Multiplataforma</h3>
+    <h4 className="vertical-timeline-element-subtitle">Stucom-Barcelona</h4>
     <p>
-      Strategy, Social Media
+      Java/ Javascript/ MongoDB/ MySQL/ Swift/
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="November 2012"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    conStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={image2}
+    contentStyle={{ background: 'rgba(8, 93, 121, 0.271)', color: 'black' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(8, 93, 121)' }}
+    date="Junio/2022 - Noviembre/2023" 
+    iconStyle={{ background: '#fff', color: '#fff' }}
+    icon={<Icono2></Icono2>}
   >
-    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+    <h3 className="vertical-timeline-element-title">Grado Superior Ilustración/Diseño</h3>
+    <h4 className="vertical-timeline-element-subtitle">Pau Gargallo-Barcelona</h4>
     <p>
-      Creative Direction, User Experience, Visual Design
+     Diseño de producción
     </p>
   </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="2002 - 2006"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    conStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={image3}
-  >
-    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-    <p>
-      Creative Direction, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-    conStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={image4}
-  />
+
 </VerticalTimeline>
 
 </>
