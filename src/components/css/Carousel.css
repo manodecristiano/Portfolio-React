@@ -1,0 +1,13 @@
+
+#carousel-container{ 
+  
+    width: 500px;
+    margin-left: 20%;
+    
+    
+  }
+
+  #carousel-container img{
+    width: 80px;
+    height: 80px;
+  }

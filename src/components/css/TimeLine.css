@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+.vertical-timeline-element-date {
+opacity: 1;
+font-weight: 700!important;
+margin: 0px 15px 0px 15px;
+color: rgb(8, 93, 121);
+  
+}
 
+
+
+.vertical-timeline::before {
+    background: #b6b6b6;
+}
 .empresa{
     font-family: 'Abel', sans-serif;
     font-weight: 300;

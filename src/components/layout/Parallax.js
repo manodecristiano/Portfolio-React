@@ -7,15 +7,18 @@ import image2 from "../assets/fotoCristian00.jpg";
 import image3 from "../assets/fotoCristian03.jpeg";
 import image4 from "../assets/fotoCristian04.jpeg";
 import image5 from "../assets/fotoCristian02.jpeg";
+import image6 from "../assets/cv.png";
 
-
+/*
 const insideStyles = { 
-  background: "#fff", 
+  backgroundImage: `url(${image6})`, // Cambia el fondo a la imagen6
+  backgroundSize: "cover",
+  backgroundPosition: "center",
   padding: 20,
-position: "absolute", top: "50%",
-left: "50%",
-transform: "traslate (-50%, -50%)",
-}
+  position: "absolute", top: "50%",
+  left: "50%",
+  transform: "traslate (-50%, -50%)",
+}*/
 
 export function ModuleParallax() {
 return (
@@ -26,15 +29,11 @@ return (
 </div>
 </Parallax>
 
-<Parallax bgImage={image1} strength={200}>
-<div style={{ height: "100vh" }}>
-</div>
-</Parallax>
 
 
 <Parallax bgImage={image2} strength={200}>
 <div style={{ height: "80vh" }}>
-<div style={insideStyles}> CV</div>
+{/*<div style={insideStyles}> CV</div>*/}
 </div>
 </Parallax>
 
@@ -44,11 +43,7 @@ return (
 </div>
 </Parallax>
 
-<Parallax bgImage={image4} strength={200}>
-<div style={{ height: "80vh" }}>
 
-</div>
-</Parallax>
 
 <Parallax bgImage={image5} strength={200}>
 <div style={{ height: "80vh" }}>

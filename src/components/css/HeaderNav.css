@@ -3,7 +3,7 @@
   display: flex;
 }
 .logo span {
-  margin-top: -64px;
+  margin-top: -69px;
   color:rgb(44, 44, 44);
   font: 200px/1 'TeXGyreAdventorBold';
   animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation ;
@@ -15,14 +15,15 @@
 .logo h3 {
   font-size: 30px;
   width: 12px;
+  font-family: 'Roboto', sans-serif!important;
   font-weight: lighter;
   margin-top: 2px;
   margin-left: -93px;
 }
 
 .cuerda{
-
-  margin-top: -52px;
+  font-family: 'Roboto', sans-serif!important;
+  margin-top: -55px;
   margin-left: 65px;
   font-size: 40px;
   height: fit-content;
@@ -78,7 +79,7 @@
   height:110vh;
   padding-left: 40px;
   padding-top: 40px;
-  width: 30%;
+  width: 20%;
 }
 .fixedcontainer {
   position: fixed;
@@ -95,21 +96,25 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-
+  margin-left: 20px;
+  height: 40px;
   list-style: none;
-  margin: 15px;
-  margin-top: 44px;
+ 
+  margin-top: 85px;
 }
 
 a:link,
 a:visited {
   color: rgb(8, 93, 121);
-  padding: 15px;
+ 
   text-decoration: none;
 }
 
 a:hover,
 .active2 {
-  background: rgba(42, 165, 165, 0.238);
+  
+  background: rgba(8, 93, 121, 0.486);
   color: rgb(255, 255, 255) !important;
+  font-weight: bold!important;
+  padding: 19px;
 }

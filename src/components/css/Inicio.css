@@ -1,49 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap");
 
-#imagenPortada{
+#imagenPortada {
   padding: 40px;
-  height: 300px;
-  width: 370px;
+  height: 250px;
+  width: 226px;
 }
 
-#titulo{
+#titulo {
   display: flex;
-  justify-content: space-around; 
-  align-items: center; 
-  font-family: 'Roboto', sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: lighter;
   font-size: 40px;
 }
 
 .linea-separadora {
-  border-top: 4px solid rgb(8, 93, 121); 
-  margin: 0px 0px 0px 121px!important; 
+  border-top: 4px solid rgb(8, 93, 121);
+  margin: -10px 0px 0px 121px !important;
+}
+.linea-separadora2 {
+  border-top: 4px solid rgb(8, 93, 121);
+  margin: -10px 20px 50px 121px !important;
 }
 
 .contenedor-flex {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-   
-  }
-  
-  .subcontenedor1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    padding: 20px;
-    text-align: center;
-  }
-  .subcontenedor1 p{
-    padding: 20px;
-    margin-left: 40px;
-  }
-  .subcontenedor2{
-    background-color:  rgb(4, 85, 109);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#subcontenedor0 {
+  padding-left: 108px !important;
+  display: flex;
+}
+.subcontenedor1 {
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
 
-  
+.subcontenedor2 {
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+
+.subcontenedor-separador {
+  background-color: rgb(4, 85, 109);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+#carousel{
+  margin-bottom: 62px;
+  margin-top: -79px;
+  margin-left: -21px;
+}
