@@ -1,57 +1,54 @@
-import React from 'react';
+import React from "react";
 import "./css/Servicios.css";
+import image1 from "./assets/servicios/internet.png";
+import image2 from "./assets/servicios/logo-design.png";
+import image3 from "./assets/servicios/phone.png";
 
 export const Servicios = () => {
   return (
     <>
-    <h2 id="tituloServicio">Servicios</h2>
-    
-    <div className="contenedor-flex">
-    
-      
+      <h2 id="tituloServicio">Servicios</h2>
+
+      <div className="contenedor-flex">
         <div className="subcontenedor1">
-        <div id='linea-separadora'></div>
+          <div id="linea-separadora"></div>
           <h2>Páginas Webs</h2>
-          <div className='linea-separadora'></div>
+          <div className="linea-separadora"></div>
           <p>
-              Leftmost column is placed for logo and main menu. After that is an
-              image column. Right side column is a 100% full-width content.
-            </p>
-          <img
-            src="ruta-de-tu-imagen.jpg" // Agrega la ruta de tu imagen
-            alt="Descripción de la imagen"
-          />
+            Desarrollo tu web y mejoro su posicionamiento web. Mi servicio de
+            creación de páginas web ofrece diseño innovador, funcionalidad
+            avanzado y una presencia en línea que destaca. Desde sitios
+            corporativos hasta portafolios personales, creo la plataforma
+            perfecta para tu éxito en internet.
+          </p>
+          <img src={image1} alt="Descripción de la imagen" />
         </div>
 
-      
         <div className="subcontenedor1">
           <h2>Diseño UI </h2>
-          <div className='linea-separadora'></div>
+          <div className="linea-separadora"></div>
           <p>
-              Leftmost column is placed for logo and main menu. After that is an
-              image column. Right side column is a 100% full-width content.
-            </p>
-            <img
-            src="ruta-de-tu-imagen.jpg" // Agrega la ruta de tu imagen
-            alt="Descripción de la imagen"
-          />
+            Potencio tu marca con diseño de interfaz y experiencia de usuario
+            excepcionales. Mi servicio de UI/UX transforma conceptos en
+            interfaces intuitivas y estéticamente atractivas, elevando la
+            conexión emocional con tus usuarios.
+          </p>
+          <img src={image2} alt="Descripción de la imagen" />
         </div>
 
         <div className="subcontenedor1">
           <h2>Dev Apps </h2>
-          <div className='linea-separadora'></div>
+          <div className="linea-separadora"></div>
           <p>
-              Leftmost column is placed for logo and main menu. After that is an
-              image column. Right side column is a 100% full-width content.
-            </p>
-            <img
-            src="ruta-de-tu-imagen.jpg" // Agrega la ruta de tu imagen
-            alt="Descripción de la imagen"
-          />
+            Convierto tus ideas en aplicaciones impactantes. Mi servicio de
+            desarrollo de aplicaciones ofrece soluciones personalizadas,
+            funcionalidad avanzada y una experiencia de usuario excepcional para
+            impulsar tu presencia móvil.
+          </p>
+          <img src={image3} alt="Descripción de la imagen" />
         </div>
       </div>
       <h2 id="tituloServicio"> </h2>
-      </>
-   
-  )
-}
+    </>
+  );
+};

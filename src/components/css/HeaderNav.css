@@ -99,14 +99,12 @@ li {
   margin-left: 20px;
   height: 40px;
   list-style: none;
- 
   margin-top: 85px;
 }
 
 a:link,
 a:visited {
   color: rgb(8, 93, 121);
- 
   text-decoration: none;
 }
 
@@ -114,7 +112,7 @@ a:hover,
 .active2 {
   
   background: rgba(8, 93, 121, 0.486);
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) ;
   font-weight: bold!important;
   padding: 19px;
 }

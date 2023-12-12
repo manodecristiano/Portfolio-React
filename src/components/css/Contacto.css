@@ -30,12 +30,38 @@
     width: 150px;
   }
   
-  .redes-sociales a {
-    color: #333; /* Color del ícono */
-    font-size: 24px; /* Tamaño del ícono */
+  .iconosRRSS{
+    color: #2980b9!important; 
+    font-size: 20px; 
+    margin: 0px 20px 0px 20px;
+   
   }
   
-  .redes-sociales a:hover {
-    color: #007bff; /* Cambia el color al pasar el ratón sobre el ícono */
+  .redes-sociales a:hover{
+    font-size: 20px; 
+    color: #ffffff!important; 
+    padding: 1px;
+    margin: 0px 20px 0px 18px;
+    border-radius: 5px;
   }
-  
+
+  .redes-sociales button:hover{
+    margin: 0px 40px 0px 36px!important;
+    font-size: 20px!important; 
+    color: #ffffff!important; 
+    padding: 2px!important;
+    background-color:rgba(8, 93, 121, 0.486)!important;
+    border-radius: 5px;
+  }
+ 
+  #buttonEnviar{
+    background-color: #2980b9;
+  }
+  #buttonEnviar:hover{
+    background-color: #2980b9;
+    color: #ffffff!important; 
+    font-size: 15px;
+    padding: 5px 0px 5px 0px!important;
+    margin: 5px 0px -7px 0px!important;
+
+  }

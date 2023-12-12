@@ -8,7 +8,7 @@ export const Footer = () => {
         <div>
          
           <div className="footer">
-          <h3>Muchas Gracias por ver mi trabajo!</h3>
+          <h3>Muchas Gracias por llegar hasta aquí</h3>
           Made with ❤️ by Cristian Carreño ©️&nbsp; {new Date().getFullYear()}
           </div>
          

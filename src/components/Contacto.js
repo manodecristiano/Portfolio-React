@@ -1,40 +1,70 @@
 import React from 'react';
 import "./css/Contacto.css";
+
+
 export const  Contacto = () => {
 
+
+    const handleDownloadCurriculum = () => {
+      // URL del archivo PDF
+      const pdfUrl = process.env.PUBLIC_URL + '/Cristian_CV_2023.pdf';
+
+      // Nombre del archivo para la descarga
+      const fileName = 'Cristian_CV_2023.pdf';
   
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí puedes agregar lógica para enviar el correo electrónico
-    console.log('Correo electrónico enviado');
-  };
+      // Crear un enlace temporal
+      const link = document.createElement('a');
+  
+      // Configurar el enlace con la URL del PDF y el nombre de archivo
+      link.href = pdfUrl;
+      link.download = fileName;
+  
+      // Agregar el enlace al DOM y hacer clic en él
+      document.body.appendChild(link);
+      link.click();
+  
+      // Eliminar el enlace del DOM después de la descarga
+      document.body.removeChild(link);
+    };
+  
 
   return (
+    <>
     <div id='contacto'className="contacto-container">
       {/* Formulario de Correo Electrónico */}
-      <form onSubmit={handleSubmit}>
+      <form action="https://formsubmit.co/cristian.carre.online@gmail.com" method="POST" >
         <label htmlFor="email">Tu Correo Electrónico:</label>
         <input type="email" id="email" name="email" required />
 
         <label htmlFor="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" required />
-
-        <button type="submit">Enviar Correo</button>
-      </form>
+        <input type='hidden' name='_next' value='http://localhost:3000'></input>
+        <input type='hidden' name='_captcha' value='false'></input>
+        <button onClick={() => alert('¡Correo electrónico enviado con éxito!')} id='buttonEnviar'type="submit">Enviar Correo</button>
+      
+       
+        </form>
 
       {/* Redes Sociales */}
       <div className="redes-sociales">
-        <a href="mailto:tuemail@example.com">
-    mail
+
+
+        <a className='iconosRRSS' href="mailto:cristian.carre.online@gmail.com">
+        email
         </a>
-        <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">
-     twiter 
-        </a>
-        <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
+        <button className='iconosRRSS' onClick={handleDownloadCurriculum}>
+         CV
+        </button>
+        <a className='iconosRRSS' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
          linkedin
         </a>
+
       </div>
+
+      
     </div>
+
+    </>
   );
 };
 
