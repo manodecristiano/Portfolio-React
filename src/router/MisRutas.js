@@ -25,15 +25,12 @@ export const MisRutas = () => {
           {/*Contenido Central*/}
           <section id="inicio"><Inicio></Inicio></section>
           
-          <section className="galeria"><Galeria></Galeria></section>
+          <section id="galeria"><Galeria></Galeria></section>
 
-           <section id="servicios">
-          <div id="servicios"> <Servicios></Servicios></div>
-          </section>
-
-          <div id="contacto"> <Contacto></Contacto></div>
-         
-
+          <section id="servicios"> <Servicios></Servicios> </section>
+        
+          <section id="contacto"> <Contacto></Contacto> </section>
+          
           {/*Footer*/}
           <Footer></Footer>
         </div>
