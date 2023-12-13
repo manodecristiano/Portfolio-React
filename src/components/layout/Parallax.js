@@ -1,55 +1,50 @@
 import React from "react";
 import "../css/Parallax.css";
 import { Parallax } from "react-parallax";
-import image0 from "../assets/foto000.png";
-import image1 from "../assets/fotoCristian01.png";
-import image2 from "../assets/fotoCristian00.jpg";
-import image3 from "../assets/fotoCristian03.jpeg";
-import image4 from "../assets/fotoCristian04.jpeg";
-import image5 from "../assets/fotoCristian02.jpeg";
-import image6 from "../assets/cv.png";
 
-/*
-const insideStyles = { 
-  backgroundImage: `url(${image6})`, // Cambia el fondo a la imagen6
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  padding: 20,
-  position: "absolute", top: "50%",
-  left: "50%",
-  transform: "traslate (-50%, -50%)",
-}*/
+import image1 from "../assets/parallax/fotoParallax01.png";
+import image2 from "../assets/parallax/fotoParallax02.png";
+import image3 from "../assets/parallax/fotoParallax03.png";
+import image4 from "../assets/parallax/fotoParallax04.png";
+import image5 from "../assets/parallax/fotoParallax05.png";
+
 
 export function ModuleParallax() {
 return (
 <div className="parallax">
   
-<Parallax bgImage={image0} strength={200}>
-<div style={{ height: "89vh" }}>
+<Parallax bgImage={image5} strength={200}>
+<div style={{ height: "45vh" }}>
 </div>
 </Parallax>
 
-
+<Parallax bgImage={image1} strength={100}>
+<div style={{ height: "55vh" }}>
+</div>
+</Parallax>
 
 <Parallax bgImage={image2} strength={200}>
-<div style={{ height: "80vh" }}>
+<div style={{ height: "100vh" }}>
 {/*<div style={insideStyles}> CV</div>*/}
 </div>
 </Parallax>
 
 <Parallax bgImage={image3} strength={200}>
-<div style={{ height: "80vh" }}>
-
+<div style={{ height: "100vh" }}>
 </div>
 </Parallax>
 
-
-
-<Parallax bgImage={image5} strength={200}>
-<div style={{ height: "80vh" }}>
-
+<Parallax bgImage={image4} strength={200}>
+<div style={{ height: "94vh" }}>
 </div>
 </Parallax>
+
+<Parallax bgImage={image1} strength={200}>
+<div style={{ height: "44vh" }}>
 </div>
+</Parallax>
+
+</div>
+
 );
 }

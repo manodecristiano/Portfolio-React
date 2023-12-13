@@ -23,7 +23,6 @@ export const Galeria = () => {
   
 
 
-
   const [categoryImages, setCategoryImages] = useState({
     category: "all",
     
@@ -54,8 +53,45 @@ export const Galeria = () => {
       ? images
       : images.filter((img) => img.category === categoryImages.category);
 
+
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+  const handleImageClick = (index) => {
+    setShowPopup(true);
+    setSelectedImageIndex(index);
+  };
+
+  
+      
   return (
     <>
+
+
+    {filteredImages.map((image, index) => (
+  <img
+   
+    style={{ animationDelay: `${image.id * 4}s` }}
+    key={image.id}
+    src={image.src}
+    alt={`Imagen ${image.id}`}
+    onClick={() => handleImageClick(index)}
+  />
+))}
+
+{showPopup && (
+        <div className="popup">
+          <img
+            src={filteredImages[selectedImageIndex].src}
+            alt={`Imagen ${filteredImages[selectedImageIndex].id}`}
+          />
+          <button id="buttonCerrar" onClick={() => setShowPopup(false)}>Cerrar</button>
+        </div>
+      )}
+
+
+
     <div id='trabajos'>
       <div id="nav-galeria">
       <button
@@ -89,6 +125,7 @@ export const Galeria = () => {
         ))}
       </div>
     </div>
+    
     </>
   );
 };
