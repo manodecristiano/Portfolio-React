@@ -5,27 +5,24 @@ import imagen2 from "./assets/galeria/galeria02.png";
 import imagen3 from "./assets/galeria/galeria03.png";
 import imagen4 from "./assets/galeria/galeria04.png";
 import imagen5 from "./assets/galeria/galeria05.png";
+import imagen9 from "./assets/galeria/galeria01.gif";
 import imagen6 from "./assets/galeria/iconoButton1.png";
 import imagen7 from "./assets/galeria/iconoButton2.png";
 import imagen8 from "./assets/galeria/iconoButton3.png";
 
-
 export const Galeria = () => {
-  const images = [
-    { id: 1, category: "design", src: imagen1 },
-    { id: 2, category: "frontend", src: imagen2 },
-    { id: 3, category: "design", src: imagen3 },
-    { id: 4, category: "frontend", src: imagen4 },
-    { id: 5, category: "frontend", src: imagen5 },
+  const worksArray = [
+    { id: 'galeria01', category: "design", src: imagen1, tecnology:'Figma,Flutter', describe:'LoremIpsum' },
+    { id: 'galeria02', category: "frontend", src: imagen2 },
+    { id: 'galeria03', category: "design", src: imagen3 },
+    { id: 'galeria04', category: "frontend", src: imagen4 },
+    { id: 'galeria05', category: "frontend", src: imagen5 },
   ];
 
   const [animationOrder, setAnimationOrder] = useState("down");
-  
-
 
   const [categoryImages, setCategoryImages] = useState({
     category: "all",
-    
   });
 
   const [buttonStates, setButtonStates] = useState({
@@ -48,12 +45,10 @@ export const Galeria = () => {
     setAnimationOrder((prevOrder) => (prevOrder === "down" ? "up" : "down"));
   };
 
-  const filteredImages =
-  categoryImages.category === "all"
-      ? images
-      : images.filter((img) => img.category === categoryImages.category);
-
-
+  const filteredWorksforCategory =
+    categoryImages.category === "all"
+      ? worksArray
+      : worksArray.filter((img) => img.category === categoryImages.category);
 
   const [showPopup, setShowPopup] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -63,69 +58,71 @@ export const Galeria = () => {
     setSelectedImageIndex(index);
   };
 
-  
-      
   return (
     <>
-
-
-    {filteredImages.map((image, index) => (
-  <img
-   
-    style={{ animationDelay: `${image.id * 4}s` }}
-    key={image.id}
-    src={image.src}
-    alt={`Imagen ${image.id}`}
-    onClick={() => handleImageClick(index)}
-  />
-))}
-
-{showPopup && (
+      {showPopup && (
+        
         <div className="popup">
+          <button id="buttonCerrar" onClick={() => setShowPopup(false)}>
+            Cerrar
+          </button>
           <img
-            src={filteredImages[selectedImageIndex].src}
-            alt={`Imagen ${filteredImages[selectedImageIndex].id}`}
+            style={{ width: "150%", height: "150%" }}
+            src={require("./assets/galeria/"+filteredWorksforCategory[selectedImageIndex].id+".gif")}
+            alt={`Imagen ${filteredWorksforCategory[selectedImageIndex].id}`}
           />
-          <button id="buttonCerrar" onClick={() => setShowPopup(false)}>Cerrar</button>
+          
         </div>
+      
       )}
+ {console.log(filteredWorksforCategory[selectedImageIndex].id+".gif")}
+      <div id="trabajos">
+        <div id="nav-galeria">
 
 
+          <button
+            onClick={() => handleStatesButtonClick("all")}
+            disabled={buttonStates.all}
+          >
+            <img className="icono" src={imagen6} alt="icono de todo" />
+            <p>Todo</p>
+          </button>
 
-    <div id='trabajos'>
-      <div id="nav-galeria">
-      <button
-        onClick={() => handleStatesButtonClick("all")}
-        disabled={buttonStates.all}
-      >
-        <img className='icono' src={imagen6} alt='icono de todo' />
-        <p>Todo</p>
-      </button>
-      <button
-        onClick={() => handleStatesButtonClick("design")}
-        disabled={buttonStates.design}
 
-      >  <img className='icono' src={imagen7} alt='icono de diseño' />
-      <p>Diseño</p>
-         
-      </button>
-      <button
-        onClick={() => handleStatesButtonClick("frontend")}
-        disabled={buttonStates.frontend}
-      >
-          <img className='icono' src={imagen8} alt='icono de frontend' />
-        <p>Frontend</p>
-      </button>
+          <button
+            onClick={() => handleStatesButtonClick("design")}
+            disabled={buttonStates.design}
+          >
+            <img className="icono" src={imagen7} alt="icono de diseño" />
+            <p>Diseño</p>
+          </button>
+
+
+          <button
+            onClick={() => handleStatesButtonClick("frontend")}
+            disabled={buttonStates.frontend}
+          >
+            <img className="icono" src={imagen8} alt="icono de frontend" />
+            <p>Frontend</p>
+          </button>
+        </div>
+
+
+        <div className={`image-container`}>
+          {filteredWorksforCategory.map((image, index) => (
+            <img
+              className={`imageAnimation${
+                animationOrder === "down" ? "2" : "1"
+              }`}
+              key={image.id}
+              src={image.src}
+              style={{ width: "200px", height: "200px" }}
+              alt={`Imagen ${image.id}`}
+              onClick={() => handleImageClick(index)}
+            />
+          ))}
+        </div>
       </div>
-      <div
-        className={`image-container`}
-      >
-        {filteredImages.map((image) => (
-          <img className={`imageAnimation${animationOrder === "down" ? "2" : "1"}`} style={{ animationDelay: `${image.id * 0.1}s` }} key={image.id} src={image.src} alt={`Imagen ${image.id}`} />
-        ))}
-      </div>
-    </div>
-    
     </>
   );
 };
