@@ -1,22 +1,35 @@
 import React, { useState } from "react";
 import "./css/Galeria.css";
-import imagen1 from "./assets/galeria/galeria01.png";
-import imagen2 from "./assets/galeria/galeria02.png";
-import imagen3 from "./assets/galeria/galeria03.png";
-import imagen4 from "./assets/galeria/galeria04.png";
-import imagen5 from "./assets/galeria/galeria05.png";
-import imagen9 from "./assets/galeria/galeria01.gif";
-import imagen6 from "./assets/galeria/iconoButton1.png";
-import imagen7 from "./assets/galeria/iconoButton2.png";
-import imagen8 from "./assets/galeria/iconoButton3.png";
+import imagen1 from "./assets/galeria/blackJack.png";
+import gif1 from "./assets/galeria/blackJack.gif";
+import imagen2 from "./assets/galeria/bolaMagica.png";
+import gif2 from "./assets/galeria/bolaMagica.gif";
+import imagen3 from "./assets/galeria/weatherApp.png";
+import gif3 from "./assets/galeria/weatherApp.gif";
+
+
+import imagen4 from "./assets/galeria/netflix.png";
+//import gif4 from "./assets/galeria/netflix.gif";
+import imagen5 from "./assets/galeria/landingPage.png";
+//import gif5 from "./assets/galeria/landingPage.gif";
+import imagen6 from "./assets/galeria/catBombers.png";
+//import gif6 from "./assets/galeria/catBombers.gif";
+import imagen7 from "./assets/galeria/goodAndGo.png";
+//import gif7 from "./assets/galeria/goodAndGo.gif";
+
+import imagenButton1 from "./assets/galeria/iconoButton1.png";
+import imagenButton2 from "./assets/galeria/iconoButton2.png";
+import imagenButton3 from "./assets/galeria/iconoButton3.png";
 
 export const Galeria = () => {
   const worksArray = [
-    { id: 'galeria01', category: "design", src: imagen1, tecnology:'Figma,Flutter', describe:'LoremIpsum' },
-    { id: 'galeria02', category: "frontend", src: imagen2 },
-    { id: 'galeria03', category: "design", src: imagen3 },
-    { id: 'galeria04', category: "frontend", src: imagen4 },
-    { id: 'galeria05', category: "frontend", src: imagen5 },
+    { id: 'blackJack', category: "frontend", src: imagen1, tecnology:'Figma,Flutter', describe:'LoremIpsum' },
+    { id: 'bolaMagica', category: "frontend", src: imagen2 },
+    { id: 'weatherApp', category: "frontend", src: imagen3 },
+    { id: 'netflix', category: "frontend", src: imagen4 },
+    { id: 'landingPage', category: "frontend", src: imagen5 },
+    { id: 'catBombers', category: "design", src: imagen6 },
+    { id: 'goodAndGo', category: "design", src: imagen7 },
   ];
 
   const [animationOrder, setAnimationOrder] = useState("down");
@@ -75,7 +88,7 @@ export const Galeria = () => {
         </div>
       
       )}
- {console.log(filteredWorksforCategory[selectedImageIndex].id+".gif")}
+
       <div id="trabajos">
         <div id="nav-galeria">
 
@@ -84,7 +97,7 @@ export const Galeria = () => {
             onClick={() => handleStatesButtonClick("all")}
             disabled={buttonStates.all}
           >
-            <img className="icono" src={imagen6} alt="icono de todo" />
+            <img className="icono" src={imagenButton1} alt="icono de todo" />
             <p>Todo</p>
           </button>
 
@@ -93,7 +106,7 @@ export const Galeria = () => {
             onClick={() => handleStatesButtonClick("design")}
             disabled={buttonStates.design}
           >
-            <img className="icono" src={imagen7} alt="icono de diseño" />
+            <img className="icono" src={imagenButton2} alt="icono de diseño" />
             <p>Diseño</p>
           </button>
 
@@ -102,7 +115,7 @@ export const Galeria = () => {
             onClick={() => handleStatesButtonClick("frontend")}
             disabled={buttonStates.frontend}
           >
-            <img className="icono" src={imagen8} alt="icono de frontend" />
+            <img className="icono" src={imagenButton3} alt="icono de frontend" />
             <p>Frontend</p>
           </button>
         </div>

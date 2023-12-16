@@ -32,7 +32,7 @@ export const MisRutas = () => {
           <section id="contacto"> <Contacto></Contacto> </section>
           
           {/*Footer*/}
-          <Footer></Footer>
+          <Footer className='footer'></Footer>
         </div>
 
       </div>

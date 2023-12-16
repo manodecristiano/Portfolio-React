@@ -1,7 +1,12 @@
-body,html{margin: 0;}
+body,
+html {
+  margin: 0;
+}
 
-.parallax{
-   /* margin-left: 278px;*/
-    /*background-color: rgba(0, 255, 221, 0.238);*/
-    width: 400px; 
-  }
+.parallax {
+  /* margin-left: 278px;*/
+  /*background-color: rgba(0, 255, 221, 0.238);*/
+  width: 400px;
+
+
+}

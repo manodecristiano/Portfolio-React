@@ -35,12 +35,12 @@ return (
 </Parallax>
 
 <Parallax bgImage={image4} strength={200}>
-<div style={{ height: "94vh" }}>
+<div style={{ height: "55vh" }}>
 </div>
 </Parallax>
 
 <Parallax bgImage={image1} strength={200}>
-<div style={{ height: "44vh" }}>
+<div style={{ height: "37vh" }}>
 </div>
 </Parallax>
 

@@ -2,11 +2,12 @@
 .logo {
   display: flex;
 }
+
 .logo span {
   margin-top: -69px;
-  color:rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
   font: 200px/1 'TeXGyreAdventorBold';
-  animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation ;
+  animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation;
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 25px 15px rgba(0, 0, 0, 0.3);
 
 }
@@ -15,50 +16,55 @@
 .logo h3 {
   font-size: 30px;
   width: 12px;
-  font-family: 'Roboto', sans-serif!important;
+  font-family: 'Roboto', sans-serif !important;
   font-weight: lighter;
   margin-top: 2px;
   margin-left: -93px;
 }
 
-.cuerda{
-  font-family: 'Roboto', sans-serif!important;
+.cuerda {
+  font-family: 'Roboto', sans-serif !important;
   margin-top: -55px;
   margin-left: 65px;
   font-size: 40px;
   height: fit-content;
   font-weight: lighter;
-  color:rgb(44, 44, 44);
-  animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation ;
+  color: rgb(44, 44, 44);
+  animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation;
 
 }
 
-@keyframes logoAnimation{
+@keyframes logoAnimation {
+
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
   70% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
+
   20%,
   40%,
   60% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
+
   80% {
     -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    transform: translateX(8px);
   }
+
   90% {
     -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    transform: translateX(-8px);
   }
 }
 
@@ -70,17 +76,18 @@
 }
 
 .sidebar {
- 
-  overflow-y: scroll;
+
+
   width: 200px;
   top: 0;
   bottom: 0;
   left: 0;
-  height:110vh;
+  height: 110vh;
   padding-left: 40px;
   padding-top: 40px;
   width: 20%;
 }
+
 .fixedcontainer {
   position: fixed;
 
@@ -110,9 +117,9 @@ a:visited {
 
 a:hover,
 .active2 {
-  
+
   background: rgba(8, 93, 121, 0.486);
-  color: rgb(255, 255, 255) ;
-  font-weight: bold!important;
+  color: rgb(255, 255, 255);
+  font-weight: bold !important;
   padding: 19px;
 }
