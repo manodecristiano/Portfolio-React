@@ -10,10 +10,7 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
 }
 
-#root {
-	height: 3324px;
-	background-color: red;
-}
+
 
 .general {
 	display: flex;

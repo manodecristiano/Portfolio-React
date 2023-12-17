@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/Footer.css";
-import image from '../assets/parallax/fotoParallax01.png';
+
 
 export const Footer = () => {
   
