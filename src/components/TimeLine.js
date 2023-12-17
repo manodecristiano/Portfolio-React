@@ -44,7 +44,7 @@ export const TimeLine = () => {
     Google TagManager /
     Google Adsense /
     Google WorkSpace /
-    Wordpress / 
+    Wordpress  
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement

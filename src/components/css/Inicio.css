@@ -2,9 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap");
 
 #imagenPortada {
-  padding: 40px;
-  height: 250px;
-  width: 226px;
+
+  height: 350px;
+  width: 326px;
+  margin-top: 35px;
+  margin-right: 70px;
+  border-radius: 30px;
 }
 
 #titulo {
@@ -20,6 +23,7 @@
   border-top: 4px solid rgb(8, 93, 121);
   margin: -10px 0px 0px 121px !important;
 }
+
 .linea-separadora2 {
   border-top: 4px solid rgb(8, 93, 121);
   margin: -10px 0px 50px 121px !important;
@@ -30,24 +34,32 @@
   justify-content: space-around;
   align-items: center;
 }
+
 #subcontenedor0 {
-  padding-left: 108px !important;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .subcontenedor1 {
+  width: 30%;
   font-family: "Kumbh Sans", sans-serif;
   padding: 10px;
   font-size: 13px;
   font-weight: 600;
   color: black;
+
 }
 
 .subcontenedor2 {
+  width: 30%;
   font-family: "Kumbh Sans", sans-serif;
   padding: 10px;
   font-size: 13px;
   font-weight: 600;
   color: black;
+  margin-left: 6%;
 }
 
 .subcontenedor-separador {
@@ -59,7 +71,7 @@
   text-align: center;
 }
 
-#carousel{
+#carousel {
   margin-bottom: 62px;
   margin-top: -79px;
   margin-left: -21px;

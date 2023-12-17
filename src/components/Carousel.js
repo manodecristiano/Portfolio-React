@@ -7,6 +7,8 @@ import image1 from "./assets/carousel/01-Icono.png";
 import image2 from "./assets/carousel/02-Icono.png";
 import image3 from "./assets/carousel/03-Icono.png";
 import image4 from "./assets/carousel/04-Icono.png";
+import image5 from "./assets/carousel/05-Icono.png";
+import image6 from "./assets/carousel/06-Icono.png";
 
 const Carousel = () => {
   const settings = {
@@ -35,6 +37,12 @@ const Carousel = () => {
         </div>
         <div>
         <img src={image4} alt="icono Tailwind" />
+        </div>
+        <div>
+        <img src={image5} alt="icono Bootstrap" />
+        </div>
+        <div>
+        <img src={image6} alt="icono Wordpress" />
         </div>
       </Slider>
     </div>

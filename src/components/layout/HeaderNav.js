@@ -48,7 +48,7 @@ export const HeaderNav = () => {
       const inicioOffset = elmntInicio.current?.offsetTop || 0;
       const trabajosOffset = elmntTrabajos.current?.offsetTop + -150 || 0;
       const serviciosOffset = elmntServicios.current?.offsetTop + -200 || 0;
-      const contactoOffset = elmntContacto.current.offsetTop + -350||0;
+      const contactoOffset = elmntContacto.current.offsetTop + -450||0;
     
 
       const scrollPosition = window.scrollY;
