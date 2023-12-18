@@ -23,13 +23,13 @@ import imagenButton3 from "./assets/galeria/iconoButton3.png";
 
 export const Galeria = () => {
   const worksArray = [
-    { id: 'blackJack', category: "frontend", src: imagen1, tecnology:'Figma,Flutter', describe:'LoremIpsum' },
-    { id: 'bolaMagica', category: "frontend", src: imagen2 },
-    { id: 'weatherApp', category: "frontend", src: imagen3 },
-    { id: 'netflix', category: "frontend", src: imagen4 },
-    { id: 'landingPage', category: "frontend", src: imagen5 },
-    { id: 'catBombers', category: "design", src: imagen6 },
-    { id: 'goodAndGo', category: "design", src: imagen7 },
+    { id: 'blackJack', category: "frontend", src: imagen1, tecnology:'Figma, Javascript, HTML, CSS3', describe:'Proyecto de una aplicación para poder jugar al BlackJack' },
+    { id: 'bolaMagica', category: "frontend", src: imagen2,tecnology:'Javascript, HTML, CSS3', describe:'Proyecto de una apliación web donde consultar a una bola mágica sobre cualquier cosa.' },
+    { id: 'weatherApp', category: "frontend", src: imagen3, tecnology:'React, HTML, CSS3', describe:'Proyecto de una apliación web donde consultar el tiempo de una ciudad a través de una APi' },
+    { id: 'netflix', category: "frontend", src: imagen4, tecnology:'React, HTML, CSS3', describe:'Proyecto de una página web copia de Netflix' },
+    { id: 'landingPage', category: "frontend", src: imagen5,tecnology:'HTML,CSS3, Bootstrap', describe:'Proyecto de una landing page totalmente responsive' },
+    { id: 'catBombers', category: "design", src: imagen6,tecnology:'Figma, Flutter', describe:'Aplicación móvil completa para ayudar a aprobar una opsición' },
+    { id: 'goodAndGo', category: "design", src: imagen7,tecnology:'Figma, Photoshop, Ilustrator', describe:'Aplicación móvil de pedido de comida a domicilo' },
   ];
 
   const [animationOrder, setAnimationOrder] = useState("down");
@@ -84,9 +84,13 @@ export const Galeria = () => {
             src={require("./assets/galeria/"+filteredWorksforCategory[selectedImageIndex].id+".gif")}
             alt={`Imagen ${filteredWorksforCategory[selectedImageIndex].id}`}
           />
-          
+          <div className="textoImagen">
+            {console.log(`${filteredWorksforCategory[selectedImageIndex].tecnology}`)}
+          <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
+          <p>{filteredWorksforCategory[selectedImageIndex].describe}</p>
+          <a href="https://github.com/manodecristiano" target="_blank">github.com</a>
         </div>
-      
+        </div>
       )}
 
       <div id="trabajos">
