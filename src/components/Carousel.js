@@ -14,11 +14,11 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 550,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 200, 
+    autoplaySpeed: 400, 
     pauseOnHover: false, 
     easing: "ease-in-out", // Tipo de animación (desplazamiento suave)
   };

@@ -111,7 +111,7 @@ button:disabled {
 .popup {
   border-radius: 15px;
   position: fixed;
-  width: auto;
+  width: 25%;
   height: auto;
   top: 50%;
   left: 50%;
@@ -132,11 +132,65 @@ button:disabled {
 #buttonCerrar {
   border-radius: 5px;
   align-self: flex-end;
-  background: rgb(8, 93, 121);
+  background: rgba(8, 93, 121, 0.486);
   color: white;
   font-size: 15px;
+  border-color: #CF2A2A;
+  box-shadow: 0 0 30px 30px rgb(65, 182, 221) inset;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#buttonCerrar:hover {
+  box-shadow: 0 0 12px 0 #CF2A2A inset, 0 0 12px 4px #CF2A2A;
 }
 
 .textoImagen {
   color: white;
+}
+
+.popup h4 {
+  background-color: rgb(65, 182, 221);
+  border-radius: 5px;
+  color: black;
+  width: fit-content;
+  padding: 8px;
+}
+
+.popup p {
+  color: white;
+  font-weight: 300;
+
+}
+
+.popup a {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: #FF8B25;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 2px 2px 2px black;
+  z-index: 1;
+
+
+}
+
+.popup a:hover:after {
+  width: 110%;
+}
+
+.popup a:after {
+  border-radius: 7px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-color: rgb(8, 93, 121);
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+
 }

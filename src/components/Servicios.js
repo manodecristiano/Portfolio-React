@@ -10,7 +10,7 @@ export const Servicios = () => {
       <h2 id="tituloServicio">Servicios</h2>
 
       <div className="contenedor-flex">
-        <div className="subcontenedor1">
+        <div className="subcontenedorServicios">
           <div id="linea-separadora"></div>
           <h2>Páginas Webs</h2>
           <div className="linea-separadora"></div>
@@ -24,7 +24,7 @@ export const Servicios = () => {
           <img src={image1} alt="Descripción de la imagen" />
         </div>
 
-        <div className="subcontenedor1">
+        <div className="subcontenedorServicios">
           <h2>Diseño UI </h2>
           <div className="linea-separadora"></div>
           <p>
@@ -36,7 +36,7 @@ export const Servicios = () => {
           <img src={image2} alt="Descripción de la imagen" />
         </div>
 
-        <div className="subcontenedor1">
+        <div className="subcontenedorServicios">
           <h2>Dev Apps </h2>
           <div className="linea-separadora"></div>
           <p>

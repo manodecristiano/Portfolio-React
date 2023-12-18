@@ -23,13 +23,13 @@ import imagenButton3 from "./assets/galeria/iconoButton3.png";
 
 export const Galeria = () => {
   const worksArray = [
-    { id: 'blackJack', category: "frontend", src: imagen1, tecnology:'Figma, Javascript, HTML, CSS3', describe:'Proyecto de una aplicación para poder jugar al BlackJack' },
-    { id: 'bolaMagica', category: "frontend", src: imagen2,tecnology:'Javascript, HTML, CSS3', describe:'Proyecto de una apliación web donde consultar a una bola mágica sobre cualquier cosa.' },
-    { id: 'weatherApp', category: "frontend", src: imagen3, tecnology:'React, HTML, CSS3', describe:'Proyecto de una apliación web donde consultar el tiempo de una ciudad a través de una APi' },
-    { id: 'netflix', category: "frontend", src: imagen4, tecnology:'React, HTML, CSS3', describe:'Proyecto de una página web copia de Netflix' },
-    { id: 'landingPage', category: "frontend", src: imagen5,tecnology:'HTML,CSS3, Bootstrap', describe:'Proyecto de una landing page totalmente responsive' },
-    { id: 'catBombers', category: "design", src: imagen6,tecnology:'Figma, Flutter', describe:'Aplicación móvil completa para ayudar a aprobar una opsición' },
-    { id: 'goodAndGo', category: "design", src: imagen7,tecnology:'Figma, Photoshop, Ilustrator', describe:'Aplicación móvil de pedido de comida a domicilo' },
+    { id: 'blackJack', category: "frontend", src: imagen1, tecnology:'Figma, Javascript, HTML, CSS3', describe:'Proyecto de una aplicación web del juego 21 Blackjack. Ofrece una emocionante experiencia del juego. Con un diseño simple pero con toda la lógica del juego real, los usuarios pueden disfrutar de partidas auténticas y de ese modo practicar estrategias con la mecánica de reglas realistas.' },
+    { id: 'bolaMagica', category: "frontend", src: imagen2,tecnology:'Javascript, HTML, CSS3', describe:'Desarrollo de una apliación web única que ofrece respuestas divertidas y misteriosas a través de una bola mágica virtual. Los usuarios pueden realizar preguntas sobre cualquier tema y recibir respuestas enigmáticas, proporcionando entretenimiento y un toque de magia a consultas diarias.' },
+    { id: 'weatherApp', category: "frontend", src: imagen3, tecnology:'React, HTML, CSS3', describe:'Desarrollo de una apliación web meteorológica que brinda información precisa y fácil de entender sobre el clima gracias a consultas a una API RESTful. Los usuarios pueden consultar el tiempo y demás condiciones metereológicas de una ciudad, simplemente poniendo el nombre de la misma.' },
+    { id: 'netflix', category: "frontend", src: imagen4, tecnology:'React, HTML, Taildwind', describe:'Proyecto de una aplicación web de una réplica de Netflix. Ofrece una extensa biblioteca de contenido multimedia mediante consultas a una API RESTful, con una interfaz intuitiva y recomendaciones personalizadas. Centrandome en dar a los usuarios una experiencia cinematográfica excepcional, recreando el encanto de Netflix con un toque único y atractivo.' },
+    { id: 'landingPage', category: "frontend", src: imagen5,tecnology:'HTML, Javascript, Bootstrap', describe:'Desarrollo de una landing page completamente responsive, garantizando una experiencia fluida en cualquier dispositivo. La prioridad fue crear un diseño atractivo y funcional que se adapte perfectamente a pantallas de diferentes tamaños, maximizando la interacción del usuario y optimizando la efectividad de la página en todos los contextos.' },
+    { id: 'catBombers', category: "design", src: imagen6,tecnology:'Figma, Flutter, Dart', describe:'Aplicación móvil integral para la preparación de oposiciones de bomberos. Ofrece contenido didáctico, simulacros de exámenes, seguimiento de progreso y asesoramiento personalizado. La plataforma optimiza el estudio, maximizando las posibilidades de éxito en el exigente proceso de selección para convertirse en bombero profesional.' },
+    { id: 'goodAndGo', category: "design", src: imagen7,tecnology:'Figma, Photoshop, Ilustrator', describe:'Diseño de Aplicación móvil de pedido de comida a domicilo. Buscando simplificar la experiencia de usuario. Con un diseño intuitivo, amplio menú, seguimiento en tiempo real y opciones de pago fácile ' },
   ];
 
   const [animationOrder, setAnimationOrder] = useState("down");
@@ -77,7 +77,7 @@ export const Galeria = () => {
         
         <div className="popup">
           <button id="buttonCerrar" onClick={() => setShowPopup(false)}>
-            Cerrar
+            X
           </button>
           <img
             style={{ width: "150%", height: "150%" }}
@@ -85,10 +85,11 @@ export const Galeria = () => {
             alt={`Imagen ${filteredWorksforCategory[selectedImageIndex].id}`}
           />
           <div className="textoImagen">
-            {console.log(`${filteredWorksforCategory[selectedImageIndex].tecnology}`)}
-          <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
+           
           <p>{filteredWorksforCategory[selectedImageIndex].describe}</p>
-          <a href="https://github.com/manodecristiano" target="_blank">github.com</a>
+          <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
+         
+          <a href="https://github.com/manodecristiano" target="_blank">github.com/cristian</a>
         </div>
         </div>
       )}
