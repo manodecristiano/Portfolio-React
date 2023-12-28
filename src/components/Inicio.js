@@ -10,10 +10,11 @@ export const Inicio = () => {
   return (
     <>
       <div ref={inicioRef} id="inicio" className="seccionInicio"></div>
-      <h1 id="titulo">Bienvenido a mi web  !    Soy Cristian</h1>
+      <h1 id="titulo">Bienvenido a mi web  !  Soy Cristian </h1>
+      <h1 id="titulo2">Bienvenido a mi web  !  </h1>
       <div className="linea-separadora"></div>
       <div className="contenedor-flex">
-        {/* Subcontenedor 1: Texto y Foto */}
+     
         <div id="subcontenedor0">
         <div className="subcontenedor1">
           <p>
