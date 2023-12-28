@@ -26,7 +26,7 @@
 .linea-separadora,
 .linea-separadora2 {
   border-top: 4px solid rgb(8, 93, 121);
-  margin: -10px 0px 0px 121px !important;
+  margin: -10px 0px 0px 121px;
 }
 
 .contenedor-flex {
@@ -104,7 +104,9 @@
     margin-right: 0%;
     font-family: "Roboto", sans-serif !important;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 13%;
+    margin-bottom: 0%;
   }
 
   .contenedor-flex {
@@ -117,28 +119,43 @@
   #carousel {
     margin-bottom: 62px;
     margin-top: 25px;
+    margin-left: 0px;
   }
 
   #carousel-container {
-    width: 100%;
-    margin-left: 10%;
+    display: none;
+    width: 50%;
+    margin-left: 0%;
   }
 
-  .linea-separadora,
+  .linea-separadora {
+    display: none;
+  }
+
   .linea-separadora2 {
-    border-top: 4px solid rgb(8, 93, 121);
-    margin: -10px -80px 30px 128px !important;
+
+    border-top: 8px solid rgb(8, 93, 121);
+    margin: -39px 0px 18px 26px !important;
+  }
+
+  #subcontenedor0 {
+    padding: 20px;
+    display: inline;
+    text-align: center;
   }
 
   .subcontenedor1,
   .subcontenedor2 {
+    font-size: 12px;
+    padding: 5px;
     margin-top: 20px;
     width: 100%;
+    margin-left: 0%;
   }
 
   #imagenPortada {
-    height: 350px;
-    width: 300px;
+    height: 323px;
+    width: 258px;
     margin-top: 35px;
     margin-right: 0%;
     border-radius: 30px;

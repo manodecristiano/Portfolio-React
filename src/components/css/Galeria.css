@@ -194,3 +194,10 @@ button:disabled {
   transition: width 0.3s ease-in-out;
 
 }
+
+@media screen and (max-width: 1123px) {
+  #nav-galeria {
+    width: 105%;
+  }
+
+}

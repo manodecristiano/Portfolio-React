@@ -10,3 +10,10 @@ html {
   height: 100px;
 
 }
+
+@media screen and (max-width: 1123px) {
+
+  .parallax {
+    width: 600px;
+  }
+}

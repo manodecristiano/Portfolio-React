@@ -121,3 +121,17 @@ a:hover,
   font-weight: bold !important;
   padding: 19px;
 }
+
+
+@media screen and (max-width: 1123px) {
+  .sidebar {
+    width: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+
+  }
+
+  .fixedcontainer {
+    display: none;
+  }
+}
