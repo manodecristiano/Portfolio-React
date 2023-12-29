@@ -1,11 +1,10 @@
-/* Estilos del contenedor de contacto */
+
 .contacto-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Estilos del formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -23,7 +22,7 @@ button {
   margin-bottom: 10px;
 }
 
-/* Estilos de los íconos de redes sociales */
+
 .redes-sociales {
   display: flex;
   justify-content: space-around;
@@ -65,4 +64,10 @@ button {
   padding: 5px 0px 5px 0px !important;
   margin: 5px 0px -7px 0px !important;
 
+}
+
+@media screen and (max-width: 1123px) {
+  .contacto-container {width: 100%;
+      position: relative;
+      margin-left: -15%;}
 }

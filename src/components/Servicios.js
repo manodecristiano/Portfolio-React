@@ -48,7 +48,7 @@ export const Servicios = () => {
           <img src={image3} alt="Descripción de la imagen" />
         </div>
       </div>
-      <h2 id="tituloServicio"> </h2>
+      <h2 id="linea-separadora3"> </h2>
     </>
   );
 };

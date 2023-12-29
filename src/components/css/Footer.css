@@ -21,3 +21,10 @@
     border-radius: 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 1123px) {
+    .footer {
+        width: 136%;  
+        margin-left: -36%;
+    }
+}
