@@ -101,7 +101,7 @@
   #titulo2 {
     display: flex;
     justify-content: flex-end;
-    margin-right: 0%;
+    margin-right: 6%;
     font-family: "Roboto", sans-serif !important;
     font-weight: lighter;
     font-size: 30px;
@@ -129,11 +129,11 @@
   }
 
   .linea-separadora {
-    display: none;
+    border-top: 3px solid rgb(8, 93, 121);
+    margin: 3px 45px 0px 45px !important;
   }
 
   .linea-separadora2 {
-
     border-top: 8px solid rgb(8, 93, 121);
     margin: -39px 0px 18px 26px !important;
   }
