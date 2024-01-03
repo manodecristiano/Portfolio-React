@@ -1,8 +1,8 @@
-
-.contacto-container {
+#contacto-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 form {
@@ -10,6 +10,9 @@ form {
   flex-direction: column;
   width: 300px;
   margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(8, 93, 121);
+
 }
 
 label {
@@ -67,7 +70,7 @@ button {
 }
 
 @media screen and (max-width: 1123px) {
-  .contacto-container {width: 100%;
-      position: relative;
-      margin-left: -15%;}
+  #contacto-container {
+    margin-left: -20%;
+  }
 }

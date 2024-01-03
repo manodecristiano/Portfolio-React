@@ -15,7 +15,7 @@ export const Inicio = () => {
       <div className="linea-separadora"></div>
       <div className="contenedor-flex">
      
-        <div id="subcontenedor0">
+      <div id="subcontenedor0">
         <div className="subcontenedor1">
           <p>
            Soy un desarrollador <strong>Web</strong> licenciado en desarrollo de Aplicaciones multiplataforma, además complemento mi formación con amplios conocimientos
@@ -33,10 +33,12 @@ export const Inicio = () => {
         </div>
         <img id='imagenPortada' src={imagenPortada} alt='foto profesioanl Cristian' />
         
+          <div id="carousel">
+            <Carousel></Carousel>
+          </div>
       </div>
-      <div id="carousel">
-      <Carousel></Carousel>
-      </div>
+      
+      
       
        <br/>
      <div className="linea-separadora2"></div>
@@ -48,7 +50,7 @@ export const Inicio = () => {
          
         </div>
       
-        <div className="linea-separadora"></div>
+     
       
     </>
   );

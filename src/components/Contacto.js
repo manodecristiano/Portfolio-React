@@ -29,8 +29,9 @@ export const  Contacto = () => {
   
 
   return (
-    <>
-    <div id='contacto'className="contacto-container">
+  
+    <div id="contacto-container">
+
       {/* Formulario de Correo Electrónico */}
       <form action="https://formsubmit.co/cristian.carre.online@gmail.com" method="POST" >
         <label htmlFor="email">Tu Correo Electrónico:</label>
@@ -64,7 +65,7 @@ export const  Contacto = () => {
       
     </div>
 
-    </>
+  
   );
 };
 

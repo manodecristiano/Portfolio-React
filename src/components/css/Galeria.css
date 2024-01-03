@@ -196,14 +196,18 @@ button:disabled {
   }
 
   .image-container {
-    overflow:scroll;
+    overflow: scroll;
     text-align: center;
   }
 
 
-.image-container img {
-  width: 128px!important;
-  height: 140px!important;
-}
+  .image-container img {
+    width: 128px !important;
+    height: 140px !important;
+  }
 
+  .popup {
+    width: 80%;
+    height: auto;
+  }
 }

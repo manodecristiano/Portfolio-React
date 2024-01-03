@@ -9,7 +9,6 @@
     text-align: center;
     font-size: 11px;
     padding-top: 35px;
-
     color: white;
     background-image: url('../assets/fotoFooter.png') !important;
 }
@@ -24,7 +23,7 @@
 
 @media screen and (max-width: 1123px) {
     .footer {
-        width: 136%;  
-        margin-left: -36%;
+        width: 136%;
+        margin-left: -35%;
     }
 }

@@ -32,12 +32,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 30%;
+  background-color: red;
 }
 
 #subcontenedor0 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .subcontenedor1 {
@@ -75,14 +78,18 @@
 }
 
 #carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
   margin-bottom: 62px;
   margin-top: -79px;
-  margin-left: -21px;
+
 }
 
 #carousel-container {
-  width: 500px;
-  margin-left: 20%;
+  width: 100%;
+
 }
 
 #carousel-container img {
