@@ -16,24 +16,27 @@
   font-family: "Roboto", sans-serif !important;
   font-weight: lighter;
   font-size: 40px;
+  margin-right: 28%;
 }
 
 #titulo2 {
   display: none;
 }
 
-.linea-separadora,
-.linea-separadora2 {
+#linea-separadora1 {
+  display: none;
+}
+
+#linea-separadora2 {
   border-top: 4px solid rgb(8, 93, 121);
-  margin: -10px 0px 0px 121px;
+  margin: 14px 0px 0px 121px;
 }
 
 .contenedor-flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
-  background-color: red;
+
 }
 
 #subcontenedor0 {
@@ -43,7 +46,7 @@
   flex-wrap: wrap;
 }
 
-.subcontenedor1 {
+#subcontenedor1 {
   border: 1px solid rgba(0, 0, 0, 0.212);
   border-radius: 15px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
@@ -55,7 +58,7 @@
   color: black;
 }
 
-.subcontenedor2 {
+#subcontenedor2 {
   border: 1px solid rgba(0, 0, 0, 0.212);
   border-radius: 15px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
@@ -78,12 +81,14 @@
 }
 
 #carousel {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 22%;
   margin-bottom: 62px;
   margin-top: -79px;
+  margin-left: 15%;
 
 }
 
@@ -96,6 +101,13 @@
   width: 80px;
   height: 80px;
 }
+
+@media screen and (max-width: 1360px)and (min-width: 500px) {
+  #carousel-container {
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 1123px) {
 
@@ -125,22 +137,23 @@
     margin-bottom: 62px;
     margin-top: 25px;
     margin-left: 0px;
+    width: 70%;
   }
 
   #carousel-container {
-    display: none;
-    width: 50%;
-    margin-left: 0%;
+    width: 90%;
+    margin-left: 10%;
   }
 
-  .linea-separadora {
+  #linea-separadora1 {
+    display: block;
     border-top: 3px solid rgb(8, 93, 121);
     margin: 3px 45px 0px 45px !important;
   }
 
-  .linea-separadora2 {
+  #linea-separadora2 {
     border-top: 8px solid rgb(8, 93, 121);
-    margin: -39px 0px 18px 26px !important;
+    margin: 120px 0px 18px 26px !important;
   }
 
   #subcontenedor0 {
@@ -149,8 +162,8 @@
     text-align: center;
   }
 
-  .subcontenedor1,
-  .subcontenedor2 {
+  #subcontenedor1,
+  #subcontenedor2 {
     font-size: 12px;
     padding: 5px;
     margin-top: 20px;

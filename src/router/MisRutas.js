@@ -27,9 +27,9 @@ export const MisRutas = () => {
           
           <section id="galeria"><Galeria></Galeria></section>
 
-          <section id="servicios"> <Servicios></Servicios> </section>
+          <section id="servicios"><Servicios></Servicios> </section>
         
-          <section id="contacto"> <Contacto></Contacto> </section>
+          <section id="contacto"><Contacto></Contacto></section>
           
           {/*Footer*/}
           <Footer className='footer'></Footer>
