@@ -46,6 +46,15 @@
 }
 
 @media screen and (max-width: 1123px) {
+
+  #tituloServicio {
+
+    justify-content: center;
+    align-items: center;
+    width: 122%;
+    margin-left: -28%;
+  }
+
   .subcontenedorServicios {
     padding: 8px;
     width: 80%;
@@ -71,7 +80,6 @@
   #linea-separadora3 {
     border-top: 17px solid rgb(8, 93, 121);
     margin-bottom: 28px;
-
     align-items: center;
     justify-content: center;
     width: 136%;
@@ -79,8 +87,7 @@
 
   }
 
-  #contenedorUI,
-  #contenedorDEV {
+  .subcontenedorServicios {
     margin-left: -22%;
   }
 
