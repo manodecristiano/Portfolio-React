@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./css/Galeria.css";
 import imagen1 from "./assets/galeria/blackJack.png";
-import gif1 from "./assets/galeria/blackJack.gif";
+//import gif1 from "./assets/galeria/blackJack.gif";
 import imagen2 from "./assets/galeria/bolaMagica.png";
-import gif2 from "./assets/galeria/bolaMagica.gif";
+//import gif2 from "./assets/galeria/bolaMagica.gif";
 import imagen3 from "./assets/galeria/weatherApp.png";
-import gif3 from "./assets/galeria/weatherApp.gif";
-
-
+//import gif3 from "./assets/galeria/weatherApp.gif";
 import imagen4 from "./assets/galeria/netflix.png";
 //import gif4 from "./assets/galeria/netflix.gif";
 import imagen5 from "./assets/galeria/landingPage.png";
@@ -16,6 +14,10 @@ import imagen6 from "./assets/galeria/catBombers.png";
 //import gif6 from "./assets/galeria/catBombers.gif";
 import imagen7 from "./assets/galeria/goodAndGo.png";
 //import gif7 from "./assets/galeria/goodAndGo.gif";
+import imagen8 from "./assets/galeria/grandvoyage.png";
+//import gif8 from "./assets/galeria/grandvoyage.gif";
+import imagen9 from "./assets/galeria/deliverymedia.png";
+//import gif9 from "./assets/galeria/deliverymedia.gif";
 
 import imagenButton1 from "./assets/galeria/iconoButton1.png";
 import imagenButton2 from "./assets/galeria/iconoButton2.png";
@@ -29,7 +31,10 @@ export const Galeria = () => {
     { id: 'netflix', category: "frontend", src: imagen4, tecnology:'React, HTML, Taildwind', describe:'Proyecto de una aplicación web de una réplica de Netflix. Ofrece una extensa biblioteca de contenido multimedia mediante consultas a una API RESTful, con una interfaz intuitiva y recomendaciones personalizadas. Centrandome en dar a los usuarios una experiencia cinematográfica excepcional, recreando el encanto de Netflix con un toque único y atractivo.' },
     { id: 'landingPage', category: "frontend", src: imagen5,tecnology:'HTML, Javascript, Bootstrap', describe:'Desarrollo de una landing page completamente responsive, garantizando una experiencia fluida en cualquier dispositivo. La prioridad fue crear un diseño atractivo y funcional que se adapte perfectamente a pantallas de diferentes tamaños, maximizando la interacción del usuario y optimizando la efectividad de la página en todos los contextos.' },
     { id: 'catBombers', category: "design", src: imagen6,tecnology:'Figma, Flutter, Dart', describe:'Aplicación móvil integral para la preparación de oposiciones de bomberos. Ofrece contenido didáctico, simulacros de exámenes, seguimiento de progreso y asesoramiento personalizado. La plataforma optimiza el estudio, maximizando las posibilidades de éxito en el exigente proceso de selección para convertirse en bombero profesional.' },
-    { id: 'goodAndGo', category: "design", src: imagen7,tecnology:'Figma, Photoshop, Ilustrator', describe:'Diseño de Aplicación móvil de pedido de comida a domicilo. Buscando simplificar la experiencia de usuario. Con un diseño intuitivo, amplio menú, seguimiento en tiempo real y opciones de pago fácile ' },
+    { id: 'goodAndGo', category: "design", src: imagen7,tecnology:'Figma, Photoshop, Ilustrator', describe:'Diseño de Aplicación móvil de pedido de comida a domicilo. Buscando simplificar la experiencia de usuario. Con un diseño intuitivo, amplio menú, seguimiento en tiempo real y opciones de pago fácil' },
+    { id: 'grandvoyage', category: "frontend", src: imagen8,tecnology:'Javascript, HTML, CSS3, Photoshop', describe:'Proyecto de actualización y mejora de la web de GrandVoyage, con un enfoque centrado en la experiencia de usuario, con mejoras significativas en la interfaz, la navegación y la velocidad del sitio. Además de dar un toque más actualizado ' },
+    { id: 'deliverymedia', category: "design", src: imagen9,tecnology:'Wordpress, Photoshop, Ilustrator', describe:'Proyecto de la web de DeliveryMedia desarrollada en WordPress. Se enfoca en una renovación completa para brindar una experiencia optimizada. Con diseño responsivo y mejoras en la usabilidad, esta empresa busca destacar con contenido fresco y funcionalidades mejoradas, consolidando su presencia en línea de manera vibrante y efectiva.' },
+
   ];
 
   const [animationOrder, setAnimationOrder] = useState("down");
@@ -88,8 +93,12 @@ export const Galeria = () => {
            
           <p>{filteredWorksforCategory[selectedImageIndex].describe}</p>
           <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
+         {filteredWorksforCategory[selectedImageIndex].id === 'grandvoyage'?(
+          <a href=" https://manodecristiano.github.io/Landing_Page_Home_GrandVoyage/" target="_blank" rel="noreferrer">Web en GitHubPage</a>
+         ):(
+          <a href="https://github.com/manodecristiano" target="_blank"rel="noreferrer">github.com/cristian</a>
+          )}
          
-          <a href="https://github.com/manodecristiano" target="_blank">github.com/cristian</a>
         </div>
         </div>
       )}
