@@ -9,9 +9,14 @@ form {
   display: flex;
   flex-direction: column;
   width: 300px;
+  padding: 20px;
   margin-bottom: 20px;
   font-weight: bold;
   color: rgb(8, 93, 121);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 
 }
 
@@ -25,6 +30,14 @@ button {
   margin-bottom: 10px;
 }
 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 .redes-sociales {
   display: flex;
