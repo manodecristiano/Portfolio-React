@@ -4,16 +4,15 @@ html {
 }
 
 .parallax {
-  /* margin-left: 278px;*/
-  /*background-color: rgba(0, 255, 221, 0.238);*/
   width: 400px;
-  height: 100px;
-
 }
 
-@media screen and (max-width: 1123px) {
 
+
+@media screen and (max-width: 1123px) {
   .parallax {
-    width: 600px;
+    display: none;
   }
+
+
 }

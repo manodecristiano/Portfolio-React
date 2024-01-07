@@ -8,6 +8,7 @@
   font-size: 25px;
   padding: 10px;
   text-align: center;
+  margin-top: 0%;
 }
 
 #linea-separadora3 {
@@ -48,11 +49,9 @@
 @media screen and (max-width: 1123px) {
 
   #tituloServicio {
-
     justify-content: center;
     align-items: center;
-    width: 122%;
-    margin-left: -28%;
+
   }
 
   .subcontenedorServicios {
@@ -87,8 +86,6 @@
 
   }
 
-  .subcontenedorServicios {
-    margin-left: -22%;
-  }
+
 
 }

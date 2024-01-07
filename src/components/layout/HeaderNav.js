@@ -89,7 +89,7 @@ export const HeaderNav = () => {
           <ul className="menu">
             <li>
               <Link to="#inicio" className={activeSection === "inicio" ? "active2" : ""} onClick={scrollToInicio}>
-                Inicio
+                Experiencia
               </Link>
             </li>
             <li>

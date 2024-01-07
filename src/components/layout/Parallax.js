@@ -10,10 +10,11 @@ import image4 from "../assets/parallax/fotoParallax04.png";
 
 export function ModuleParallax() {
 return (
+    <>
 <div className="parallax">
   
 <Parallax bgImage={image4} strength={200}>
-<div style={{ height: "330px" }}>
+<div id='parallax-img1'style={{ height: "330px" }}>
 </div>
 </Parallax>
 
@@ -37,10 +38,10 @@ return (
 <div style={{ height: "425px" }}>
 </div>
 </Parallax>
-
-
-
 </div>
+
+
+</>
 
 );
 }

@@ -14,18 +14,18 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 550,
+    speed: 5000,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 400, 
+    autoplaySpeed: 1, 
     pauseOnHover: false, 
-    easing: "ease-in-out", // Tipo de animación (desplazamiento suave)
+    easing: "ease-in-out",
   };
 
   return (
     <div id="carousel-container">
-      <Slider {...settings}>
+      <Slider {...settings} className="custom-carousel">
         <div>
           <img src={image1} alt="icono Javascript" />
         </div>

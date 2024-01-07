@@ -39,14 +39,12 @@
 
 .image-container {
   overflow-x: hidden;
-
   overflow-y: scroll;
   overflow: auto;
   text-align: center;
 }
 
 .imageAnimation1 {
-
   animation: animationUp 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
@@ -55,8 +53,11 @@
 }
 
 .image-container img {
-  width: 225px !important;
-  height: 200px;
+  width: 245px !important;
+  height: 190px !important;
+  border-radius: 25px;
+  margin: 0.2%;
+
 }
 
 .image-container img:hover {
@@ -69,17 +70,22 @@ button {
   font-size: 10px;
   text-align: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.7;
-  color: rgb(255, 255, 255);
   border: none;
+  color: white;
+  border-radius: 15px;
+}
+
+.button-galeria {
+  margin-bottom: -23px;
+  color: transparent;
+  background-color: transparent;
 }
 
 
 button:hover {
-  color: #2980b9;
+  color: white;
   font-size: 10px;
 }
 
@@ -95,19 +101,19 @@ button:disabled {
 }
 
 #trabajos {
-  padding: 0px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 500px;
+  min-height: 450px;
   max-height: 600px;
+  background-color: rgba(8, 93, 121, 0.486);
 }
 
-#nav-galeria {
-  margin-top: 9px;
-  margin-bottom: -15px;
+#linea-separadora-galeria {
+  height: 10%;
+  background-color: rgba(8, 93, 121, 0.781);
 }
-
 
 .popup {
   border-radius: 15px;

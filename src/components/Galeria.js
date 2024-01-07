@@ -93,46 +93,67 @@ export const Galeria = () => {
            
           <p>{filteredWorksforCategory[selectedImageIndex].describe}</p>
           <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
-         {filteredWorksforCategory[selectedImageIndex].id === 'grandvoyage'?(
-          <a href=" https://manodecristiano.github.io/Landing_Page_Home_GrandVoyage/" target="_blank" rel="noreferrer">Web en GitHubPage</a>
-         ):(
-          <a href="https://github.com/manodecristiano" target="_blank"rel="noreferrer">github.com/cristian</a>
-          )}
+          
+
+          {
+  filteredWorksforCategory[selectedImageIndex].id === 'grandvoyage' && (
+    <a href="https://manodecristiano.github.io/Landing_Page_Home_GrandVoyage/" target="_blank" rel="noreferrer">
+     sitio web: GitHubPage
+    </a>
+  )
+}
+{
+  (filteredWorksforCategory[selectedImageIndex].id !== 'grandvoyage' && filteredWorksforCategory[selectedImageIndex].id !== 'deliverymedia') && (
+    <a href="https://github.com/manodecristiano" target="_blank" rel="noreferrer">
+      github.com/cristian
+    </a>
+  )
+}
+
+
+{
+  filteredWorksforCategory[selectedImageIndex].id === 'deliverymedia' && (
+    <a href="https://www.deliverymedia.es/" target="_blank" rel="noreferrer">
+      sitio web: Deliverymedia.es
+    </a>
+  )
+}
          
         </div>
         </div>
       )}
+   <div id='linea-separadora-galeria'className="subcontenedor-separador">
+     <div id="nav-galeria">
 
+
+<button className="button-galeria"
+  onClick={() => handleStatesButtonClick("all")}
+  disabled={buttonStates.all}
+>
+  <img className="icono" src={imagenButton1} alt="icono de todo" />
+  <p>Todo</p>
+</button>
+
+
+<button className="button-galeria"
+  onClick={() => handleStatesButtonClick("design")}
+  disabled={buttonStates.design}
+>
+  <img className="icono" src={imagenButton2} alt="icono de diseño" />
+  <p>Diseño</p>
+</button>
+
+
+<button className="button-galeria"
+  onClick={() => handleStatesButtonClick("frontend")}
+  disabled={buttonStates.frontend}
+>
+  <img className="icono" src={imagenButton3} alt="icono de frontend" />
+  <p>Frontend</p>
+</button>
+</div></div>
       <div id="trabajos">
-        <div id="nav-galeria">
-
-
-          <button
-            onClick={() => handleStatesButtonClick("all")}
-            disabled={buttonStates.all}
-          >
-            <img className="icono" src={imagenButton1} alt="icono de todo" />
-            <p>Todo</p>
-          </button>
-
-
-          <button
-            onClick={() => handleStatesButtonClick("design")}
-            disabled={buttonStates.design}
-          >
-            <img className="icono" src={imagenButton2} alt="icono de diseño" />
-            <p>Diseño</p>
-          </button>
-
-
-          <button
-            onClick={() => handleStatesButtonClick("frontend")}
-            disabled={buttonStates.frontend}
-          >
-            <img className="icono" src={imagenButton3} alt="icono de frontend" />
-            <p>Frontend</p>
-          </button>
-        </div>
+       
 
 
         <div className={`image-container`}>
