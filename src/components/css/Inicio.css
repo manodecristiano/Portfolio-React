@@ -118,10 +118,10 @@
 
 @media screen and (max-width: 1123px) {
   #subcontenedor-general {
+    background-color: #24a8d46b;
 
-    background-color: #aac7d1;
-    opacity: 0.7;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1 10px), repeating-linear-gradient(#085d7955, #085d79);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);
+
   }
 
   #titulo {
