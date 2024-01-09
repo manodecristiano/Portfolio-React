@@ -12,7 +12,6 @@
 
 }
 
-
 .logo h3 {
   font-size: 30px;
   width: 12px;
@@ -131,16 +130,7 @@ a:hover,
 
   }
 
-  #logoColgando {
-    margin-top: 20%;
-  }
-
-  #logoColgando h3 {
-    display: none;
-  }
-
   #titulo2 {
-    justify-content: end;
 
     margin: 0%;
   }
@@ -148,4 +138,9 @@ a:hover,
   #navegacion {
     display: none;
   }
+
+  #logoColgando {
+    display: none;
+  }
+
 }

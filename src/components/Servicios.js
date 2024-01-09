@@ -9,7 +9,7 @@ export const Servicios = () => {
     <>
       <h2 id="tituloServicio">Servicios</h2>
 
-      <div className="contenedor-flex">
+      <div id='contenedorServicios' className="contenedor-flex">
         <div className="subcontenedorServicios">
           <div id="linea-separadora"></div>
           <h2>Páginas Webs</h2>

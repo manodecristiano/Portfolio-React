@@ -55,6 +55,12 @@
   }
 
   .subcontenedorServicios {
+    background-color: #0242574b;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);
+
+  }
+
+  .subcontenedorServicios {
     padding: 8px;
     width: 80%;
     text-align: center;
@@ -73,7 +79,9 @@
 
   .subcontenedorServicios:hover {
     color: white;
+    background-image: none;
     background-color: rgb(4, 85, 109);
+
   }
 
   #linea-separadora3 {

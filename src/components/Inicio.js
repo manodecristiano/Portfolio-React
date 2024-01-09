@@ -10,12 +10,21 @@ export const Inicio = () => {
   return (
     <>
      <div id="subcontenedor-general">
+
+
       <div ref={inicioRef} id="inicio" className="seccionInicio"></div>
       <h1 id="titulo">Bienvenido a mi web  !  Soy Cristian </h1>
-      <h1 id="titulo2">Bienvenido a mi web </h1>
+      <h1 id="titulo2">Portfolio web </h1>
       <div id="linea-separadora1"></div>
       <div className="contenedor-flex">
      
+      <div id="logoColgando2">
+       <h2 className="cuerda">|</h2>
+       <div className="logo">
+          <span>C</span>
+         
+        </div>
+      </div>
       <div id="subcontenedor0">
         <div id="subcontenedor1">
           <p>

@@ -87,6 +87,7 @@ export const HeaderNav = () => {
           <h3>ristian arreño</h3>
         </div>
         </div>
+        
         <div id="navegacion">
         <nav>
           <ul className="menu">

@@ -32,19 +32,7 @@ export const  Contacto = () => {
   
     <div id="contacto-container">
 
-      {/* Formulario de Correo Electrónico */}
-      <form action="https://formsubmit.co/cristian.carre.online@gmail.com" method="POST" >
-        <label htmlFor="email">Tu Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label htmlFor="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required />
-        <input type='hidden' name='_next' value='http://localhost:3000'></input>
-        <input type='hidden' name='_captcha' value='false'></input>
-        <button  onClick={() => alert('¡Correo electrónico enviado con éxito!')} id='buttonEnviar'type="submit">Enviar Correo</button>
-      
-       
-        </form>
+     
 
       {/* Redes Sociales */}
       <div className="redes-sociales">
@@ -62,7 +50,6 @@ export const  Contacto = () => {
 
       </div>
 
-      
     </div>
 
   
