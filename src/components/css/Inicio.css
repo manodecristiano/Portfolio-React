@@ -118,10 +118,12 @@
 
 @media screen and (max-width: 1123px) {
   #subcontenedor-general {
-    background-color: #24a8d46b;
+    background-color: #24a8d41e;
 
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);
-
+    /* background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);*/
+    background-image: url(../assets/parallax/fotoParallax03.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   #titulo {

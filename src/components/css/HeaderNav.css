@@ -131,7 +131,21 @@ a:hover,
 
   }
 
-  .fixedcontainer {
+  #logoColgando {
+    margin-top: 20%;
+  }
+
+  #logoColgando h3 {
+    display: none;
+  }
+
+  #titulo2 {
+    justify-content: end;
+
+    margin: 0%;
+  }
+
+  #navegacion {
     display: none;
   }
 }

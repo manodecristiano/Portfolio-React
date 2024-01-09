@@ -80,11 +80,14 @@ export const HeaderNav = () => {
   return (
     <div className="sidebar">
       <div className="fixedcontainer">
+      <div id="logoColgando">
         <h2 className="cuerda">|</h2>
         <div className="logo">
           <span>C</span>
           <h3>ristian arreño</h3>
         </div>
+        </div>
+        <div id="navegacion">
         <nav>
           <ul className="menu">
             <li>
@@ -108,6 +111,7 @@ export const HeaderNav = () => {
             </li>
           </ul>
         </nav>
+      </div>
       </div>
     </div>
   );
