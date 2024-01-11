@@ -13,8 +13,11 @@ export const Inicio = () => {
 
 
       <div ref={inicioRef} id="inicio" className="seccionInicio"></div>
-      <h1 id="titulo">Bienvenido a mi web  !  Soy Cristian </h1>
-      <h1 id="titulo2">Portfolio web </h1>
+      <div id="titulos">
+        <h1 id="titulo">Bienvenido a mi web  !  Soy Cristian </h1>
+        <h1 id="titulo2">Portfolio web</h1> 
+        <h5 id="titulo3">Cristian Carreño</h5>
+      </div>
       <div id="linea-separadora1"></div>
       <div className="contenedor-flex">
      

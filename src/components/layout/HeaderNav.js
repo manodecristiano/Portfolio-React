@@ -5,7 +5,6 @@ import React, { useRef, useEffect , useState} from "react";
 export const HeaderNav = () => {
   const location = useLocation();
 
-  
 
   const elmntInicio = useRef(null);
   const elmntContacto = useRef(null);
@@ -46,11 +45,10 @@ export const HeaderNav = () => {
   useEffect(() => {
     const handleScroll = () => {
       const inicioOffset = elmntInicio.current?.offsetTop || 0;
-      const trabajosOffset = elmntTrabajos.current?.offsetTop + -150 || 0;
-      const serviciosOffset = elmntServicios.current?.offsetTop + -250 || 0;
-      const contactoOffset = elmntContacto.current.offsetTop + -505||0;
+      const trabajosOffset = elmntTrabajos.current?.offsetTop + -950 || 0;
+      const serviciosOffset = elmntServicios.current?.offsetTop + -550 || 0;
+      const contactoOffset = elmntContacto.current.offsetTop + -800;
     
-
       const scrollPosition = window.scrollY;
 
       

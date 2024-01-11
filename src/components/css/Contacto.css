@@ -6,82 +6,41 @@
   justify-content: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: rgb(8, 93, 121);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
 
-}
-
-label {
-  margin-bottom: 5px;
-}
-
-input,
-textarea,
-button {
-  margin-bottom: 10px;
-}
-
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.redes-sociales {
+/*
+#redes-sociales {
   display: flex;
   justify-content: space-around;
-  width: 150px;
-}
+  width: 450px;
+
+}*/
 
 .iconosRRSS {
   color: #2980b9 !important;
   font-size: 20px;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 10px 0px 10px;
+  padding: 15px;
 
 }
 
-.redes-sociales a:hover {
+#redes-sociales a:hover {
   font-size: 20px;
   color: #ffffff !important;
-  padding: 1px;
-  margin: 0px 20px 0px 18px;
   border-radius: 5px;
+  font-weight: normal !important;
+  padding: 15px;
 }
 
-.redes-sociales button:hover {
-  margin: 0px 40px 0px 36px !important;
+#redes-sociales button:hover {
   font-size: 20px !important;
   color: #ffffff !important;
-  padding: 2px !important;
   background-color: rgba(8, 93, 121, 0.486) !important;
   border-radius: 5px;
 }
 
-#buttonEnviar {
-  background-color: #2980b9;
-}
 
-#buttonEnviar:hover {
-  background-color: #2980b9;
-  color: #ffffff !important;
-  font-size: 15px;
-  padding: 5px 0px 5px 0px !important;
-  margin: 5px 0px -7px 0px !important;
 
-}
+
 
 @media screen and (max-width: 1123px) {
   #contacto-container {}

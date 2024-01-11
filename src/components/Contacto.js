@@ -35,7 +35,7 @@ export const  Contacto = () => {
      
 
       {/* Redes Sociales */}
-      <div className="redes-sociales">
+      <div id="redes-sociales">
 
 
         <a className='iconosRRSS' href="mailto:cristian.carre.online@gmail.com">

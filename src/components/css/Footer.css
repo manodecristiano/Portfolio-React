@@ -13,8 +13,24 @@
     background-image: url('../assets/fotoFooter.png') !important;
 }
 
+#buttontoTop {
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(8, 93, 121, 0.849);
+    color: white;
+    color: white;
+    font-size: 19px;
+    border-color: #CF2A2A;
+    box-shadow: 0 0 30px 30px rgb(3, 102, 134) inset;
+    transition: box-shadow 0.3s ease-in-out;
+    transform: rotateX(180deg);
+}
+
+#buttontoTop:hover {
+    box-shadow: 0 0 12px 0 #CF2A2A inset, 0 0 12px 4px #CF2A2A;
+}
+
 #footerText {
-    padding: 0px 5px 5px 5px;
+    padding: 0px 25px 2px 25px;
     background-color: rgba(0, 0, 0, 0.158);
     width: fit-content;
     border-radius: 10px;

@@ -101,18 +101,22 @@ button:disabled {
 }
 
 #trabajos {
-  padding: 20px 20px 0px 20px;
+  padding: 15px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 450px;
   max-height: 600px;
-  background-color: rgba(8, 93, 121, 0.486);
+  background-image: url(../assets/parallax/fotoParallax03.png);
+  background-size: cover;
+  background-position-y: 10%;
+  background-color: rgba(2, 0, 0, 0.87);
 }
 
 #linea-separadora-galeria {
   height: 10%;
   background-color: rgba(8, 93, 121, 0.781);
+  box-shadow: 0px 8px 5px 1px rgba(0, 0, 0, 0.616);
 }
 
 .popup {
@@ -145,6 +149,7 @@ button:disabled {
   border-color: #CF2A2A;
   box-shadow: 0 0 30px 30px rgb(65, 182, 221) inset;
   transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 12px;
 }
 
 #buttonCerrar:hover {

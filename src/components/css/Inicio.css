@@ -27,7 +27,8 @@
 
 }
 
-#titulo2 {
+#titulo2,
+#titulo3 {
   display: none;
 }
 
@@ -117,14 +118,20 @@
 @media screen and (max-width: 1360px)and (min-width: 500px) {
   #carousel-container {
     display: none;
-
   }
 
   #logoColgando2 {
     display: none;
   }
-
 }
+
+
+@media screen and (max-width: 1700px) {
+  #titulo {
+    font-size: 35px;
+  }
+}
+
 
 
 @media screen and (max-width: 1123px) {
@@ -138,19 +145,29 @@
     display: none;
   }
 
-  #titulo2 {
+  #titulos {
     display: flex;
-    width: 95%;
-    justify-content: center;
+    align-items: center;
     font-family: "Kumbh Sans", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: white;
     background-color: rgb(8, 93, 121);
     color: white;
-    padding: 10px;
-    margin-bottom: -8%;
+    flex-direction: column;
+  }
 
+  #titulo2 {
+    display: flex;
+    font-weight: 600;
+    font-size: 28px;
+    background-color: rgb(8, 93, 121);
+    padding-top: 10px;
+
+  }
+
+  #titulo3 {
+    margin-top: -2px;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 10px;
   }
 
   .contenedor-flex {
@@ -208,19 +225,24 @@
 
   #logoColgando2 {
     margin-left: -60%;
-    margin-top: -5%;
+    margin-top: -8%;
     margin-bottom: -30%;
     display: block;
+    -webkit-text-stroke: 1px rgba(223, 234, 238, 0.527);
+
   }
 
   #logoColgando2 span {
     font-size: 150px;
-    color: rgb(28, 66, 78);
+    color: rgba(238, 238, 238, 0.836);
     margin-left: -23%;
+    text-shadow: 0 1px 0 #0475a1, 0 2px 0 #0475a1, 0 3px 0 #0475a1, 0 4px 0 #0475a1, 0 5px 0 #0475a1, 0 6px 0 #0475a1, 0 7px 0 #0475a1, 0 8px 0 #0475a1, 0 9px 0 #0475a1, 10px 25px 15px rgb(0, 0, 0);
   }
 
   .cuerda {
     margin-left: 27px !important;
   }
+
+
 
 }
