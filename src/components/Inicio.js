@@ -28,26 +28,37 @@ export const Inicio = () => {
          
         </div>
       </div>
-      <div id="subcontenedor0">
+    <div id="subcontenedor0">
+
+      <div id="subcontenedor99">
+
         <div id="subcontenedor1">
           <p>
           Me presento, soy Cristian, un desarrollador multiplataforma, licenciado en ello y además con amplia formación y conocimientos en diseño e ilustración que he ido consiguiendo durante estos más de 5 años de experiencia y constante aprendizaje. Me gusta ser autodidacta, así cualquier reto para mí lo veo como una oportunidad y crecimiento.
           </p>
-          </div>
-          <div id="subcontenedor2">
+        </div>
+
+        <div id="subcontenedor2">
           <p>
           Entre mis cualidades a destacar diría que soy muy "focus", me centro en una cosa y hasta que no la consigo, es muy posible que ni pare para comer. Combino creatividad y originalidad en el desarrollo, algo que se está perdiendo con el desarrollo de nuevas I.A. Me suelo decantar por las cosas simples, elegantes pero sobre todo sin perder funcionalidad.
           </p>
         </div>
-        
+       
+      </div>
+      <div id="subcontenedor3">
+        <div id="carousel">
+            <Carousel></Carousel>
         </div>
+        </div>
+       
+
+    </div>
+
         <img id='imagenPortada' src={imagenPortada} alt='foto profesioanl Cristian' />
         
           
       </div>
-      <div id="carousel">
-            <Carousel></Carousel>
-          </div>
+    
        <br/>
        
      <div id="linea-separadora2"></div>
