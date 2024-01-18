@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap");
 
+#subcontenedor-general {
+  height: fit-content;
+}
+
 #titulo {
   display: flex;
   width: 70%;
@@ -34,7 +38,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  padding: 0px 0px 0px 0px !important;
 }
 
 
