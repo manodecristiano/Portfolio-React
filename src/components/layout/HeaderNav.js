@@ -78,9 +78,9 @@ export const HeaderNav = () => {
   return (
     <div className="sidebar">
       <div className="fixedcontainer">
-      <div id="logoColgando">
-        <h2 className="cuerda">|</h2>
-        <div className="logo">
+      <div id="container-logo-Nav">
+        <h2 className="rope">|</h2>
+        <div className="letter-logo">
           <span>C</span>
           <h3>ristian arreño</h3>
         </div>

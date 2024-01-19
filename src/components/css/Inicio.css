@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap");
 
-#subcontenedor-general {
+#container-general {
   height: fit-content;
 }
 
-#titulo {
+#title1 {
   display: flex;
   width: 70%;
   justify-content: center;
@@ -20,30 +20,30 @@
   border-radius: 0px 15px 15px 0px;
 }
 
-#titulo2,
-#titulo3 {
+#title2,
+#title3 {
   display: none;
 }
 
-#linea-separadora1 {
+#separator-line1 {
   display: none;
 }
 
-#linea-separadora2 {
+#separator-line2 {
   border-top: 4px solid rgb(8, 93, 121);
   margin: 14px 0px 0px 121px;
 }
 
-.contenedor-flex {
+.container-flex {
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 0px 0px 0px 0px !important;
+  padding: 0 35px;
 }
 
 
-#subcontenedor1,
-#subcontenedor2 {
+#subcontainer1,
+#subcontainer2 {
   border: 1px solid rgba(0, 0, 0, 0.212);
   border-radius: 15px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
@@ -58,7 +58,7 @@
   padding: 15px;
 }
 
-#subcontenedor3 {
+#subcontainer3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +71,12 @@
   width: 22%;
 }
 
-#subcontenedor99 {
+#subcontainer0 {
   display: flex;
 }
 
 
-
-#imagenPortada {
+#imageProfile {
   height: 350px;
   width: 326px;
   margin-top: 35px;
@@ -85,7 +84,7 @@
   border-radius: 30px;
 }
 
-.subcontenedor-separador {
+.subcontainer-separator {
   background-color: rgb(4, 85, 109);
   color: white;
   font-family: "Roboto", sans-serif;
@@ -109,16 +108,16 @@
   display: none !important;
 }
 
-#logoColgando2 {
+#container-logo-Initiation {
   display: none;
 }
 
-#subcontenedor99>div {
+#subcontainer0>div {
   margin-left: 70px;
 }
 
 @media screen and (max-width: 1500px) {
-  #subcontenedor99>div {
+  #subcontainer0>div {
     margin-left: 88px;
   }
 }
@@ -129,20 +128,16 @@
     display: none;
   }
 
-  #logoColgando2 {
-    display: none;
-  }
-
-  #subcontenedor1,
-  #subcontenedor2 {
+  #subcontainer1,
+  #subcontainer2 {
     margin-top: 5%;
   }
 
-  #imagenPortada {
+  #imageProfile {
     margin-left: 24px;
   }
 
-  #subcontenedor99>div {
+  #subcontainer0>div {
     margin-left: 20px;
   }
 
@@ -150,37 +145,46 @@
 
 
 @media screen and (max-width: 1700px) {
-  #titulo {
+  #title1 {
     font-size: 35px;
   }
 
-  #subcontenedor3 {
+  #subcontainer3 {
     margin-top: 2%;
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 402px) {
 
+  #carousel-container {
+    margin-top: 20%;
+
+  }
+
+}
 
 @media screen and (max-width: 1123px) {
-  #subcontenedor-general {
+
+
+  #container-general {
     background-image: url(../assets/parallax/fotoParallax03.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
 
-  #subcontenedor99 {
+  #subcontainer0 {
     display: inline;
   }
 
-  #subcontenedor99 div {
+  #subcontainer0 div {
     margin-left: 0%;
   }
 
-  #titulo {
+  #title1 {
     display: none;
   }
 
-  #titulos {
+  #container-title {
     display: flex;
     align-items: center;
     font-family: "Kumbh Sans", sans-serif;
@@ -189,7 +193,7 @@
     flex-direction: column;
   }
 
-  #titulo2 {
+  #title2 {
     display: flex;
     font-weight: 600;
     font-size: 28px;
@@ -198,14 +202,14 @@
 
   }
 
-  #titulo3 {
+  #title3 {
     margin-top: -2px;
     display: inline-block;
     font-weight: 200;
     font-size: 10px;
   }
 
-  .contenedor-flex {
+  .container-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,27 +217,28 @@
   }
 
 
-
   #carousel {
     width: 70%;
   }
 
-  #linea-separadora1 {
+
+
+  #separator-line1 {
     display: none;
   }
 
-  #linea-separadora2 {
+  #separator-line2 {
     border-top: 8px solid rgb(8, 93, 121);
     margin: 120px 0px 18px 26px !important;
   }
 
-  #subcontenedor0 {
+  #subcontainer-general {
     padding: 13%;
     text-align: center;
   }
 
-  #subcontenedor1,
-  #subcontenedor2 {
+  #subcontainer1,
+  #subcontainer2 {
     font-size: 15px;
     padding: 15px;
     margin-top: 20px;
@@ -242,12 +247,12 @@
     width: auto;
   }
 
-  #subcontenedor3 {
+  #subcontainer3 {
     margin-top: 150%;
   }
 
 
-  #imagenPortada {
+  #imageProfile {
     height: 323px;
     width: 258px;
     margin-top: -110%;
@@ -256,7 +261,7 @@
     margin-left: 0px;
   }
 
-  #logoColgando2 {
+  #container-logo-Initiation {
     margin-left: -60%;
     margin-top: -8%;
     margin-bottom: -30%;
@@ -265,15 +270,19 @@
 
   }
 
-  #logoColgando2 span {
+  #container-logo-Initiation span {
     font-size: 150px;
     color: rgba(238, 238, 238, 0.836);
     margin-left: -23%;
     text-shadow: 0 1px 0 #0475a1, 0 2px 0 #0475a1, 0 3px 0 #0475a1, 0 4px 0 #0475a1, 0 5px 0 #0475a1, 0 6px 0 #0475a1, 0 7px 0 #0475a1, 0 8px 0 #0475a1, 0 9px 0 #0475a1, 10px 25px 15px rgb(0, 0, 0);
   }
 
-  .cuerda {
+  .rope {
     margin-left: 27px !important;
+  }
+
+  #container-logo-Nav {
+    display: none;
   }
 
 

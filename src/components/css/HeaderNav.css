@@ -1,9 +1,9 @@
 /*logo*/
-.logo {
+.letter-logo {
   display: flex;
 }
 
-.logo span {
+.letter-logo span {
   margin-top: -69px;
   color: rgb(8, 93, 121);
   font: 200px/1 'TeXGyreAdventorBold';
@@ -12,7 +12,7 @@
 
 }
 
-.logo h3 {
+.letter-logo h3 {
   font-size: 30px;
   width: 12px;
   font-family: 'Roboto', sans-serif !important;
@@ -21,7 +21,7 @@
   margin-left: -93px;
 }
 
-.cuerda {
+.rope {
   font-family: 'Roboto', sans-serif !important;
   margin-top: -55px;
   margin-left: 65px;
@@ -141,8 +141,7 @@ a:hover,
 
   }
 
-  #titulo2 {
-
+  #title2 {
     margin: 0%;
   }
 
@@ -150,8 +149,6 @@ a:hover,
     display: none;
   }
 
-  #logoColgando {
-    display: none;
-  }
+
 
 }

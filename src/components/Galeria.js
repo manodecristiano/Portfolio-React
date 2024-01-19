@@ -122,7 +122,7 @@ export const Galeria = () => {
         </div>
         </div>
       )}
-   <div id='linea-separadora-galeria'className="subcontenedor-separador">
+   <div id='linea-separadora-galeria'className="subcontainer-separator">
      <div id="nav-galeria">
 
 
@@ -154,8 +154,6 @@ export const Galeria = () => {
 </div></div>
       <div id="trabajos">
        
-
-
         <div className={`image-container`}>
           {filteredWorksforCategory.map((image, index) => (
             <img

@@ -22,7 +22,7 @@
   margin: 10px 50px;
 }
 
-.contenedor-flex {
+.container-flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -55,7 +55,7 @@
   }
 
   .subcontenedorServicios {
-    background-color: #0242574b;
+    background-color: #0242572d;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);
 
   }
