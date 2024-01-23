@@ -157,7 +157,7 @@
 
 
 @media screen and (max-width: 1360px)and (min-width: 500px) {
-  #carousel-container {
+  #box-carousel {
     display: none;
   }
 
@@ -234,18 +234,19 @@
   }
 
   #box-id-general {
-    display: inline;
-    grid-template-columns: 70%;
-
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 0%;
   }
 
   #box-first-paragraf {
-
     grid-row: 1;
+    background-color: azure;
   }
 
   #box-second-paragraf {
     grid-row: 2;
+    background-color: azure;
   }
 
   #box-image {
@@ -253,8 +254,17 @@
   }
 
   #box-carousel {
+    width: 100%;
+    grid-column: auto;
     grid-row: 4;
+    margin-left: -35px;
   }
+
+  #carousel2 img {
+    width: 70px;
+    height: 70px;
+  }
+
 
   #box-first-paragraf,
   #box-second-paragraf {
