@@ -23,6 +23,12 @@ code {
 	/*display: flex;*/
 	align-items: stretch;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 70%;
+}
+
+@media screen and (max-width: 1123px) {
+	.content {
+		width: 100%;
+	}
 
 }

@@ -1,9 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap");
 
+
+.box-class-general {
+  padding: 35px;
+  margin: 15px;
+  border-radius: 15px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#box-id-general {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  padding: 20px;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+
 #container-general {
   height: fit-content;
 }
+
+#box-first-paragraf {
+  /* border: 1px solid rgba(0, 0, 0, 0.212);*/
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
+  background-color: rgba(245, 245, 220, 0.329);
+  display: grid;
+  align-items: center;
+  height: fit-content;
+  margin-top: 20%;
+}
+
+#box-second-paragraf {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
+  background-color: rgba(245, 245, 220, 0.329);
+  align-items: center;
+  display: grid;
+  height: fit-content;
+  margin-top: 20%;
+}
+
+
+#box-carousel {
+  margin-top: -3%;
+  /*border: 1px solid rgba(0, 0, 0, 0.212);*/
+  grid-column: 1/4;
+}
+
+#carousel2 img {
+  width: 100px;
+  height: 100px;
+}
+
+.custom-carousel .slick-prev,
+.custom-carousel .slick-next {
+  display: none !important;
+}
+
+
+#imageProfile2 {
+  height: 350px;
+  width: 300px;
+  border-radius: 30px;
+}
+
 
 #title1 {
   display: flex;
@@ -42,38 +107,6 @@
 }
 
 
-#subcontainer1,
-#subcontainer2 {
-  border: 1px solid rgba(0, 0, 0, 0.212);
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: black;
-  line-height: 1.5;
-  margin-bottom: 5%;
-  background-color: rgba(245, 245, 220, 0.329);
-  width: 100%;
-  padding: 15px;
-}
-
-#subcontainer3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#carousel {
-  margin-top: 2%;
-  margin-left: 5%;
-  position: absolute;
-  width: 22%;
-}
-
-#subcontainer0 {
-  display: flex;
-}
 
 
 #imageProfile {
@@ -94,32 +127,32 @@
 }
 
 
-#carousel-container {
-  width: 100%;
-}
-
-#carousel-container img {
-  width: 80px;
-  height: 80px;
-}
-
-.custom-carousel .slick-prev,
-.custom-carousel .slick-next {
-  display: none !important;
-}
-
 #container-logo-Initiation {
   display: none;
 }
 
-#subcontainer0>div {
-  margin-left: 70px;
-}
 
-@media screen and (max-width: 1500px) {
-  #subcontainer0>div {
-    margin-left: 20px;
+@media screen and (max-width: 1540px) {
+  .box-class-general {
+    font-size: 12px;
+    margin: 10px;
   }
+
+  #imageProfile2 {
+    height: 300px;
+    width: 250px;
+  }
+
+  #box-carousel {
+    margin-bottom: -25px;
+  }
+
+  #carousel2 img {
+    width: 90px;
+    height: 80px;
+  }
+
+
 }
 
 
@@ -128,18 +161,6 @@
     display: none;
   }
 
-  #subcontainer1,
-  #subcontainer2 {
-    margin-top: 5%;
-  }
-
-  #imageProfile {
-    margin-left: 24px;
-  }
-
-  #subcontainer0>div {
-    margin-left: 20px;
-  }
 
 }
 
@@ -149,19 +170,10 @@
     font-size: 35px;
   }
 
-  #subcontainer3 {
-    margin-top: 2%;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 402px) {
-
-  #carousel-container {
-    margin-top: 20%;
-
-  }
 
 }
+
+
 
 @media screen and (max-width: 1123px) {
 
@@ -172,13 +184,7 @@
     background-repeat: no-repeat;
   }
 
-  #subcontainer0 {
-    display: inline;
-  }
 
-  #subcontainer0 div {
-    margin-left: 0%;
-  }
 
   #title1 {
     display: none;
@@ -217,11 +223,6 @@
   }
 
 
-  #carousel {
-    width: 70%;
-  }
-
-
 
   #separator-line1 {
     display: none;
@@ -232,33 +233,42 @@
     margin: 120px 0px 18px 26px !important;
   }
 
-  #subcontainer-general {
-    padding: 13%;
-    text-align: center;
+  #box-id-general {
+    display: inline;
+    grid-template-columns: 70%;
+
   }
 
-  #subcontainer1,
-  #subcontainer2 {
+  #box-first-paragraf {
+
+    grid-row: 1;
+  }
+
+  #box-second-paragraf {
+    grid-row: 2;
+  }
+
+  #box-image {
+    grid-row: 3;
+  }
+
+  #box-carousel {
+    grid-row: 4;
+  }
+
+  #box-first-paragraf,
+  #box-second-paragraf {
+
     font-size: 15px;
-    padding: 15px;
     margin-top: 20px;
-    width: 100%;
-    background-color: white;
     width: auto;
   }
 
-  #subcontainer3 {
-    margin-top: 150%;
-  }
 
-
-  #imageProfile {
+  #imageProfile2 {
     height: 323px;
     width: 258px;
-    margin-top: -110%;
-    margin-right: 0%;
-    border-radius: 30px;
-    margin-left: 0px;
+
   }
 
   #container-logo-Initiation {
