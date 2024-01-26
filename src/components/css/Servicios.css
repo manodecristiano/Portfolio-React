@@ -55,9 +55,21 @@
   }
 
   .subcontenedorServicios {
-    background-color: #0242572d;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);
+    background-image: none;
+    background-color: rgb(4, 85, 109);
+    color: rgb(255, 255, 255);
+  }
 
+
+  .subcontenedorServicios p {
+    margin: 5px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+  }
+
+  .subcontenedorServicios h2:hover {
+    color: rgba(0, 0, 0, 0.788);
   }
 
   .subcontenedorServicios {
@@ -79,9 +91,12 @@
 
   .subcontenedorServicios:hover {
     color: white;
-    background-image: none;
-    background-color: rgb(4, 85, 109);
+    background-color: #03685b41;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #aac7d1d0 10px), repeating-linear-gradient(#085d792c, #085d7942);
+  }
 
+  .subcontenedorServicios:hover p {
+    background-color: rgba(4, 84, 109, 0.342);
   }
 
   #linea-separadora3 {

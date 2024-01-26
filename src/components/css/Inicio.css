@@ -16,7 +16,7 @@
 
 #box-id-general {
   display: grid;
-  grid-template-columns: 30% 30% 40%;
+  grid-template-columns: 30% 25% 15% 30%;
   padding: 20px;
   justify-content: space-around;
   margin-left: 5%;
@@ -45,16 +45,38 @@
   margin-top: 20%;
 }
 
-
-#box-carousel {
-  margin-top: -3%;
-  /*border: 1px solid rgba(0, 0, 0, 0.212);*/
-  grid-column: 1/4;
+#box-icons {
+  margin-top: 36%;
+  background-color: rgb(8, 93, 121);
+  align-items: center;
+  display: grid;
+  height: fit-content;
+  width: fit-content;
 }
 
-#carousel2 img {
+#iconoLinkedin {
+  height: 70px;
+  width: 70px;
+}
+
+#iconoGithub {
+  height: 130px;
   width: 100px;
-  height: 100px;
+  border-radius: 15px;
+}
+
+#box-carousel p {
+  font-size: 16px;
+  font-weight: 900;
+  text-align: left;
+  color: rgb(8, 93, 121);
+}
+
+
+
+#carousel2 img {
+  width: 70px;
+  height: 70px;
 }
 
 .custom-carousel .slick-prev,
@@ -107,13 +129,10 @@
 }
 
 
-
-
 #imageProfile {
   height: 350px;
   width: 326px;
-  margin-top: 35px;
-  margin-left: 70px;
+
   border-radius: 30px;
 }
 
@@ -182,6 +201,7 @@
     background-image: url(../assets/parallax/fotoParallax03.png);
     background-size: 100%;
     background-repeat: no-repeat;
+
   }
 
 
@@ -212,7 +232,8 @@
     margin-top: -2px;
     display: inline-block;
     font-weight: 200;
-    font-size: 10px;
+    font-size: 14px;
+    margin-bottom: 4%;
   }
 
   .container-flex {
@@ -239,6 +260,10 @@
     margin-left: 0%;
   }
 
+  .box-class-general {
+    padding: 18px;
+  }
+
   #box-first-paragraf {
     grid-row: 1;
     background-color: azure;
@@ -257,7 +282,7 @@
     width: 100%;
     grid-column: auto;
     grid-row: 4;
-    margin-left: -35px;
+    margin-left: -6%;
   }
 
   #carousel2 img {
@@ -282,10 +307,9 @@
   }
 
   #container-logo-Initiation {
-    margin-left: -60%;
-    margin-top: -8%;
-    margin-bottom: -30%;
-    display: block;
+    display: inline;
+    position: absolute;
+    margin-top: -12%;
     -webkit-text-stroke: 1px rgba(223, 234, 238, 0.527);
 
   }
@@ -293,12 +317,12 @@
   #container-logo-Initiation span {
     font-size: 150px;
     color: rgba(238, 238, 238, 0.836);
-    margin-left: -23%;
+
     text-shadow: 0 1px 0 #0475a1, 0 2px 0 #0475a1, 0 3px 0 #0475a1, 0 4px 0 #0475a1, 0 5px 0 #0475a1, 0 6px 0 #0475a1, 0 7px 0 #0475a1, 0 8px 0 #0475a1, 0 9px 0 #0475a1, 10px 25px 15px rgb(0, 0, 0);
   }
 
   .rope {
-    margin-left: 27px !important;
+    margin-left: 50px !important;
   }
 
   #container-logo-Nav {

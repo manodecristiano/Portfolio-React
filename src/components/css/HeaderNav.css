@@ -125,10 +125,10 @@ a:hover,
 
   a:hover,
   .active2 {
-
     padding: 10px;
     margin-left: -10px;
   }
+
 }
 
 
@@ -145,7 +145,7 @@ a:hover,
     margin: 0%;
   }
 
-  #navegacion {
+  .sidebar {
     display: none;
   }
 

@@ -228,16 +228,18 @@ button:disabled {
   }
 }
 
-@media screen and (min-width: 413px) and (max-width: 1122px) {
+@media screen and (min-width: 414px) and (max-width: 1122px) {
   .image-container img {
-    width: 190px !important;
-    height: 160px !important;
+    width: 160px !important;
+    height: 140px !important;
   }
+
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 412px) {
   .image-container img {
-    width: 160px !important;
-    height: 140px !important;
+    width: 140px !important;
+    height: 120px !important;
   }
 }
