@@ -1,4 +1,4 @@
-import React, { useRef,useEffect,useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./css/Inicio.css";
 import Carousel from "./Carousel";
 import TimeLine from "./TimeLine";
@@ -11,26 +11,26 @@ export const Inicio = () => {
 
 
   const inicioRef = useRef(null);
- 
-const escrituraAutomatica = React.useRef(null);
 
-    React.useEffect(() => {
-      const typed = new Typed(escrituraAutomatica.current, {
-        strings: ["Programador", "Frontend", "Diseñador", "Maquetador", "Web","Móvil"],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 1500,
-        showCursor: true,
-        loop:true
-      });
-  
-      return () => {
-        // Destroy Typed instance during cleanup to stop animation
-        typed.destroy();
-      };
-    }, []);
+  const escrituraAutomatica = React.useRef(null);
 
- 
+  React.useEffect(() => {
+    const typed = new Typed(escrituraAutomatica.current, {
+      strings: ["Programador", "Frontend", "Diseñador", "Maquetador", "Web", "Móvil"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      showCursor: true,
+      loop: true
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
+
 
   return (
     <>
@@ -57,43 +57,61 @@ const escrituraAutomatica = React.useRef(null);
           </div>
 
           <div>
-          <div className='box-class-general' id="box-first-paragraf">  
-          <p>
-            Apasionado desarrollador multiplataforma con una licenciatura en la materia. A lo largo de mis más de <strong>5 años</strong> de experiencia, he cultivado amplios conocimientos en diseño e ilustración. Mi enfoque autodidacta me impulsa a ver cada desafío como una oportunidad para aprender y crecer. Siempre estoy comprometido con la mejora continua, lo que me permite enfrentar nuevos retos con entusiasmo y determinación.
-          </p>
+            <div className='box-class-general' id="box-first-paragraf">
+              <p>
+              Apasionado desarrollador multiplataforma con una licenciatura en la materia.
+              A lo largo de mis más de <span>5 años de experiencia</span>, he forjado sólidos conocimientos 
+              en diseño e ilustración. Mi enfoque autodidacta me motiva a considerar cada desafío 
+              como una oportunidad para aprender y crecer. 
+              </p>
+            </div>
+
           </div>
+          <div className='box-class-general' id="box-image">
           
-          </div>
-          <div className='box-class-general' id="box-image"> 
-          <img id="imageProfile2"src={imagenPortada} alt="foto profesional de Cristian"/>
-          <div>
-          <span id='escrituraAutomatica' ref={escrituraAutomatica} />
-          </div>
+            <img id="imageProfile2" src={imagenPortada} alt="foto profesional de Cristian" />
+           
           </div>
 
           <div className='box-class-general' id="box-icons">
-          <img id="iconoLinkedin" src={iconoLinkedin}alt="icono de Linkedin"/>
-          
+          <a href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
+            <img id="iconoLinkedin" src={iconoLinkedin} alt="icono de Linkedin" href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer" />
+          </a>
 
-          <img id="iconoGithub" src={iconoGithub}alt="icono de Github"/>
+          <a href="https://github.com/manodecristiano" target="_blank" rel="noopener noreferrer">
+            <img id="iconoGithub" src={iconoGithub} alt="icono de Github" />
+            </a>
           </div>
 
-
-          <div className='box-class-general' id="box-second-paragraf"> 
-          <p>
-            Sin duda, destaco por mi enfoque decidido y concentrado, siendo altamente "focus". Cuando me embarco en un proyecto, me sumerjo por completo y persisto hasta alcanzar los resultados deseados, incluso dejando de lado pausas para comer. Fusiono creatividad y originalidad en mi trabajo, algo que considero vital en un contexto donde la proliferación de nuevas I.A. está transformando el desarrollo. Mi preferencia por soluciones simples y elegantes no compromete la funcionalidad; al contrario, busco la eficiencia sin perder la esencia de la innovación.
-          </p>
+          <div>
+          <div className='box-class-general' id="box-second-paragraf">
+            <p>
+            Con un enfoque decidido y altamente centrado, me sumerjo por
+            completo en proyectos, persistiendo hasta lograr resultados. 
+            Fusiono creatividad y originalidad, elementos vitales en un 
+            mundo transformado por la proliferación de I.A. Además, destaco 
+            por una comunicación efectiva, cultura de servicio, organización, 
+            manejo del tiempo, pensamiento crítico y una actitud proactiva.
+            </p>
           </div>
-         
+             <div>
+              <span id='escrituraAutomatica' ref={escrituraAutomatica} />
+            </div>
+            </div>
+
+            
 
           <div className='box-class-general' id="box-carousel">
-            <p>Tecnologías que utilizo:</p>
+         
+          <div id="separator-line3"></div>
+         
+          <p>Tecnologías que utilizo:</p>
             <div id="carousel2">
               <Carousel></Carousel>
             </div>
           </div>
-        
-          
+
+
         </div>
 
 

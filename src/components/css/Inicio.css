@@ -16,15 +16,20 @@
 
 #box-id-general {
   display: grid;
-  grid-template-columns: 30% 25% 10% 30%;
+  grid-template-columns: 33% 20% 10% 30%;
   padding: 20px;
-  justify-content: space-between;
   margin-left: 5%;
- 
+
 }
 
 #container-general {
   height: fit-content;
+}
+
+#box-first-paragraf p>span {
+
+  color: #0475a1;
+  font-size: 13px;
 }
 
 #box-first-paragraf {
@@ -34,7 +39,9 @@
   display: grid;
   align-items: center;
   height: fit-content;
- 
+  font-size: 12px;
+  padding: 9%;
+
 }
 
 #box-second-paragraf {
@@ -43,26 +50,32 @@
   align-items: center;
   display: grid;
   height: fit-content;
-  width: 65%;
+  width: 60%;
+  font-size: 12px;
+  padding: 9%;
 }
 
 #box-icons {
-  background-color: rgb(8, 93, 121);
+  background-color: black;
   align-items: center;
-
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
-  height:90%;
-  padding:  0%!important;
-  margin:5px 0 0 0!important;
-  
+  height: 100%;
+  padding: 0% !important;
+  margin: 0 35px 0 0 !important;
+  background-image: url(../assets/parallax/fotoParallax03.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
 }
 
 #iconoLinkedin {
   margin-top: 15%;
   height: 40px;
   width: 40px;
+  border-radius: 5px;
+  margin-bottom: 25%;
 }
 
 #iconoGithub {
@@ -70,17 +83,31 @@
   width: 80px;
   border-radius: 15px;
 }
+
+#box-icons a:hover {
+  border-radius: 0px;
+  background: none;
+  padding: 0px;
+}
+
 #escrituraAutomatica {
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  color:  rgb(8, 93, 121);
+  font-size: 55px;
+  font-family: 'Impact', sans-serif;
+  color: rgb(8, 93, 121);
   white-space: nowrap;
   overflow: hidden;
-  
+  margin-left: 15px;
 }
+
+.typed-cursor {
+  font-size: 55px;
+  color: rgba(0, 0, 0, 0.493);
+}
+
 #box-carousel {
-  margin-top: -37%;
+  margin-top: -28%;
   grid-column: 1/3;
+  margin-bottom: 0%;
 }
 
 
@@ -94,8 +121,8 @@
 
 
 #carousel2 img {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
 }
 
 .custom-carousel .slick-prev,
@@ -103,14 +130,13 @@
   display: none !important;
 }
 
-#box-image{
-  padding: -18px;
-  margin:-10px;
+#box-image {
+  margin: -5px;
 }
 
 #imageProfile2 {
-  height: 250px;
-  width: 100px;
+  height: 230px;
+  width: 200px;
   border-radius: 30px;
 }
 
@@ -144,18 +170,34 @@
   margin: 14px 0px 0px 121px;
 }
 
+
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+#separator-line3 {
+  border-radius: 3px;
+  height: 17px;
+  width: 100%;
+  background: linear-gradient(to right, #000000, rgb(8, 93, 121));
+  margin-top: 30px;
+  margin-bottom: -15px;
+  animation: moveGradient 5s linear infinite;
+  background-size: 200% 100%;
+}
+
 .container-flex {
   align-items: center;
   display: flex;
   justify-content: space-around;
   padding: 0 35px;
-}
-
-
-#imageProfile {
-  height: 350px;
-  width: 326px;
-  border-radius: 30px;
 }
 
 .subcontainer-separator {
@@ -179,18 +221,31 @@
     margin: 10px;
   }
 
+
+  #box-id-general {
+    grid-template-columns: 30% 25% 10% 30%;
+  }
+
+  #separator-line3 {
+    margin-top: 5px;
+  }
+
   #imageProfile2 {
     height: 250px;
     width: 200px;
   }
 
   #box-carousel {
+    margin-top: -30%;
+    grid-column: 1/3;
     margin-bottom: -25px;
   }
 
+
+
   #carousel2 img {
     width: 58px;
-    height:58px;
+    height: 58px;
   }
 
 
@@ -256,7 +311,7 @@
     font-weight: 200;
     font-size: 14px;
     margin-bottom: 4%;
-    
+
   }
 
   .container-flex {
@@ -304,8 +359,8 @@
 
   #box-carousel {
     width: 100%;
-  
-   
+
+
   }
 
   #carousel2 img {

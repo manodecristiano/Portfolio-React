@@ -1,47 +1,32 @@
 import React from "react";
-import "../css/Parallax.css";
 import { Parallax } from "react-parallax";
+import "../css/Parallax.css";
 
-import image1 from "../assets/parallax/fotoParallax01.png";
+import image5 from "../assets/parallax/fotoParallax05.png";
 import image2 from "../assets/parallax/fotoParallax02.png";
 import image3 from "../assets/parallax/fotoParallax03.png";
-import image4 from "../assets/parallax/fotoParallax04.png";
-
+import image6 from "../assets/parallax/fotoParallax06.png";
+import image7 from "../assets/parallax/fotoParallax07.png";
 
 export function ModuleParallax() {
-return (
+  const parallaxItems = [
+    { bgImage: image5, strength: 200, height: "100vh" },
+    { bgImage: image2, strength: 200, height: "100vh" },
+    { bgImage: image3, strength: 200, height: "100vh" },
+    { bgImage: image6, strength: 200, height: "100vh" },
+    { bgImage: image7, strength: 200, height: "auto" },
+  ];
+
+  return (
     <>
-<div className="parallax">
-  
-<Parallax bgImage={image4} strength={200}>
-<div id='parallax-img1'style={{ height: "330px" }}>
-</div>
-</Parallax>
-
-<Parallax bgImage={image1} strength={100}>
-<div style={{ height: "640px" }}>
-</div>
-</Parallax>
-
-<Parallax bgImage={image2} strength={200}>
-<div style={{ height: "890px" }}>
-{/*<div style={insideStyles}> CV</div>*/}
-</div>
-</Parallax>
-
-<Parallax bgImage={image3} strength={200}>
-<div style={{ height: "827px" }}>
-</div>
-</Parallax>
-
-<Parallax bgImage={image4} strength={200}>
-<div style={{ height: "275px" }}>
-</div>
-</Parallax>
-</div>
-
-
-</>
-
-);
+      <div className="parallax">
+        {parallaxItems.map((item, index) => (
+          <Parallax key={index} bgImage={item.bgImage} strength={item.strength}>
+            <div style={{ height: item.height }}></div>
+          </Parallax>
+        ))}
+      </div>
+    </>
+  );
 }
+

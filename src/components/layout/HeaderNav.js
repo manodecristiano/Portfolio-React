@@ -73,9 +73,10 @@ export const HeaderNav = () => {
     };
   }, []);
 
-      
+
     
   return (
+    
     <div className="sidebar">
       <div className="fixedcontainer">
       <div id="container-logo-Nav">
