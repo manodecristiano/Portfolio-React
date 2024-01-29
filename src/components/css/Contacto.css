@@ -4,16 +4,19 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-color: #020c13;
+  padding: 1%;
 }
 
 
-/*
 #redes-sociales {
-  display: flex;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 2px;
   justify-content: space-around;
   width: 450px;
 
-}*/
+}
 
 .iconosRRSS {
   color: #2980b9 !important;
@@ -23,19 +26,32 @@
 
 }
 
-#redes-sociales a:hover {
+#redes-sociales a {
   font-size: 20px;
   color: #ffffff !important;
   border-radius: 5px;
   font-weight: normal !important;
   padding: 15px;
+  background-color: rgba(8, 93, 121, 0.295);
+}
+
+#redes-sociales a:hover {
+  background-color: rgb(63, 148, 177);
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
+
+#redes-sociales button {
+  border-radius: 65px !important;
+
 }
 
 #redes-sociales button:hover {
   font-size: 20px !important;
   color: #ffffff !important;
   background-color: rgba(8, 93, 121, 0.486) !important;
-  border-radius: 5px;
+  border-radius: 15px !important;
+
 }
 
 

@@ -123,17 +123,6 @@ a:hover,
   padding: 19px;
 }
 
-@media screen and (max-width: 1700px) {
-
-  a:hover,
-  .active2 {
-    padding: 10px;
-    margin-left: -10px;
-  }
-
-}
-
-
 
 @media screen and (max-width: 1123px) {
   .sidebar {

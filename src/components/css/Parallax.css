@@ -1,14 +1,18 @@
 body,
-html {
+html,
+#root {
+  height: 100%;
   margin: 0;
+  padding: 0;
+
+  /* Añade display: flex para que #root ocupe toda la altura */
 }
+
 
 .parallax {
-  width: 25%;
-  height: auto;
-  background-color: red;
-}
+  width: 20%;
 
+}
 
 
 @media screen and (max-width: 1123px) {

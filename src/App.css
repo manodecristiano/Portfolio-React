@@ -24,6 +24,7 @@ code {
 	align-items: stretch;
 	flex-wrap: wrap;
 	width: 70%;
+	height: 100%;
 }
 
 @media screen and (max-width: 1123px) {

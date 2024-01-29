@@ -11,16 +11,19 @@
   margin-top: 0%;
 }
 
-#linea-separadora3 {
-  border-top: 17px solid rgb(8, 93, 121);
+
+
+
+#separator-line4 {
+  height: 45px;
   width: 100%;
-  margin: 10px 0px;
+  background: linear-gradient(to bottom, rgb(8, 93, 121), #000000, #000000);
+  margin-top: 30px;
+  margin-bottom: -15px;
+  animation: moveGradient 5s linear infinite;
+  background-size: 200% 100%;
 }
 
-.linea-separadora {
-  border-top: 4px solid rgb(8, 93, 121);
-  margin: 10px 50px;
-}
 
 .container-flex {
   display: flex;

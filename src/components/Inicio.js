@@ -59,57 +59,63 @@ export const Inicio = () => {
           <div>
             <div className='box-class-general' id="box-first-paragraf">
               <p>
-              Apasionado desarrollador multiplataforma con una licenciatura en la materia.
-              A lo largo de mis más de <span>5 años de experiencia</span>, he forjado sólidos conocimientos 
-              en diseño e ilustración. Mi enfoque autodidacta me motiva a considerar cada desafío 
-              como una oportunidad para aprender y crecer. 
+                Apasionado desarrollador multiplataforma con una licenciatura en la materia.
+                A lo largo de mis más de <span>5 años de experiencia</span>, he forjado sólidos conocimientos
+                en diseño e ilustración. Mi enfoque autodidacta me motiva a considerar cada desafío
+                como una oportunidad para aprender y crecer.
               </p>
             </div>
 
           </div>
           <div className='box-class-general' id="box-image">
-          
+
             <img id="imageProfile2" src={imagenPortada} alt="foto profesional de Cristian" />
-           
+
           </div>
 
           <div className='box-class-general' id="box-icons">
-          <a href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
-            <img id="iconoLinkedin" src={iconoLinkedin} alt="icono de Linkedin" href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer" />
-          </a>
+           
+            <div className="icons-inicio">
+              <a href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
+                <img id="iconoLinkedin" src={iconoLinkedin} alt="icono de Linkedin" href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer" />
+              </a>
+              </div>
 
-          <a href="https://github.com/manodecristiano" target="_blank" rel="noopener noreferrer">
-            <img id="iconoGithub" src={iconoGithub} alt="icono de Github" />
-            </a>
+            <div className="icons-inicio">
+              <a href="https://github.com/manodecristiano" target="_blank" rel="noopener noreferrer">
+                <img id="iconoGithub" src={iconoGithub} alt="icono de Github" />
+              </a>
+            </div>
+
           </div>
-
           <div>
-          <div className='box-class-general' id="box-second-paragraf">
-            <p>
-            Con un enfoque decidido y altamente centrado, me sumerjo por
-            completo en proyectos, persistiendo hasta lograr resultados. 
-            Fusiono creatividad y originalidad, elementos vitales en un 
-            mundo transformado por la proliferación de I.A. Además, destaco 
-            por una comunicación efectiva, cultura de servicio, organización, 
-            manejo del tiempo, pensamiento crítico y una actitud proactiva.
-            </p>
-          </div>
-             <div>
+            <div className='box-class-general' id="box-second-paragraf">
+              <p>
+                Con un enfoque decidido y altamente centrado, me sumerjo por
+                completo en proyectos, persistiendo hasta lograr resultados.
+                Fusiono creatividad y originalidad, elementos vitales en un
+                mundo transformado por la proliferación de I.A. Además, destaco
+                por una comunicación efectiva, cultura de servicio, organización,
+                manejo del tiempo, pensamiento crítico y una actitud proactiva.
+              </p>
+            </div>
+            <div>
               <span id='escrituraAutomatica' ref={escrituraAutomatica} />
             </div>
-            </div>
+          </div>
 
-            
+
 
           <div className='box-class-general' id="box-carousel">
-         
-          <div id="separator-line3"></div>
-         
-          <p>Tecnologías que utilizo:</p>
+
+           
+
+            <p id='titleCarousel'>Tecnologías que utilizo:</p>
             <div id="carousel2">
-              <Carousel></Carousel>
+              <Carousel></Carousel>  </div> 
+              <div id="separator-line3"></div>
             </div>
-          </div>
+        
 
 
         </div>

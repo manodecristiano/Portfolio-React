@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,8 @@
     font-size: 11px;
     padding-top: 35px;
     color: white;
-    background-image: url('../assets/fotoFooter.png') !important;
+    background-color: #020c13;
+
 }
 
 #buttontoTop {

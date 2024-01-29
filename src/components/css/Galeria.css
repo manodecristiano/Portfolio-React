@@ -106,10 +106,9 @@ button:disabled {
   align-items: center;
   min-height: 450px;
   max-height: 600px;
-  background-image: url(../assets/parallax/fotoParallax03.png);
-  background-size: cover;
-  background-position-y: 10%;
-  background-color: rgba(2, 0, 0, 0.87);
+
+  background-color: rgba(8, 93, 121, 0.281);
+  background-color: rgb(3, 25, 32);
 }
 
 #linea-separadora-galeria {

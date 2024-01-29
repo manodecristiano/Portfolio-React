@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+
 import "../App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Contacto } from "../components/Contacto";
@@ -11,17 +12,50 @@ import { Servicios } from "../components/Servicios";
 
 export const MisRutas = () => {
 
- 
+  const generalRef = useRef(null);
+  const [alturaMaxima, setAlturaMaxima] = useState(0);
+  const [allIsCharged, setallIsCharged] = useState(false);
+
+  useEffect(() => {
+
+    const changeHeightParallax = () => {
+      if (generalRef.current) {
+        const alturaGeneral = generalRef.current.clientHeight;
+        setAlturaMaxima(alturaGeneral);
+      }
+    };
+
+    const chargedAll = () => {
+      setallIsCharged(true);
+    };
+
+    // Manejar redimensionamiento de la ventana
+    window.addEventListener("resize", changeHeightParallax);
+
+    // Manejar carga completa del contenido
+    window.addEventListener("load", chargedAll);
+
+    // Llamar a changeHeight al montar el componente
+    changeHeightParallax();
+
+    // Limpiar los events listeners al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", changeHeightParallax);
+      window.removeEventListener("load", chargedAll);
+    };
+  }, [generalRef, allIsCharged]);
+
+
   return (
     <BrowserRouter>
       {/*Header y Navegacion*/}
       <div className="general">
 
         <HeaderNav></HeaderNav>
-        <ModuleParallax></ModuleParallax>
+        <ModuleParallax alturaMaxima={alturaMaxima} ></ModuleParallax>
         
-        <div className="content">
-
+        <div className="content" ref={generalRef} >
+      
           {/*Contenido Central*/}
           <section id="inicio"><Inicio></Inicio></section>
           
