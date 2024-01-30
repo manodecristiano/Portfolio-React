@@ -8,11 +8,14 @@
   color: rgb(8, 93, 121);
   font: 200px/1 'TeXGyreAdventorBold';
   animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation;
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 25px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc,
+    0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc,
+    0 9px 0 #cccccc, 0 25px 15px rgb(0, 126, 199);
 
 }
 
 .letter-logo h3 {
+  color: rgba(255, 255, 255, 0.342);
   font-size: 30px;
   width: 12px;
   font-family: 'Roboto', sans-serif !important;
@@ -28,7 +31,7 @@
   font-size: 40px;
   height: fit-content;
   font-weight: lighter;
-  color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
   animation: 55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite both logoAnimation;
 
 }
@@ -71,61 +74,83 @@
 
 
 
-/*nav*/
-.container-siderbar {
-  margin-left: 0;
+
+
+#sidebar {
+  position: relative;
+  width: 16%;
+  background-image: url(../assets/parallax/fotoParallax03.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
-.sidebar {
-  width: 200px;
+#sidebar::after {
+  content: '';
+  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  height: 110vh;
-  padding-left: 40px;
-  padding-top: 40px;
-  width: 16%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0d2e3f, #020c13);
+  z-index: -1;
 }
 
 .fixedcontainer {
   position: fixed;
-
 }
 
-nav ul {
-  justify-content: center;
-  align-items: center;
-  padding-inline-start: 0px;
+#container-logo-Nav {
+  padding-top: 20%;
 }
+
+
+
 
 li {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  margin-left: 20px;
-  height: 40px;
+  margin-top: 10%;
   list-style: none;
-  margin-top: 85px;
+
 }
 
-a:link,
-a:visited {
-  color: rgb(8, 93, 121);
+.button-navegacion {
+  position: relative;
+  background-color: #11455f7e;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  padding: 35%;
+  left: -50%;
+}
+
+a {
   text-decoration: none;
 }
 
-a:hover,
-.active2 {
+.menu a:link,
+a:visited {
   border-radius: 5px;
-  background: rgba(8, 93, 121, 0.486);
-  color: rgb(255, 255, 255) !important;
+  color: white;
   font-weight: bold !important;
-  padding: 19px;
+}
+
+.button-navegacion-active {
+  position: relative;
+  padding: 35%;
+  left: -50%;
+}
+
+a:hover {
+  color: rgb(104, 182, 255) !important;
 }
 
 
+
 @media screen and (max-width: 1123px) {
-  .sidebar {
+  #sidebar {
     width: 0px;
     padding-left: 0px;
     padding-top: 0px;
@@ -136,7 +161,7 @@ a:hover,
     margin: 0%;
   }
 
-  .sidebar {
+  #sidebar {
     display: none;
   }
 

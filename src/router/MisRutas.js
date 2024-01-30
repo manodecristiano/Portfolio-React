@@ -52,7 +52,6 @@ export const MisRutas = () => {
       <div className="general">
 
         <HeaderNav></HeaderNav>
-        <ModuleParallax alturaMaxima={alturaMaxima} ></ModuleParallax>
         
         <div className="content" ref={generalRef} >
       
@@ -68,6 +67,7 @@ export const MisRutas = () => {
           {/*Footer*/}
           <Footer className='footer'></Footer>
         </div>
+        <ModuleParallax alturaMaxima={alturaMaxima} ></ModuleParallax>
 
       </div>
     </BrowserRouter>

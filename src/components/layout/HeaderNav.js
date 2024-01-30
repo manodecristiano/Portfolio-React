@@ -65,7 +65,6 @@ export const HeaderNav = () => {
     }
   };
   
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -76,8 +75,10 @@ export const HeaderNav = () => {
 
     
   return (
+
     
-    <div className="sidebar">
+    <div id="sidebar">
+   
       <div className="fixedcontainer">
       <div id="container-logo-Nav">
         <h2 className="rope">|</h2>
@@ -87,32 +88,38 @@ export const HeaderNav = () => {
         </div>
         </div>
         
-        <div id="navegacion">
         <nav>
           <ul className="menu">
-            <li>
-              <Link to="#inicio" className={activeSection === "inicio" ? "active2" : ""} onClick={scrollToInicio}>
+            <li  className={activeSection === "inicio" ? "button-navegacion-active" : "button-navegacion"}>
+            
+              <Link to="#inicio"  onClick={scrollToInicio}>
                 Experiencia
               </Link>
+              
             </li>
-            <li>
-            <Link to="#trabajos" className={activeSection === "trabajos" ? "active2" : ""} onClick={scrollToTrabajos}>                Trabajos
+            <li  className={activeSection === "trabajos" ? "button-navegacion-active" : "button-navegacion"}>
+            <Link to="#trabajos"  onClick={scrollToTrabajos}>                
+            Trabajos
               </Link>
+            
             </li>
-            <li>
-              <Link to="#servicios" className={activeSection === "servicios" ? "active2" : ""}onClick={scrollToServicios}>
+            <li  className={activeSection === "servicios" ? "button-navegacion-active" : "button-navegacion"}>
+              <Link to="#servicios" onClick={scrollToServicios}>
                 Servicios
               </Link>
+           
             </li>
-            <li>
-              <Link to="#contacto" className={activeSection=== "contacto" ? "active2" : ""} onClick={scrollToContacto}>
+            <li  className={activeSection === "contacto" ? "button-navegacion-active" : "button-navegacion"}>
+              <Link to="#contacto" onClick={scrollToContacto}>
                 Contacto
               </Link>
+              
             </li>
           </ul>
         </nav>
       </div>
-      </div>
+   
     </div>
+ 
   );
 };
