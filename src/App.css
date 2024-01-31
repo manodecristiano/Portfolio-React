@@ -11,25 +11,29 @@ code {
 }
 
 
-
 .general {
 	display: flex;
 	width: 100%;
 	height: 100%;
-
 }
 
+
+
 .content {
-	/*display: flex;*/
+
 	align-items: stretch;
 	flex-wrap: wrap;
 	width: 70%;
 	height: 100%;
 }
 
+
 @media screen and (max-width: 1123px) {
 	.content {
 		width: 100%;
 	}
 
+	div.eapps-widget {
+		display: none;
+	}
 }

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import "./css/Inicio.css";
 import Carousel from "./Carousel";
 import TimeLine from "./TimeLine";
@@ -56,7 +56,7 @@ export const Inicio = () => {
             </div>
           </div>
 
-          <div>
+         
             <div className='box-class-general' id="box-first-paragraf">
               <p>
                 Apasionado desarrollador multiplataforma con una licenciatura en la materia.
@@ -66,7 +66,7 @@ export const Inicio = () => {
               </p>
             </div>
 
-          </div>
+         
           <div className='box-class-general' id="box-image">
 
             <img id="imageProfile2" src={imagenPortada} alt="foto profesional de Cristian" />
@@ -88,9 +88,10 @@ export const Inicio = () => {
             </div>
 
           </div>
-          <div>
-            <div className='box-class-general' id="box-second-paragraf">
-              <p>
+       
+            <div className='box-class-general' id="box-second-paragraf" >
+              <div id="second-paragraf">
+            <p>
                 Con un enfoque decidido y altamente centrado, me sumerjo por
                 completo en proyectos, persistiendo hasta lograr resultados.
                 Fusiono creatividad y originalidad, elementos vitales en un
@@ -99,22 +100,21 @@ export const Inicio = () => {
                 manejo del tiempo, pensamiento crítico y una actitud proactiva.
               </p>
             </div>
+
             <div>
               <span id='escrituraAutomatica' ref={escrituraAutomatica} />
             </div>
-          </div>
+            </div>
 
 
 
           <div className='box-class-general' id="box-carousel">
-
-           
-
             <p id='titleCarousel'>Tecnologías que utilizo:</p>
             <div id="carousel2">
-              <Carousel></Carousel>  </div> 
+              <Carousel></Carousel>
+            </div> 
               <div id="separator-line3"></div>
-            </div>
+         </div>
         
 
 

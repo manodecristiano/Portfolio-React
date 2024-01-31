@@ -19,7 +19,6 @@
   grid-template-columns: 33% 20% 10% 30%;
   padding: 20px;
   margin-left: 5%;
-
 }
 
 #container-general {
@@ -27,7 +26,6 @@
 }
 
 #box-first-paragraf p>span {
-
   color: #0475a1;
   font-size: 13px;
 }
@@ -44,7 +42,7 @@
 
 }
 
-#box-second-paragraf {
+#second-paragraf {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
   background-color: rgba(245, 245, 220, 0.329);
   align-items: center;
@@ -53,10 +51,10 @@
   width: 60%;
   font-size: 12px;
   padding: 9%;
+  border-radius: 15px;
 }
 
 #box-icons {
-  background-color: black;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -67,7 +65,6 @@
   background-image: url(../assets/parallax/fotoParallax03.png);
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
 #iconoLinkedin {
@@ -273,10 +270,40 @@
     margin: 10px;
   }
 
+  #box-first-paragraf,
+  #second-paragraf {
+    color: azure;
+  }
+
+  #box-first-paragraf p>span {
+    color: #97ffee;
+    font-size: 15px;
+  }
+
+
+  #box-icons {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-position: 80%;
+    order: 1;
+  }
+
+  #escrituraAutomatica {
+    color: white;
+  }
+
+  #container-general {
+    background-color: rgb(5, 22, 32);
+  }
 
   #box-id-general {
-    grid-template-columns: 30% 25% 10% 30%;
+    grid-template-columns: 30% 25% auto auto;
+
   }
+
+
 
   #separator-line3 {
     margin-top: 5px;
@@ -288,6 +315,7 @@
   }
 
   #box-carousel {
+
     margin-top: -30%;
     grid-column: 1/3;
     margin-bottom: -25px;
@@ -302,14 +330,6 @@
 }
 
 
-@media screen and (max-width: 1360px)and (min-width: 500px) {
-  #box-carousel {
-    display: none;
-  }
-
-
-}
-
 
 @media screen and (max-width: 1700px) {
   #title1 {
@@ -323,14 +343,23 @@
 
 @media screen and (max-width: 1123px) {
 
+  #box-first-paragraf,
+  #second-paragraf {
+    color: black
+  }
 
   #container-general {
     background-image: url(../assets/parallax/fotoParallax03.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
   }
 
+  #box-id-general {
+    background-image: url(../assets/parallax/fotoParallax03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 
   #title1 {
@@ -393,35 +422,51 @@
   }
 
   #box-first-paragraf {
-    grid-row: 1;
+    order: 0;
     background-color: azure;
+  }
+
+  #second-paragraf {
+    background-color: azure;
+    width: 90%;
+    font-size: 15px;
+    padding: 9%;
+    margin-left: -4%;
+
   }
 
   #box-second-paragraf {
-    grid-row: 2;
-    background-color: azure;
-
+    order: 4;
   }
 
   #box-image {
-    grid-row: 3;
+    order: 3;
   }
 
   #box-carousel {
-    width: 100%;
 
+    display: contents;
+    order: 5;
+    margin-top: 0%;
+    grid-column: none;
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 0%;
 
   }
 
+  #separator-line3 {
+    display: none;
+  }
+
   #carousel2 img {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
   }
 
 
   #box-first-paragraf,
   #box-second-paragraf {
-
     font-size: 15px;
     margin-top: 20px;
     width: auto;
