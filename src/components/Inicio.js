@@ -60,7 +60,7 @@ export const Inicio = () => {
             <div className='box-class-general' id="box-first-paragraf">
               <p>
                 Apasionado desarrollador multiplataforma con una licenciatura en la materia.
-                A lo largo de mis más de <span>5 años de experiencia</span>, he forjado sólidos conocimientos
+                A lo largo de mis más de <span>3 años de experiencia</span>, he forjado sólidos conocimientos
                 en diseño e ilustración. Mi enfoque autodidacta me motiva a considerar cada desafío
                 como una oportunidad para aprender y crecer.
               </p>

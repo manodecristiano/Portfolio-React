@@ -277,6 +277,11 @@
     margin: 10px;
   }
 
+  #title1 {
+    width: 100%;
+    margin: 0%;
+  }
+
   #box-first-paragraf,
   #second-paragraf {
     color: azure;

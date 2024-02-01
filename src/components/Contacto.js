@@ -7,10 +7,10 @@ export const  Contacto = () => {
 
     const handleDownloadCurriculum = () => {
       // URL del archivo PDF
-      const pdfUrl = process.env.PUBLIC_URL + '/Cristian_CV_2023.pdf';
+      const pdfUrl = process.env.PUBLIC_URL + '/Cristian_CV_Frontend_2024.pdf';
 
       // Nombre del archivo para la descarga
-      const fileName = 'Cristian_CV_2023.pdf';
+      const fileName = 'Cristian_CV_Frontend_2024.pdf';
   
       // Crear un enlace temporal
       const link = document.createElement('a');
