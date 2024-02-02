@@ -2,6 +2,148 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap");
 
 
+
+
+
+
+.bento-grid-general {
+  border-radius: 25px;
+  margin: 1%;
+  padding: 5%;
+  background-color: rgb(2, 46, 61);
+}
+
+#bento-grid-container {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+#bento-grid-Linkedin {
+  grid-column: 1/2;
+  perspective: 1000px;
+  overflow: hidden;
+
+}
+
+.linkedin {
+  position: absolute;
+  border-radius: 15px;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+}
+
+#imageLinkedin {
+  opacity: 1;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  backface-visibility: hidden;
+}
+
+#imageLinkedin-profile {
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  backface-visibility: hidden;
+}
+
+
+#bento-grid-Linkedin:hover #imageLinkedin {
+  transform: rotateY(180deg);
+
+}
+
+#bento-grid-Linkedin:hover #imageLinkedin-profile {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bento-grid-Presentation {
+  grid-column: 2/4;
+  background-image: url(../assets/dibujoperfil.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+
+#bento-grid-Presentation>p {
+  color: white;
+  margin-right: 40%;
+}
+
+#bento-grid-Maps {
+  grid-column: 4/5;
+
+}
+
+#bento-grid-Carrousel {
+  grid-column: 1/3;
+  padding: 0%
+}
+
+#bento-grid-AboutMe {
+  grid-column: 3/5;
+}
+
+#bento-grid-Git {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/matrix.gif);
+}
+
+#bento-grid-Git>a:hover {
+  box-shadow: 0 20px 20px -18px rgb(6, 236, 75);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+#bento-grid-English {
+
+  grid-column: 2/3;
+}
+
+#bento-grid-Time {
+
+  grid-column: 3/4;
+}
+
+#bento-grid-Picture {
+
+  grid-column: 4/5;
+}
+
+
+
+
 .box-class-general {
   padding: 15px;
   margin: 15px;
@@ -109,23 +251,23 @@
 }
 
 #escrituraAutomatica {
-  font-size: 55px;
+  font-size: 105px;
   font-family: 'Impact', sans-serif;
-  color: rgb(8, 93, 121);
+  color: rgb(237, 241, 243);
   white-space: nowrap;
   overflow: hidden;
-  margin-left: 15px;
+
 }
 
 .typed-cursor {
-  font-size: 55px;
+  font-size: 105px;
   color: rgba(0, 0, 0, 0.493);
 }
 
 
 
 #box-carousel {
-  margin-top: -35%;
+
   grid-column: 1/3;
   margin-bottom: 0%;
 
