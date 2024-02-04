@@ -1,5 +1,6 @@
 import React from 'react';
 import "./css/Contacto.css";
+import Typed from "typed.js";
 
 
 export const  Contacto = () => {
@@ -27,7 +28,24 @@ export const  Contacto = () => {
       document.body.removeChild(link);
     };
   
+    const escrituraAutomatica = React.useRef(null);
 
+    React.useEffect(() => {
+      const typed = new Typed(escrituraAutomatica.current, {
+        strings: ["Programador", "Frontend", "Diseñador", "Maquetador", "Web", "Móvil"],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        showCursor: true,
+        loop: true
+      });
+  
+      return () => {
+        // Destroy Typed instance during cleanup to stop animation
+        typed.destroy();
+      };
+    }, []);
+  
   return (
   
     <div id="contacto-container">
@@ -47,7 +65,7 @@ export const  Contacto = () => {
         <a className='iconosRRSS' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
          linkedin
         </a>
-
+        <span id='escrituraAutomatica' ref={escrituraAutomatica} />
       </div>
 
     </div>

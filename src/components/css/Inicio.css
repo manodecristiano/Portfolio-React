@@ -10,7 +10,7 @@
   border-radius: 25px;
   margin: 1%;
   padding: 5%;
-  background-color: rgb(2, 46, 61);
+  background-color: #152a35;
 }
 
 #bento-grid-container {
@@ -32,43 +32,67 @@
   grid-column: 1/2;
   perspective: 1000px;
   overflow: hidden;
-
 }
 
 .linkedin {
   position: absolute;
   border-radius: 15px;
-  top: 15%;
-  left: 10%;
-  width: 80%;
-  height: 70%;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  height: 60%;
 }
 
 #imageLinkedin {
   opacity: 1;
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, .5), inset 0 2px 2px #525154;
   backface-visibility: hidden;
 }
 
-#imageLinkedin-profile {
-  opacity: 0;
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  backface-visibility: hidden;
-}
+#imageLinkedin-Profile {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, .5), inset 0 2px 2px #525154;
 
+  display: none;
+}
 
 #bento-grid-Linkedin:hover #imageLinkedin {
-  transform: rotateY(180deg);
-
+  animation: flip 0.4s alternate both;
 }
 
-#bento-grid-Linkedin:hover #imageLinkedin-profile {
-  transform: rotateY(0deg);
+#bento-grid-Linkedin:hover #imageLinkedin-Profile {
+  animation: flip 0.4s alternate both;
+  display: inline;
+}
+
+#bento-grid-Linkedin:not(:hover) #imageLinkedin {
+  animation: flip-return 0.3s alternate both;
   opacity: 1;
+
 }
 
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
 
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(180deg);
+  }
+}
 
+@keyframes flip-return {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
 
 
 
@@ -85,30 +109,134 @@
 
 #bento-grid-Presentation {
   grid-column: 2/4;
-  background-image: url(../assets/dibujoperfil.png);
+  background-image: url(../assets/imageLikePinted.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
+
+}
+
+#bento-grid-Presentation>h2 {
+  font-size: 32px;
+  color: beige;
+  font-weight: 900;
+  margin-right: 25%;
 }
 
 #bento-grid-Presentation>p {
+  font-size: 15px;
   color: white;
-  margin-right: 40%;
+  margin-right: 25%;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+#bento-grid-Presentation>p>span {
+  color: #00d9ffb7;
+  font-weight: 400;
 }
 
 #bento-grid-Maps {
   grid-column: 4/5;
 
+
+  /*background-image: url(../assets/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+  justify-content: center;
 }
+
+#bento-grid-Maps>#ping>img {
+  color: white;
+  animation: ping 0.8s ease-in-out infinite both;
+}
+
+#circle {
+  width: 10%;
+  height: 10%;
+}
+
+@keyframes ping {
+  0% {
+
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+
+  80% {
+
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+
+
+
 
 #bento-grid-Carrousel {
   grid-column: 1/3;
   padding: 0%
 }
 
+#box-carousel p {
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 17px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+#carousel2 img {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+  width: 70px;
+  height: 70px;
+}
+
+.custom-carousel .slick-prev,
+.custom-carousel .slick-next {
+  display: none !important;
+}
+
+
+
+#separator-line3 {
+  border-radius: 3px;
+  height: 17px;
+  width: 100%;
+  background: linear-gradient(to left, rgb(113, 219, 255), #000000);
+  margin-top: 10px;
+  animation: moveGradient 10s linear infinite;
+  background-size: 200% 100%;
+}
+
+
+
+
+
 #bento-grid-AboutMe {
   grid-column: 3/5;
 }
+
+#bento-grid-AboutMe>p {
+  font-size: 16px;
+  color: white;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
 
 #bento-grid-Git {
   grid-column: 1/2;
@@ -127,19 +255,55 @@
 
 
 #bento-grid-English {
-
   grid-column: 2/3;
+  text-align: center;
+  color: ghostwhite;
+}
+
+#bento-grid-English>span {
+  font-weight: 900;
+}
+
+#bento-grid-English>h1 {
+  font-size: 5rem;
+  margin: 0%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 #bento-grid-Time {
-
+  padding: 0%;
+  height: fit-content;
   grid-column: 3/4;
+  position: relative;
+}
+
+#bento-grid-Weather {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
 }
 
 #bento-grid-Picture {
-
   grid-column: 4/5;
+  background-image: url(../assets/imageinWork.png);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0%;
+  margin: 0%;
+  transition: background-image 3s ease;
 }
+
+#bento-grid-Picture:not(:hover)>div {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background-size: cover;
+  background-image: linear-gradient(to top, rgba(4, 38, 102, 0.637), rgb(1, 40, 77));
+}
+
+
+
 
 
 
@@ -251,7 +415,7 @@
 }
 
 #escrituraAutomatica {
-  font-size: 105px;
+  font-size: 30px;
   font-family: 'Impact', sans-serif;
   color: rgb(237, 241, 243);
   white-space: nowrap;
@@ -260,50 +424,14 @@
 }
 
 .typed-cursor {
-  font-size: 105px;
+  font-size: 30px;
   color: rgba(0, 0, 0, 0.493);
 }
 
 
 
-#box-carousel {
-
-  grid-column: 1/3;
-  margin-bottom: 0%;
-
-}
 
 
-#box-carousel p {
-  width: fit-content;
-  padding: 2px 5px 2px 5px;
-  border-radius: 5px;
-  background-color: #051218b7;
-  font-weight: bolder;
-  font-size: 17px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-
-}
-
-
-
-#carousel2 img {
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.705);
-  padding: 5%;
-  width: 70px;
-  height: 70px;
-}
-
-.custom-carousel .slick-prev,
-.custom-carousel .slick-next {
-  display: none !important;
-}
-
-#box-image {
-  margin: -5px;
-}
 
 #imageProfile2 {
   height: 230px;
@@ -379,17 +507,6 @@
   }
 }
 
-
-#separator-line3 {
-  border-radius: 3px;
-  height: 17px;
-  width: 100%;
-  background: linear-gradient(to left, rgb(113, 219, 255), #000000);
-  margin-top: 10px;
-  margin-bottom: -15px;
-  animation: moveGradient 10s linear infinite;
-  background-size: 200% 100%;
-}
 
 .container-flex {
   align-items: center;
@@ -471,10 +588,8 @@
   }
 
   #box-carousel {
-
-    margin-top: -30%;
     grid-column: 1/3;
-    margin-bottom: -25px;
+
   }
 
   #carousel2 img {
