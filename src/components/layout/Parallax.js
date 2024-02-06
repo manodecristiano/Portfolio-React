@@ -1,4 +1,4 @@
-import React,  {  useEffect, useState} from "react";
+import React from "react";
 import { Parallax } from "react-parallax";
 import "../css/Parallax.css";
 
@@ -6,7 +6,7 @@ import image5 from "../assets/parallax/fotoParallax05.png";
 import image2 from "../assets/parallax/fotoParallax02.png";
 import image3 from "../assets/parallax/fotoParallax03.png";
 import image6 from "../assets/parallax/fotoParallax06.png";
-import image4 from "../assets/parallax/fotoParallax04.png";
+
 
 export function ModuleParallax({alturaMaxima}) {
 

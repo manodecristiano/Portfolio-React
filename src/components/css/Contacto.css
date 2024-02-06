@@ -18,7 +18,6 @@
 }
 
 .iconosRRSS {
-  color: #2980b9 !important;
   font-size: 20px;
   margin: 0px 10px 0px 10px;
   padding: 15px;
@@ -34,20 +33,78 @@
 }
 
 #redes-sociales a:hover {
-  background-color: rgb(63, 148, 177);
+  background-image: url(../assets/parallax/fotoParallax03.png);
+  background-position: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #000000 !important;
-  font-weight: 900 !important;
+  font-weight: 300 !important;
 }
 
-#redes-sociales button {
-  border-radius: 65px !important;
+#emaila:hover+#buttonCV,
+#linkedina:hover~#buttonCV {
+  color: rgb(255, 255, 255) !important;
+  background-image: none;
+  background-color: rgba(8, 93, 121, 0.295);
+}
 
+
+
+#redes-sociales button {
+  color: #2980b9;
+  border-radius: 65px !important;
+  width: 50%;
+  margin-left: 23%;
+  background-image: url(../assets/parallax/fotoParallax03.png);
+  background-position: 50%;
 }
 
 #redes-sociales button:hover {
   font-size: 20px !important;
-  color: #ffffff !important;
-  background-color: rgba(8, 93, 121, 0.486) !important;
-  border-radius: 15px !important;
+  background-image: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#auto-write {
+  font-size: 140px;
+  font-family: 'Impact', sans-serif;
+  color: rgba(33, 118, 161, 0.247);
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+
+.typed-cursor {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.493);
+}
+
+
+@media screen and (max-width: 700px) {
+
+  #auto-write,
+  .typed-cursor {
+    font-size: 118px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  #auto-write,
+  .typed-cursor {
+    font-size: 90px;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  #auto-write,
+  .typed-cursor {
+    font-size: 70px;
+  }
+
 
 }

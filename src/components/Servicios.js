@@ -9,26 +9,27 @@ export const Servicios = () => {
     <>
       <h2 id="tituloServicio">Servicios</h2>
 
-      <div id='contenedorServicios' className="container-flex">
-        <div className="subcontenedorServicios">
-          <div id="linea-separadora"></div>
+      <div id='containerServices'>
+
+
+        <div className="sucontainerServices">
           <h2>Páginas Webs</h2>
-          <div className="linea-separadora"></div>
+          <div className="separator-line"></div>
           <p>
-            Desarrollo tu web y mejoro su posicionamiento web. Mi servicio de
-            creación de páginas web ofrece diseño innovador, funcionalidad
-            avanzado y una presencia en línea que destaca. Desde sitios
-            corporativos hasta portafolios personales, creo la plataforma
-            perfecta para tu éxito en internet.
+            Desarrollo tu web y mejoro su posicionamiento. Mi servicio de
+            creación de páginas web ofrece un diseño y funcionalidad
+            avanzada. Desde sitios corporativos hasta portfolios personales,
+            usando desde código hasta CMS como Wordpress.
           </p>
           <img src={image1} alt="Descripción de la imagen" />
         </div>
 
-        <div id='contenedorUI'className="subcontenedorServicios">
+
+        <div id='contenedorUI'className="sucontainerServices">
           <h2>Diseño UI </h2>
-          <div className="linea-separadora"></div>
+          <div className="separator-line"></div>
           <p>
-            Potencio tu marca con diseño de interfaz y experiencia de usuario
+            Potencio tu marca con un diseño de interfaz y experiencia de usuario
             excepcionales. Mi servicio de UI/UX transforma conceptos en
             interfaces intuitivas y estéticamente atractivas, elevando la
             conexión emocional con tus usuarios.
@@ -36,11 +37,13 @@ export const Servicios = () => {
           <img src={image2} alt="Descripción de la imagen" />
         </div>
 
-        <div id='contenedorDEV'className="subcontenedorServicios">
+
+
+        <div id='contenedorDEV'className="sucontainerServices">
           <h2>Dev Apps </h2>
-          <div className="linea-separadora"></div>
+          <div className="separator-line"></div>
           <p>
-            Convierto tus ideas en aplicaciones impactantes. Mi servicio de
+            Convierto tus ideas en aplicaciones impactantes(Iphone y Android). Mi servicio de
             desarrollo de aplicaciones ofrece soluciones personalizadas,
             funcionalidad avanzada y una experiencia de usuario excepcional para
             impulsar tu presencia móvil.
@@ -48,7 +51,7 @@ export const Servicios = () => {
           <img src={image3} alt="Descripción de la imagen" />
         </div>
       </div>
-      <div id="separator-line4"></div>
+      <div id="separator-line-FinalServices"></div>
     </>
   );
 };

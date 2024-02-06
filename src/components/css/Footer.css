@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 130px;
-    line-height: 20px;
+    justify-content: end;
+    min-height: 100px;
+    line-height: 10px;
     text-align: center;
-    font-size: 11px;
-    padding-top: 35px;
+    font-size: 9px;
+    padding-top: 1%;
     color: white;
     background-color: #020c13;
 
 }
 
 #buttontoTop {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 20px 20px;
     background: rgba(8, 93, 121, 0.849);
     color: white;
     color: white;
@@ -31,10 +31,18 @@
 
 #footerText {
     padding: 0px 25px 2px 25px;
-    background-color: rgba(0, 0, 0, 0.158);
     width: fit-content;
     border-radius: 10px;
     text-align: center;
+}
+
+#footerText>h3 {
+    color: rgb(67, 147, 173);
+
+}
+
+#footerText>h4 {
+    color: rgba(12, 114, 114, 0.644);
 }
 
 @media screen and (max-width: 1123px) {

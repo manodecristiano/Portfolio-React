@@ -34,13 +34,13 @@
   overflow: hidden;
 }
 
-.linkedin {
+.img-linkedin {
   position: absolute;
   border-radius: 15px;
-  top: 20%;
+  top: 25%;
   left: 15%;
   width: 70%;
-  height: 60%;
+  height: 50%;
 }
 
 #imageLinkedin {
@@ -51,7 +51,6 @@
 
 #imageLinkedin-Profile {
   box-shadow: 0 20px 25px rgba(0, 0, 0, .5), inset 0 2px 2px #525154;
-
   display: none;
 }
 
@@ -109,11 +108,10 @@
 
 #bento-grid-Presentation {
   grid-column: 2/4;
-  background-image: url(../assets/imageLikePinted.png);
+  background-image: url(../assets/imageLikePinted2.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
-
 }
 
 #bento-grid-Presentation>h2 {
@@ -137,14 +135,25 @@
   font-weight: 400;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 #bento-grid-Maps {
   grid-column: 4/5;
-
-
-  /*background-image: url(../assets/map.png);
+  background-image: url(../assets/map.png);
   background-repeat: no-repeat;
-  background-size: cover;*/
-
+  background-size: cover;
+  background-position: 70%;
   justify-content: center;
 }
 
@@ -154,8 +163,41 @@
 }
 
 #circle {
-  width: 10%;
-  height: 10%;
+  position: absolute;
+  margin-top: 2.1%;
+  margin-left: 0.4%;
+  width: 5%;
+  height: 8%;
+  z-index: 5;
+
+}
+
+#imagePortratiGoogle {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 1.9%;
+  width: 2%;
+  height: 4%;
+  z-index: 6;
+}
+
+#imagePortratiGoogle:hover {
+  animation: flip 0.4s alternate both;
+
+}
+
+#imagePortratiGoogle:hover+#dialog {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+#dialog {
+  opacity: 0;
+  position: absolute;
+  margin-top: 0.5%;
+  margin-left: 4%;
+  width: 5%;
+  height: 7%;
 }
 
 @keyframes ping {
@@ -182,9 +224,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 #bento-grid-Carrousel {
   grid-column: 1/3;
-  padding: 0%
+  padding: 15px;
+  margin: 15px;
 }
 
 #box-carousel p {
@@ -204,12 +258,44 @@
   height: 70px;
 }
 
+#carousel2 img:hover {
+  animation: jello-vertical 0.9s both;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .custom-carousel .slick-prev,
 .custom-carousel .slick-next {
   display: none !important;
 }
-
-
 
 #separator-line3 {
   border-radius: 3px;
@@ -220,255 +306,6 @@
   animation: moveGradient 10s linear infinite;
   background-size: 200% 100%;
 }
-
-
-
-
-
-#bento-grid-AboutMe {
-  grid-column: 3/5;
-}
-
-#bento-grid-AboutMe>p {
-  font-size: 16px;
-  color: white;
-  text-align: justify;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-}
-
-
-#bento-grid-Git {
-  grid-column: 1/2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../assets/matrix.gif);
-}
-
-#bento-grid-Git>a:hover {
-  box-shadow: 0 20px 20px -18px rgb(6, 236, 75);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-
-
-#bento-grid-English {
-  grid-column: 2/3;
-  text-align: center;
-  color: ghostwhite;
-}
-
-#bento-grid-English>span {
-  font-weight: 900;
-}
-
-#bento-grid-English>h1 {
-  font-size: 5rem;
-  margin: 0%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-
-#bento-grid-Time {
-  padding: 0%;
-  height: fit-content;
-  grid-column: 3/4;
-  position: relative;
-}
-
-#bento-grid-Weather {
-  width: 100%;
-  height: fit-content;
-  box-sizing: border-box;
-}
-
-#bento-grid-Picture {
-  grid-column: 4/5;
-  background-image: url(../assets/imageinWork.png);
-  background-size: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0%;
-  margin: 0%;
-  transition: background-image 3s ease;
-}
-
-#bento-grid-Picture:not(:hover)>div {
-  height: 100%;
-  width: 100%;
-  border-radius: 25px;
-  background-size: cover;
-  background-image: linear-gradient(to top, rgba(4, 38, 102, 0.637), rgb(1, 40, 77));
-}
-
-
-
-
-
-
-
-.box-class-general {
-  padding: 15px;
-  margin: 15px;
-  border-radius: 15px;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: black;
-  line-height: 1.5;
-  text-align: center;
-}
-
-#box-id-general {
-  display: grid;
-  grid-template-columns: 33% 20% 10% 30%;
-  padding: 20px;
-  margin-left: 5%;
-}
-
-#container-general {
-  height: fit-content;
-}
-
-#box-first-paragraf p>span {
-  color: #0475a1;
-  font-size: 13px;
-}
-
-#box-first-paragraf {
-  /* border: 1px solid rgba(0, 0, 0, 0.212);*/
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
-  background-color: rgba(245, 245, 220, 0.329);
-  display: grid;
-  align-items: center;
-  height: fit-content;
-  font-size: 12px;
-  padding: 9%;
-
-}
-
-#second-paragraf {
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
-  background-color: rgba(245, 245, 220, 0.329);
-  align-items: center;
-  display: grid;
-  height: fit-content;
-  width: 60%;
-  font-size: 12px;
-  padding: 9%;
-  border-radius: 15px;
-}
-
-#box-icons {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 70%;
-  padding: 0% !important;
-  margin: 0 35px 0 0;
-  background-image: url(../assets/parallax/fotoParallax03.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-}
-
-#iconoLinkedin {
-  margin-top: 15%;
-  height: 40px;
-  width: 40px;
-  border-radius: 5px;
-  margin-bottom: 25%;
-}
-
-#iconoGithub {
-  height: 100px;
-  width: 80px;
-  border-radius: 15px;
-}
-
-#box-icons a:hover {
-  border-radius: 0px;
-  background: none;
-  padding: 0px;
-
-}
-
-.icons-inicio {
-
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
-
-.icons-inicio a>img:hover,
-.hvr-grow-shadow a:focus,
-.hvr-grow-shadow a:active {
-  box-shadow: 0 20px 20px -4px rgb(124, 210, 250);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#escrituraAutomatica {
-  font-size: 30px;
-  font-family: 'Impact', sans-serif;
-  color: rgb(237, 241, 243);
-  white-space: nowrap;
-  overflow: hidden;
-
-}
-
-.typed-cursor {
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.493);
-}
-
-
-
-
-
-
-#imageProfile2 {
-  height: 230px;
-  width: 200px;
-  border-radius: 30px;
-}
-
-
-#title1 {
-  display: flex;
-  width: 70%;
-  justify-content: center;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 600;
-  font-size: 50px;
-  color: white;
-  background-color: rgb(8, 93, 121);
-  color: white;
-  padding: 10px;
-  margin-bottom: -1%;
-  border-radius: 0px 15px 15px 0px;
-}
-
-#title2,
-#title3 {
-  display: none;
-}
-
-#separator-line1 {
-  display: none;
-}
-
-#separator-line2 {
-  border-top: 4px solid rgb(8, 93, 121);
-  margin: 14px 0px 0px 121px;
-}
-
 
 
 @keyframes moveGradient2 {
@@ -508,170 +345,291 @@
 }
 
 
-.container-flex {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 35px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bento-grid-AboutMe {
+  grid-column: 3/5;
 }
 
-.subcontainer-separator {
-  background-color: rgb(4, 85, 109);
+#bento-grid-AboutMe>p {
+  font-size: 16px;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  padding: 20px;
-  text-align: center;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bento-grid-Git {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/matrix.gif);
+}
+
+#bento-grid-Git>a:hover {
+  box-shadow: 0 20px 20px -18px rgb(6, 236, 75);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#iconoGithub {
+  height: 100px;
+  width: 80px;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bento-grid-English {
+  grid-column: 2/3;
+  text-align: center;
+  color: ghostwhite;
+}
+
+#bento-grid-English>span {
+  font-weight: 900;
+}
+
+#bento-grid-English>h1 {
+  font-size: 5rem;
+  margin: 0%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#bento-grid-English>h1:hover {
+  animation: shake 0.8s both;
+  cursor: default;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bento-grid-Time {
+  padding: 0%;
+  height: fit-content;
+  grid-column: 3/4;
+  position: relative;
+}
+
+#bento-grid-Weather {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+#bento-grid-Picture {
+  grid-column: 4/5;
+  background-image: url(../assets/imageinWork.png);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+}
+
+#bento-grid-Picture>div:hover {
+  animation: slide-out-top 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+#bento-grid-Picture>div:not(:hover) {
+
+  animation: slide-out-down 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slide-out-top {
+  0% {
+
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-down {
+  0% {
+
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+
+  100% {
+
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#bento-grid-Picture>div {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background-size: cover;
+  background-image: linear-gradient(to top, rgba(8, 71, 122, 0.116), rgba(0, 31, 59, 0.671), rgb(0, 31, 59));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#separator-line2 {
+  border-top: 4px solid rgb(8, 93, 121);
+  margin: 14px 91px 0px 91px;
+}
+
+
+
 
 
 #container-logo-Initiation {
   display: none;
 }
 
+@media screen and (max-width: 1250px) {
 
-@media screen and (max-width: 1540px) {
-  .box-class-general {
-    font-size: 12px;
-    margin: 10px;
-  }
-
-  #title1 {
-    width: 100%;
-    margin: 0%;
-  }
-
-  #box-first-paragraf,
-  #second-paragraf {
-    color: azure;
-  }
-
-  #box-first-paragraf p>span {
-    color: #2bb19a;
+  #bento-grid-Presentation>h2 {
     font-size: 18px;
+    margin-right: 35%;
   }
 
 
-  #box-icons {
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-position: 80%;
-    order: 5;
-    margin-top: 2%;
+  #bento-grid-Presentation>p {
+    font-size: 14px;
+    margin-right: 35%;
   }
 
-  #escrituraAutomatica {
-    color: white;
+  #bento-grid-AboutMe>p {
+    font-size: 12px;
   }
-
-  #container-general {
-    background-color: rgb(5, 22, 32);
-  }
-
-  #box-id-general {
-    grid-template-columns: 30% 25% auto auto;
-
-  }
-
-
-
-  #separator-line3 {
-    margin-top: 5px;
-  }
-
-  #imageProfile2 {
-    height: 250px;
-    width: 200px;
-  }
-
-  #box-carousel {
-    grid-column: 1/3;
-
-  }
-
-  #carousel2 img {
-    width: 58px;
-    height: 58px;
-  }
-
 
 }
 
+@media screen and (max-width: 1449px) {
 
 
-@media screen and (max-width: 1700px) {
-  #title1 {
-    font-size: 35px;
+  #bento-grid-Presentation>h2 {
+    font-size: 17px;
+    margin-right: 35%;
   }
 
+  #bento-grid-Presentation>p {
+    font-size: 12px;
+  }
+
+  #bento-grid-AboutMe>p {
+    font-size: 13px;
+  }
 
 }
-
-
 
 @media screen and (max-width: 1123px) {
-
-  #box-first-paragraf,
-  #second-paragraf {
-    color: black
-  }
-
-  #container-general {
-    background-image: url(../assets/parallax/fotoParallax03.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-  }
-
-  #box-id-general {
-    background-image: url(../assets/parallax/fotoParallax03.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-
-  #title1 {
-    display: none;
-  }
-
-  #container-title {
-    display: flex;
-    align-items: center;
-    font-family: "Kumbh Sans", sans-serif;
-    background-color: rgb(8, 93, 121);
-    color: white;
-    flex-direction: column;
-  }
-
-  #title2 {
-    display: flex;
-    font-weight: 600;
-    font-size: 28px;
-    background-color: rgb(8, 93, 121);
-    padding-top: 10px;
-
-  }
-
-  #title3 {
-    margin-top: -2px;
-    display: inline-block;
-    font-weight: 200;
-    font-size: 14px;
-    margin-bottom: 4%;
-
-  }
-
-  .container-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 0px 0px 0px !important;
-  }
-
-
 
   #separator-line1 {
     display: none;
@@ -679,76 +637,9 @@
 
   #separator-line2 {
     border-top: 8px solid rgb(8, 93, 121);
-    margin: 120px 0px 18px 26px !important;
+    margin: 25px 0px 0px 0px !important;
   }
 
-  #box-id-general {
-    display: grid;
-    grid-template-columns: 100%;
-    margin-left: 0%;
-  }
-
-  .box-class-general {
-    padding: 18px;
-  }
-
-  #box-first-paragraf {
-    order: 0;
-    background-color: azure;
-  }
-
-  #second-paragraf {
-    background-color: azure;
-    width: 90%;
-    font-size: 15px;
-    padding: 9%;
-    margin-left: -4%;
-
-  }
-
-  #box-second-paragraf {
-    order: 4;
-  }
-
-  #box-image {
-    order: 3;
-  }
-
-  #box-carousel {
-    background-color: white;
-    display: contents;
-    order: 5;
-    margin-top: 0%;
-    grid-column: none;
-    margin-bottom: 2%;
-    width: 100%;
-    padding: 0%;
-
-  }
-
-  #separator-line3 {
-    display: none;
-  }
-
-  #carousel2 img {
-    width: 70px;
-    height: 70px;
-  }
-
-
-  #box-first-paragraf,
-  #box-second-paragraf {
-    font-size: 15px;
-    margin-top: 20px;
-    width: auto;
-  }
-
-
-  #imageProfile2 {
-    height: 323px;
-    width: 258px;
-
-  }
 
   #container-logo-Initiation {
     display: inline;
@@ -773,6 +664,133 @@
     display: none;
   }
 
+  @media screen and (max-width: 600px) {
+    #container-logo-Initiation {
+      display: none;
+    }
 
+    #bento-grid-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      background-image: url(../assets/parallax/fotoParallax01.png);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin: 0%;
+      border-radius: 0%;
+    }
+
+    #bento-grid-Linkedin {
+      display: flex;
+      align-items: center;
+      grid-column: 3/4;
+      order: 2;
+      width: 85%;
+      height: 90%;
+    }
+
+    .img-linkedin {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 20%;
+      left: 2%;
+    }
+
+    #bento-grid-Presentation {
+      grid-column: 1/4;
+      order: 1;
+      background-position-x: 112%;
+      margin-bottom: 2%;
+    }
+
+    #bento-grid-Presentation>p {
+      text-align: left;
+    }
+
+    #bento-grid-Maps {
+      grid-column: 1/3;
+      order: 1;
+      width: 80%;
+      height: 80%;
+    }
+
+    #circle {
+      margin-top: 0%;
+      margin-left: 10.5%;
+      width: 19%;
+      height: 4%;
+    }
+
+    #imagePortratiGoogle {
+      margin-top: 0%;
+      margin-left: 15%;
+      width: 10%;
+      height: 4%;
+    }
+
+    #bento-grid-Carrousel {
+      grid-column: 1/4;
+      order: 4;
+      margin: 5% 0% 3% 0%;
+    }
+
+    #carousel2 img {
+      border-radius: 5px;
+      width: 50px;
+      height: 50px;
+    }
+
+    #bento-grid-AboutMe {
+      grid-column: 1/4;
+      order: 5;
+      margin-bottom: 3%;
+    }
+
+    #bento-grid-English {
+      grid-column: 1/2;
+      order: 6;
+      margin: 2%;
+    }
+
+    #bento-grid-English>h1 {
+      font-size: 4rem;
+
+    }
+
+    #bento-grid-Git {
+      grid-column: 2/3;
+      order: 7;
+      margin: 4%;
+    }
+
+    #bento-grid-Picture {
+      grid-column: 3/4;
+      order: 7;
+      margin: 2%;
+    }
+
+
+    #bento-grid-Time {
+      grid-column: 1/4;
+      order: 8;
+      margin: 2%;
+
+    }
+
+    .buscador-contenedor {
+      background-color: rgb(14, 3, 3);
+      height: 25%;
+      width: 50%;
+
+    }
+
+    .buscador-bar {
+      border-radius: 5px !important;
+      height: 80%;
+
+
+    }
+  }
 
 }

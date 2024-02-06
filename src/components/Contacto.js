@@ -50,22 +50,28 @@ export const  Contacto = () => {
   
     <div id="contacto-container">
 
-     
+  
 
       {/* Redes Sociales */}
       <div id="redes-sociales">
 
 
-        <a className='iconosRRSS' href="mailto:cristian.carre.online@gmail.com">
+        <a className='iconosRRSS' id='emaila' href="mailto:cristian.carre.online@gmail.com">
         email
         </a>
-        <button className='iconosRRSS' onClick={handleDownloadCurriculum}>
-         CV
-        </button>
-        <a className='iconosRRSS' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
+
+        <button className='iconosRRSS' id='buttonCV' onClick={handleDownloadCurriculum}>
+         CV 
+        </button>  
+
+        <a className='iconosRRSS' id='linkedina' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
          linkedin
         </a>
-        <span id='escrituraAutomatica' ref={escrituraAutomatica} />
+        
+      </div>
+
+      <div id="container-auto-write">
+      <span id='auto-write' ref={escrituraAutomatica} />
       </div>
 
     </div>

@@ -42,6 +42,7 @@
   overflow-y: scroll;
   overflow: auto;
   text-align: center;
+  max-width: 80%;
 }
 
 .imageAnimation1 {
@@ -77,6 +78,7 @@ button {
 }
 
 .button-galeria {
+  margin-top: 2%;
   margin-bottom: -23px;
   color: transparent;
   background-color: transparent;
@@ -111,9 +113,12 @@ button:disabled {
 }
 
 #linea-separadora-galeria {
+  display: flex;
   height: 10%;
-  background-color: rgba(8, 93, 121, 0.781);
+  background-color: rgb(8, 93, 121);
   box-shadow: 0px 8px 5px 1px rgba(0, 0, 0, 0.616);
+  text-align: center;
+  justify-content: center;
 }
 
 .popup {
@@ -215,6 +220,9 @@ button:disabled {
   .image-container {
     overflow: scroll;
     text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+
   }
 
   #trabajos {
@@ -236,8 +244,6 @@ button:disabled {
     width: 160px !important;
     height: 140px !important;
   }
-
-
 }
 
 @media screen and (min-width: 0px) and (max-width: 412px) {
