@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 .vertical-timeline-element-date {
-opacity: 1;
-font-weight: 700!important;
-margin: 0px 15px 0px 15px;
-color: rgb(8, 93, 121);
-  
+    opacity: 1;
+    font-weight: 700 !important;
+    margin: 0px 15px 0px 15px;
+    color: rgb(8, 93, 121);
+
 }
 
 
@@ -13,15 +13,18 @@ color: rgb(8, 93, 121);
 .vertical-timeline::before {
     background: #b6b6b6;
 }
-.empresa{
+
+.empresa {
     font-family: 'Abel', sans-serif;
     font-weight: 300;
 }
-.cargo{
+
+.cargo {
     font-size: 15px;
-    font-weight: bold!important;
+    font-weight: bold !important;
 }
-.funciones{
-    font-size: 12px!important;
+
+.funciones {
+    font-size: 12px !important;
     text-transform: none;
 }

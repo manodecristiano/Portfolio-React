@@ -9,8 +9,9 @@
 .bento-grid-general {
   border-radius: 25px;
   margin: 1%;
-  padding: 5%;
-  background-color: #152a35;
+  padding: 1% 5% 1% 5%;
+
+  background-color: rgb(6, 47, 61);
 }
 
 #bento-grid-container {
@@ -25,21 +26,25 @@
 
 
 
+.iconosRRSS {
+  margin: 10px 10px 0px 10px;
 
+}
 
 
 #bento-grid-Linkedin {
   grid-column: 1/2;
   perspective: 1000px;
   overflow: hidden;
+  margin-top: 4%
 }
 
 .img-linkedin {
   position: absolute;
   border-radius: 15px;
   top: 25%;
-  left: 15%;
-  width: 70%;
+  left: 20%;
+  width: 60%;
   height: 50%;
 }
 
@@ -47,6 +52,12 @@
   opacity: 1;
   box-shadow: 0 20px 25px rgba(0, 0, 0, .5), inset 0 2px 2px #525154;
   backface-visibility: hidden;
+}
+
+#imageLinkedin2 {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #imageLinkedin-Profile {
@@ -122,7 +133,7 @@
 }
 
 #bento-grid-Presentation>p {
-  font-size: 15px;
+  font-size: 19px;
   color: white;
   margin-right: 25%;
   text-align: justify;
@@ -155,6 +166,7 @@
   background-size: cover;
   background-position: 70%;
   justify-content: center;
+  margin-top: 4%
 }
 
 #bento-grid-Maps>#ping>img {
@@ -237,8 +249,7 @@
 
 #bento-grid-Carrousel {
   grid-column: 1/3;
-  padding: 15px;
-  margin: 15px;
+
 }
 
 #box-carousel p {
@@ -363,7 +374,8 @@
 }
 
 #bento-grid-AboutMe>p {
-  font-size: 16px;
+  padding: 2%;
+  font-size: 17px;
   color: white;
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
@@ -384,7 +396,7 @@
 
 
 #bento-grid-Git {
-  grid-column: 1/2;
+  grid-column: 2/3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,9 +432,10 @@
 
 
 #bento-grid-English {
-  grid-column: 2/3;
+  grid-column: 1/2;
   text-align: center;
   color: ghostwhite;
+  padding: 8%;
 }
 
 #bento-grid-English>span {
@@ -592,6 +605,44 @@
   display: none;
 }
 
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+
+
+  #bento-grid-Presentation>h2 {
+
+    font-size: 22px;
+    margin-right: 35%;
+
+  }
+
+  #bento-grid-Presentation>p {
+    font-size: 13px;
+  }
+
+  #bento-grid-AboutMe>p {
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+
+  #bento-grid-Presentation>h2 {
+    font-size: 21px;
+    margin-right: 35%;
+  }
+
+  #bento-grid-Presentation>p {
+    font-size: 13px;
+  }
+
+  #bento-grid-AboutMe>p {
+    font-size: 13px;
+  }
+
+}
+
 @media screen and (max-width: 1250px) {
 
   #bento-grid-Presentation>h2 {
@@ -611,23 +662,7 @@
 
 }
 
-@media screen and (max-width: 1449px) {
 
-
-  #bento-grid-Presentation>h2 {
-    font-size: 17px;
-    margin-right: 35%;
-  }
-
-  #bento-grid-Presentation>p {
-    font-size: 12px;
-  }
-
-  #bento-grid-AboutMe>p {
-    font-size: 13px;
-  }
-
-}
 
 @media screen and (max-width: 1123px) {
 
@@ -685,26 +720,32 @@
       align-items: center;
       grid-column: 3/4;
       order: 2;
-      width: 85%;
-      height: 90%;
+      perspective: 0px;
+      height: 100%;
     }
 
     .img-linkedin {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      top: 20%;
-      left: 2%;
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      top: 10%;
+      left: 10%;
     }
 
     #bento-grid-Presentation {
       grid-column: 1/4;
       order: 1;
-      background-position-x: 112%;
+      background-position-x: 124%;
       margin-bottom: 2%;
     }
 
+    #bento-grid-Presentation>h2 {
+      text-align: justify;
+      font-size: 19px;
+    }
+
     #bento-grid-Presentation>p {
+      font-size: 13px;
       text-align: left;
     }
 
@@ -712,12 +753,12 @@
       grid-column: 1/3;
       order: 1;
       width: 80%;
-      height: 80%;
+      height: 90%;
     }
 
     #circle {
       margin-top: 0%;
-      margin-left: 10.5%;
+      margin-left: 9%;
       width: 19%;
       height: 4%;
     }
@@ -725,7 +766,7 @@
     #imagePortratiGoogle {
       margin-top: 0%;
       margin-left: 15%;
-      width: 10%;
+      width: 7%;
       height: 4%;
     }
 
@@ -779,7 +820,10 @@
     }
 
     .buscador-contenedor {
-      background-color: rgb(14, 3, 3);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(0, 0, 0);
       height: 25%;
       width: 50%;
 

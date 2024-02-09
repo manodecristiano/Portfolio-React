@@ -39,6 +39,7 @@ export const Inicio = () => {
           <a className='iconosRRSS' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
             <img id="imageLinkedin-Profile" className="img-linkedin" src={imageLinkedinProfile} alt="imagen de Linkedin" />
             <img id="imageLinkedin" className="img-linkedin" src={imageLinkedin} alt="imagen de Linkedin" />
+            <img id="imageLinkedin2"  src={imageLinkedinProfile} alt="imagen de Linkedin" />
           </a>
         </div>
 
@@ -46,9 +47,9 @@ export const Inicio = () => {
         <div className="bento-grid-general" id="bento-grid-Presentation">
           <h2>Hola, Bienvenido a mi Portfolio</h2>
           <p>
-            Soy un Cristian un apasionado desarrollador multiplataforma con una licenciatura en la materia.
-            A lo largo de mis más de <span>3 años de experiencia</span>, he forjado sólidos conocimientos
-            de programación, diseño e ilustración. Sientete libre de ver mis proyectos y mi trayectoria.
+            Soy Cristian, un apasionado desarrollador multiplataforma con una licenciatura en la materia.
+           Llevo más de <span>3 años de experiencia</span>, he forjado sólidos conocimientos
+            de programación, diseño e ilustración durante todo este camino. Sientete libre de ver mis proyectos y mi trayectoria.
           </p>
         </div>
 
@@ -79,14 +80,18 @@ export const Inicio = () => {
             Además de los estudios reglados, mi enfoque autodidacta me impulsa a abordar
             cada desafío como una oportunidad para aprender y evolucionar.
             Me distingo por una comunicación efectiva, habilidades
-            organizativas, una actitud proactiva con pensamiento crítico y gestión eficiente del tiempo.
+            organizativas, una actitud proactiva con pensamiento crítico y una óptima gestión del tiempo.
             Con determinación y un enfoque altamente centrado, me sumerjo por completo en proyectos,
-            perseverando hasta alcanzar resultados satisfactorios.
+            perseverando hasta alcanzar los resultados.
 
           </p>
         </div>
 
 
+        <div className="bento-grid-general" id="bento-grid-English">
+          <span>ENGLISH LEVEL:</span>
+          <h1>B2</h1>
+        </div>
 
 
         <div className="bento-grid-general" id="bento-grid-Git">
@@ -97,11 +102,7 @@ export const Inicio = () => {
 
 
 
-        <div className="bento-grid-general" id="bento-grid-English">
-          <span>ENGLISH LEVEL:</span>
-          <h1>B2</h1>
-        </div>
-
+       
 
 
         <div className="bento-grid-general" id="bento-grid-Time">

@@ -129,12 +129,13 @@ button:disabled {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(1, 20, 26);
+  background: rgba(10, 36, 44, 0.938);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 .popup img {
