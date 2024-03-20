@@ -21,17 +21,6 @@
 }
 
 
-
-
-
-
-
-.iconosRRSS {
-  margin: 10px 10px 0px 10px;
-
-}
-
-
 #bento-grid-Linkedin {
   grid-column: 1/2;
   perspective: 1000px;
@@ -529,7 +518,6 @@
 }
 
 #bento-grid-Picture>div:not(:hover) {
-
   animation: slide-out-down 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 

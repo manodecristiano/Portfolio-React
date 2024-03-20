@@ -56,15 +56,15 @@ export const  Contacto = () => {
       <div id="redes-sociales">
 
 
-        <a className='iconosRRSS' id='emaila' href="mailto:cristian.carre.online@gmail.com">
+        <a  id='emaila' href="mailto:cristian.carre.online@gmail.com">
         email
         </a>
 
-        <button className='iconosRRSS' id='buttonCV' onClick={handleDownloadCurriculum}>
-         CV 
+        <button  id='buttonCV' data-original-text="CV" onClick={handleDownloadCurriculum}>
+         
         </button>  
 
-        <a className='iconosRRSS' id='linkedina' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
+        <a  id='linkedina' href="https://www.linkedin.com/in/cristiancarre/" target="_blank" rel="noopener noreferrer">
          linkedin
         </a>
         
