@@ -514,11 +514,11 @@
 }
 
 #bento-grid-Picture>div:hover {
-  animation: slide-out-top 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-top 8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 #bento-grid-Picture>div:not(:hover) {
-  animation: slide-out-down 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-down 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @keyframes slide-out-top {
