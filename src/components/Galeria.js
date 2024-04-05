@@ -25,16 +25,78 @@ import imagenButton3 from "./assets/galeria/iconoButton3.png";
 
 export const Galeria = () => {
   const worksArray = [
-    { id: 'blackJack', category: "frontend", src: imagen1, tecnology:'Figma, JavaScript, HTML, CSS3', describe:'Proyecto de una aplicación web del juego 21 Blackjack. Con un diseño simple pero con toda la lógica del juego real, los usuarios pueden disfrutar de partidas auténticas y de ese modo practicar estrategias con la mecánica de reglas realistas.' },
-    { id: 'bolaMagica', category: "frontend", src: imagen2,tecnology:'JavaScript, HTML, CSS3', describe:'Desarrollo de una apliación web única que ofrece respuestas divertidas y misteriosas a través de una bola mágica virtual. Los usuarios pueden realizar preguntas sobre cualquier tema y recibir respuestas enigmáticas, proporcionando entretenimiento y un toque de magia a consultas diarias.' },
-    { id: 'weatherApp', category: "frontend", src: imagen3, tecnology:'React, HTML, CSS3', describe:'Desarrollo de una apliación web meteorológica que brinda información precisa y fácil de entender sobre el clima gracias a consultas a una API RESTful. Los usuarios pueden consultar el tiempo y demás condiciones metereológicas de una ciudad, simplemente poniendo el nombre de la misma.' },
-    { id: 'netflix', category: "frontend", src: imagen4, tecnology:'React, HTML, Taildwind', describe:'Proyecto de una aplicación web de una réplica de Netflix. Ofrece una extensa biblioteca de contenido multimedia mediante consultas a una API RESTful, con una interfaz intuitiva y recomendaciones personalizadas. Centrandome en dar a los usuarios una experiencia cinematográfica excepcional, recreando el encanto de Netflix con un toque único y atractivo.' },
-    { id: 'landingPage', category: "frontend", src: imagen5,tecnology:'HTML, JavaScript, Bootstrap', describe:'Desarrollo de una landing page completamente responsive, garantizando una experiencia fluida en cualquier dispositivo. La prioridad fue crear un diseño atractivo y funcional que se adapte perfectamente a pantallas de diferentes tamaños, maximizando la interacción del usuario y optimizando la efectividad de la página en todos los contextos.' },
-    { id: 'catBombers', category: "design", src: imagen6,tecnology:'Figma, Flutter, Dart', describe:'Aplicación móvil integral para la preparación de oposiciones de bomberos. Ofrece contenido didáctico, simulacros de exámenes, seguimiento de progreso y asesoramiento personalizado. La plataforma optimiza el estudio, maximizando las posibilidades de éxito en el exigente proceso de selección para convertirse en bombero profesional.' },
-    { id: 'goodAndGo', category: "design", src: imagen7,tecnology:'Figma, Photoshop, Ilustrator', describe:'Diseño de Aplicación móvil de pedido de comida a domicilo. Buscando simplificar la experiencia de usuario. Con un diseño intuitivo, amplio menú, seguimiento en tiempo real y opciones de pago fácil' },
-    { id: 'grandvoyage', category: "frontend", src: imagen8,tecnology:'JavaScript, HTML, CSS3, Photoshop', describe:'Proyecto de actualización y mejora de la web de GrandVoyage, con un enfoque centrado en la experiencia de usuario, con mejoras significativas en la interfaz, la navegación y la velocidad del sitio. Además de dar un toque más actualizado ' },
-    { id: 'deliverymedia', category: "design", src: imagen9,tecnology:'Wordpress, Photoshop, Ilustrator', describe:'Proyecto de la web de DeliveryMedia desarrollada en WordPress. Se enfoca en una renovación completa para brindar una experiencia optimizada. Con diseño responsivo y mejoras en la usabilidad, esta empresa busca destacar con contenido fresco y funcionalidades mejoradas, consolidando su presencia en línea de manera vibrante y efectiva.' },
-
+    {
+      id: "blackJack",
+      category: "frontend",
+      src: imagen1,
+      tecnology: "Figma, JavaScript, HTML, CSS3",
+      describe:
+        "Proyecto de una aplicación web del juego 21 Blackjack. Con un diseño simple pero con toda la lógica del juego real, los usuarios pueden disfrutar de partidas auténticas y de ese modo practicar estrategias con la mecánica de reglas realistas.",
+    },
+    {
+      id: "bolaMagica",
+      category: "frontend",
+      src: imagen2,
+      tecnology: "JavaScript, HTML, CSS3",
+      describe:
+        "Desarrollo de una apliación web única que ofrece respuestas divertidas y misteriosas a través de una bola mágica virtual. Los usuarios pueden realizar preguntas sobre cualquier tema y recibir respuestas enigmáticas, proporcionando entretenimiento y un toque de magia a consultas diarias.",
+    },
+    {
+      id: "weatherApp",
+      category: "frontend",
+      src: imagen3,
+      tecnology: "React, HTML, CSS3",
+      describe:
+        "Desarrollo de una apliación web meteorológica que brinda información precisa y fácil de entender sobre el clima gracias a consultas a una API RESTful. Los usuarios pueden consultar el tiempo y demás condiciones metereológicas de una ciudad, simplemente poniendo el nombre de la misma.",
+    },
+    {
+      id: "netflix",
+      category: "frontend",
+      src: imagen4,
+      tecnology: "React, HTML, Taildwind",
+      describe:
+        "Proyecto de una aplicación web de una réplica de Netflix. Ofrece una extensa biblioteca de contenido multimedia mediante consultas a una API RESTful, con una interfaz intuitiva y recomendaciones personalizadas. Centrandome en dar a los usuarios una experiencia cinematográfica excepcional, recreando el encanto de Netflix con un toque único y atractivo.",
+    },
+    {
+      id: "landingPage",
+      category: "frontend",
+      src: imagen5,
+      tecnology: "HTML, JavaScript, Bootstrap",
+      describe:
+        "Desarrollo de una landing page completamente responsive, garantizando una experiencia fluida en cualquier dispositivo. La prioridad fue crear un diseño atractivo y funcional que se adapte perfectamente a pantallas de diferentes tamaños, maximizando la interacción del usuario y optimizando la efectividad de la página en todos los contextos.",
+    },
+    {
+      id: "catBombers",
+      category: "design",
+      src: imagen6,
+      tecnology: "Figma, Flutter, Dart",
+      describe:
+        "Aplicación móvil integral para la preparación de oposiciones de bomberos. Ofrece contenido didáctico, simulacros de exámenes, seguimiento de progreso y asesoramiento personalizado. La plataforma optimiza el estudio, maximizando las posibilidades de éxito en el exigente proceso de selección para convertirse en bombero profesional.",
+    },
+    {
+      id: "goodAndGo",
+      category: "design",
+      src: imagen7,
+      tecnology: "Figma, Photoshop, Ilustrator",
+      describe:
+        "Diseño de Aplicación móvil de pedido de comida a domicilo. Buscando simplificar la experiencia de usuario. Con un diseño intuitivo, amplio menú, seguimiento en tiempo real y opciones de pago fácil",
+    },
+    {
+      id: "grandvoyage",
+      category: "frontend",
+      src: imagen8,
+      tecnology: "JavaScript, HTML, CSS3, Photoshop",
+      describe:
+        "Proyecto de actualización y mejora de la web de GrandVoyage, con un enfoque centrado en la experiencia de usuario, con mejoras significativas en la interfaz, la navegación y la velocidad del sitio. Además de dar un toque más actualizado ",
+    },
+    {
+      id: "deliverymedia",
+      category: "design",
+      src: imagen9,
+      tecnology: "Wordpress, Photoshop, Ilustrator",
+      describe:
+        "Proyecto de la web de DeliveryMedia desarrollada en WordPress. Se enfoca en una renovación completa para brindar una experiencia optimizada. Con diseño responsivo y mejoras en la usabilidad, esta empresa busca destacar con contenido fresco y funcionalidades mejoradas, consolidando su presencia en línea de manera vibrante y efectiva.",
+    },
   ];
 
   const [animationOrder, setAnimationOrder] = useState("down");
@@ -79,81 +141,93 @@ export const Galeria = () => {
   return (
     <>
       {showPopup && (
-        
         <div className="popup">
           <button id="buttonCerrar" onClick={() => setShowPopup(false)}>
             X
           </button>
           <img
             style={{ width: "150%", height: "150%" }}
-            src={require("./assets/galeria/"+filteredWorksforCategory[selectedImageIndex].id+".gif")}
+            src={require("./assets/galeria/" +
+              filteredWorksforCategory[selectedImageIndex].id +
+              ".gif")}
             alt={`Imagen ${filteredWorksforCategory[selectedImageIndex].id}`}
           />
           <div className="textoImagen">
-           
-          <p>{filteredWorksforCategory[selectedImageIndex].describe}</p>
-          <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
-          
+            <p>{filteredWorksforCategory[selectedImageIndex].describe}</p>
+            <h4>{filteredWorksforCategory[selectedImageIndex].tecnology}</h4>
 
-          {
-  filteredWorksforCategory[selectedImageIndex].id === 'grandvoyage' && (
-    <a href="https://manodecristiano.github.io/Landing_Page_Home_GrandVoyage/" target="_blank" rel="noreferrer">
-     sitio web: GitHubPage
-    </a>
-  )
-}
-{
-  (filteredWorksforCategory[selectedImageIndex].id !== 'grandvoyage' && filteredWorksforCategory[selectedImageIndex].id !== 'deliverymedia') && (
-    <a href="https://github.com/manodecristiano" target="_blank" rel="noreferrer">
-      github.com/cristian
-    </a>
-  )
-}
+            {filteredWorksforCategory[selectedImageIndex].id ===
+              "grandvoyage" && (
+              <a
+                href="https://manodecristiano.github.io/Landing_Page_Home_GrandVoyage/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                sitio web: GitHubPage
+              </a>
+            )}
+            {filteredWorksforCategory[selectedImageIndex].id !==
+              "grandvoyage" &&
+              filteredWorksforCategory[selectedImageIndex].id !==
+                "deliverymedia" && (
+                <a
+                  href="https://github.com/manodecristiano"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/cristian
+                </a>
+              )}
 
-
-{
-  filteredWorksforCategory[selectedImageIndex].id === 'deliverymedia' && (
-    <a href="https://www.deliverymedia.es/" target="_blank" rel="noreferrer">
-      sitio web: Deliverymedia.es
-    </a>
-  )
-}
-         
-        </div>
+            {filteredWorksforCategory[selectedImageIndex].id ===
+              "deliverymedia" && (
+              <a
+                href="https://www.deliverymedia.es/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                sitio web: Deliverymedia.es
+              </a>
+            )}
+          </div>
         </div>
       )}
-   <div id='linea-separadora-galeria'className="subcontainer-separator">
-     <div id="nav-galeria">
+      <div id="linea-separadora-galeria" className="subcontainer-separator">
+        <div id="nav-galeria">
+          <button
+            className="button-galeria"
+            onClick={() => handleStatesButtonClick("all")}
+            disabled={buttonStates.all}
+          >
+            <img className="icono" src={imagenButton1} alt="icono de todo" />
+            <p>Todo</p>
+          </button>
 
+          <button
+            className="button-galeria"
+            onClick={() => handleStatesButtonClick("design")}
+            disabled={buttonStates.design}
+          >
+            <img className="icono" src={imagenButton2} alt="icono de diseño" />
+            <p>Diseño</p>
+          </button>
 
-<button className="button-galeria"
-  onClick={() => handleStatesButtonClick("all")}
-  disabled={buttonStates.all}
->
-  <img className="icono" src={imagenButton1} alt="icono de todo" />
-  <p>Todo</p>
-</button>
-
-
-<button className="button-galeria"
-  onClick={() => handleStatesButtonClick("design")}
-  disabled={buttonStates.design}
->
-  <img className="icono" src={imagenButton2} alt="icono de diseño" />
-  <p>Diseño</p>
-</button>
-
-
-<button className="button-galeria"
-  onClick={() => handleStatesButtonClick("frontend")}
-  disabled={buttonStates.frontend}
->
-  <img className="icono" src={imagenButton3} alt="icono de frontend" />
-  <p>Frontend</p>
-</button>
-</div></div>
+          <button
+            className="button-galeria"
+            onClick={() => handleStatesButtonClick("frontend")}
+            disabled={buttonStates.frontend}
+          >
+            <img
+              className="icono"
+              src={imagenButton3}
+              alt="icono de frontend"
+            />
+            <p>Frontend</p>
+          </button>
+          
+        </div>
+      </div>
       <div id="trabajos">
-       
         <div className={`image-container`}>
           {filteredWorksforCategory.map((image, index) => (
             <img
