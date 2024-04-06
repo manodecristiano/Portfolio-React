@@ -141,12 +141,18 @@ a:visited {
   position: relative;
   padding: 35%;
   left: -50%;
+  background-color: #020c1300!important;
 }
 
-a:hover {
-  color: rgb(104, 182, 255) !important;
+
+ a:hover {
+ 
+  color: rgba(199, 138, 32, 0.875) !important;
 }
 
+.menu li:hover{
+  background-color: #0e65a481;
+}
 
 
 @media screen and (max-width: 1123px) {
